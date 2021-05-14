@@ -1,6 +1,6 @@
 ---
 layout: default
-title: GitHub Pagesの作成から初期設定まで
+title: GitHub Pagesの作成から初期設定
 category: IT
 ---
 Github Pagesの設定でやったことをまとめます。
