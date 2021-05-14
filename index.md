@@ -19,6 +19,14 @@ Javaが少し書けるよ。
 - SQL(Oracle、MySQL)
 - Shell
 
+## 使っているOS
+
+基本Windowsです。Love Microsoft !!ww  
+仕事でですがサーバはLinuxを使ってます。
+Macは使ったことがないので、良さがわかっていない・・・  
+エンジニアの人は良くMacを使っているみたいなので、  
+やっぱりいいんだろうな~(*'▽')
+
 ## 好きな数学者
 
 [ガロア](https://ja.wikipedia.org/wiki/%E3%82%A8%E3%83%B4%E3%82%A1%E3%83%AA%E3%82%B9%E3%83%88%E3%83%BB%E3%82%AC%E3%83%AD%E3%82%A2)
