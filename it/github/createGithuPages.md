@@ -110,7 +110,7 @@ category: IT
 \{\% endfor \%\}
 <h3>日記</h3>
 \{\% for html_page in site.html_pages \%\}
-  {% if  html_page.category contains '日記' \%\}
+  \{\% if  html_page.category contains '日記' \%\}
     <li><a href="{{ html_page.url }}">\{\{ html_page.title \}\}</a></li>
   \{\% endif \%\}
 \{\% endfor \%\}
