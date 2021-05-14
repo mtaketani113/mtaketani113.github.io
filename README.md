@@ -1,6 +1,3 @@
----
-title: Top Page
----
 
 ## GitHub Pagesでブログをはじめてみました。
 
