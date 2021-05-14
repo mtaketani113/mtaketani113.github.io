@@ -42,7 +42,7 @@ Github Pagesの設定でやったことをまとめます。
 - _layouts
 - _sass
 - assets
-- 
+
 をコピーしてGithubに上げます。
 
 https://github.com/pages-themes/architect
