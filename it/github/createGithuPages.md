@@ -56,8 +56,8 @@ https://github.com/pages-themes/
 
 ### headにtitleを追加を追加しました。
 
-`{{ site.XXXXX }}`と書くことで、`_config.yml`のXXXXに該当する値をとってくるよう(^^)/  
-`{{ page.XXXXX }}`と書くことで、読み込んでいるページの頭に書いた以下のXXXXの部分を呼んでくれるみたい！！
+`\{\{ site.XXXXX \}\}`と書くことで、`_config.yml`のXXXXに該当する値をとってくるよう(^^)/  
+`\{\{ page.XXXXX \}\}`と書くことで、読み込んでいるページの頭に書いた以下のXXXXの部分を呼んでくれるみたい！！
 
 ```
 ---
