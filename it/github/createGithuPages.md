@@ -35,13 +35,14 @@ Github Pagesの設定でやったことをまとめます。
 
 ## 3.pages-themesからコピー
 
-このままでも、markdownのファイルを作成すれば、
+このままでも、markdownのファイルを作成すれば、  
 画面が追加されていくのですが、
 テーマをいじったりできるようなので、  
 以下のサイトから
 - _layouts
 - _sass
 - assets
+- 
 をコピーしてGithubに上げます。
 
 https://github.com/pages-themes/architect
