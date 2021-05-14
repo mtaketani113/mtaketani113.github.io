@@ -1,3 +1,7 @@
+---
+title: Top Page
+---
+
 ## GitHub Pagesでブログをはじめてみました。
 
 Github Pagesでブログが作れるという情報をGithub Satellite2018の動画で見つけました。  
