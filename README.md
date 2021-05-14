@@ -1,46 +1,25 @@
-## Welcome to GitHub Pages
+## GitHub Pagesでブログをはじめてみました。
 
-You can use the [editor on GitHub](https://github.com/mtaketani113/mtaketani113.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Github Pagesでブログが作れるという情報をGithub Satellite2018の動画で見つけました。  
+勉強もかねて始めてみようかと思い、手を出しました。  
+自分が手を動かして知ったIT関連の情報や、単純な日記などを書いていこうかと思います。  
+あと、数学も好きなので、まとめていけたらなと思っています。
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## プロフィール
+
+名古屋で働くへっぽこITエンジニア  
+Javaが少し書けるよ。  
+最近はDocker、k8sも少し触ってます。
 
 ## Links
-**Github Pages**  
-- [createIssueCsv](https://mtaketani113.github.io/createIssueCsv/) 
-- [dragtable](https://mtaketani113.github.io/dragtable/) 
+**IT関連**
 
-**Hello World Repository**
-- [spring boot](https://github.com/mtaketani113/springBootHelloWorld)
-- [flask](https://github.com/mtaketani113/flaskHelloWorld)
+まだないよ(^^)/
 
-### Markdown
+**数学関連**
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+まだないよ(^^)/
 
-```markdown
-Syntax highlighted code block
+**日記**
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mtaketani113/mtaketani113.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+まだないよ(^^)/
