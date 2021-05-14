@@ -70,11 +70,10 @@ https://github.com/mtaketani113/mtaketani113.github.io/blob/master/it/github/cre
 
 なので`default.html`に以下を追加して、タイトルが出るようにしました。
 
-```html
-<title>
-  {{ page.title }} | {{ site.title }} - @mtaketani113
-</title>
-```
+`<title>`
+  `{{ page.title }} | {{ site.title }} - @mtaketani113`
+`</title>`
+
 
 
 ### ページ一覧を追加
