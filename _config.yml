@@ -1,3 +1,8 @@
 title: へっぽこITエンジニア@名古屋のブログ
 theme: jekyll-theme-architect
 google_analytics: G-LLWJ5NB3QB
+
+plugins:
+ - jekyll-seo-tag
+ - jekyll-sitemap
+ - jekyll-feed
