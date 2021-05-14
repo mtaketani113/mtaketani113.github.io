@@ -7,14 +7,14 @@ Github Pagesの設定でやったことをまとめます。
 
 ## 目次
 
-[1.Github Pagesの作成](#anchor1)  
-[2.テーマの選択](#anchor2)  
-[3.pages-themesからコピー](#anchor3)  
-[4.default.htmlのカスタマイズ](#anchor4)
+[Github Pagesの作成](#anchor1)  
+[テーマの選択](#anchor2)  
+[pages-themesからコピー](#anchor3)  
+[default.htmlのカスタマイズ](#anchor4)
 
 <a id="anchor1"></a>
 
-## 1.Github Pagesの作成
+## Github Pagesの作成
 
 以下のサイトを参考にしてすぐできました。  
 作成だけはだいぶ前にやったのであまり覚えていない(*'▽')
@@ -23,7 +23,7 @@ Github Pagesの設定でやったことをまとめます。
 
 <a id="anchor2"></a>
 
-## 2.テーマの選択
+## テーマの選択
 
 リポジトリの[setting]->[Pages]->[Change theme]を選択して、  
 自分の使いたいテーマを[Select theme]で選択する。
@@ -33,7 +33,7 @@ Github Pagesの設定でやったことをまとめます。
 
 <a id="anchor3"></a>
 
-## 3.pages-themesからコピー
+## pages-themesからコピー
 
 このままでも、markdownのファイルを作成すれば、  
 画面が追加されていくのですが、
@@ -52,8 +52,71 @@ https://github.com/pages-themes/
 
 <a id="anchor4"></a>
 
-## 4.default.htmlのカスタマイズ
+## default.htmlのカスタマイズ
 
-(作成中)
-headにtitleを追加  
-ページ一覧を追加
+### headにtitleを追加を追加しました。
+
+{{ site.XXXXX }}と書くことで、`_config.yml`のXXXXに該当する値をとってくるよう(^^)/  
+{{ page.XXXXX }}と書くことで、読み込んでいるページの頭に書いた以下のXXXXの部分を呼んでくれるみたい！！
+
+```
+---
+XXXX: ほげほげ
+---
+```
+
+具体例はここを見てください。
+https://github.com/mtaketani113/mtaketani113.github.io/blob/master/it/github/createGithuPages.md
+
+なので`default.html`に以下を追加して、タイトルが出るようにしました。
+
+```
+<title>
+  {{ page.title }} | {{ site.title }} - @mtaketani113
+</title>
+```
+
+
+### ページ一覧を追加
+
+また、トップページなどにサイトを追加するたびにリンクを足していくのは面倒かと思い、ページを追加するごとに自動で足せないかと思いました。  
+また、このサイトにはIT関連、数学、日記と3つのカテゴリーがあるので、カテゴリーごとにリンクをまとめられないかと。
+
+どうも`site.html_pages`でサイトの一覧をとれるようなので、
+さっきの`{{ page.XXXX }}`とあわせて、
+各ページに
+```
+category: IT
+```
+などを足すことにしました。
+
+これで、以下のように書くことで、自動で出力されるようにした。
+
+```
+<h3>IT関連</h3>
+{% for html_page in site.html_pages %}
+  {% if  html_page.category contains 'IT' %}
+    <li><a href="{{ html_page.url }}">{{ html_page.title }}</a></li>
+  {% endif %}
+{% endfor %}
+<h3>数学</h3>
+{% for html_page in site.html_pages %}
+  {% if  html_page.category contains '数学' %}
+    <li><a href="{{ html_page.url }}">{{ html_page.title }}</a></li>
+  {% endif %}
+{% endfor %}
+<h3>日記</h3>
+{% for html_page in site.html_pages %}
+  {% if  html_page.category contains '日記' %}
+    <li><a href="{{ html_page.url }}">{{ html_page.title }}</a></li>
+  {% endif %}
+{% endfor %}
+```
+
+ただ、2点課題が。
+1. for文3回実行されているので、buildが遅くなる？？  
+(大したレベルじゃないかな？)
+2. `html_page`何順に取得されるのだろう？？
+
+まー、やりながら修正していこうかと思います。  
+わかったらまたここに記載します。
