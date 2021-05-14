@@ -103,7 +103,7 @@ category: IT
   \{\% endif \%\}
 \{\% endfor \%\}
 <h3>数学</h3>
-\{% for html_page in site.html_pages \%\}
+\{\% for html_page in site.html_pages \%\}
   \{\% if  html_page.category contains '数学' \%\}
     <li><a href="\{\{ html_page.url \}\}">\{\{ html_page.title \}\}</a></li>
   \{\% endif \%\}
