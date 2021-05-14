@@ -76,6 +76,9 @@ https://github.com/mtaketani113/mtaketani113.github.io/blob/master/it/github/cre
 </title>
 ```
 
+注意：`{}`がなぜかコードブロックでも読まれてしますので
+`\`をつけています。  
+利用する場合は`\`を一括削除してくださいm(__)m
 
 ### ページ一覧を追加
 
@@ -94,23 +97,23 @@ category: IT
 
 ```html
 <h3>IT関連</h3>
-{% for html_page in site.html_pages %}
-  {% if  html_page.category contains 'IT' %}
-    <li><a href="{{ html_page.url }}">{{ html_page.title }}</a></li>
-  {% endif %}
-{% endfor %}
+\{\% for html_page in site.html_pages \%\}
+  \{\% if  html_page.category contains 'IT' \%\}
+    <li><a href="\{\{ html_page.url \}\}">\{\{ html_page.title \}\}</a></li>
+  \{\% endif \%\}
+\{\% endfor \%\}
 <h3>数学</h3>
-{% for html_page in site.html_pages %}
-  {% if  html_page.category contains '数学' %}
-    <li><a href="{{ html_page.url }}">{{ html_page.title }}</a></li>
-  {% endif %}
-{% endfor %}
+\{% for html_page in site.html_pages \%\}
+  \{\% if  html_page.category contains '数学' \%\}
+    <li><a href="\{\{ html_page.url \}\}">\{\{ html_page.title \}\}</a></li>
+  \{\% endif \%\}
+\{\% endfor \%\}
 <h3>日記</h3>
-{% for html_page in site.html_pages %}
-  {% if  html_page.category contains '日記' %}
-    <li><a href="{{ html_page.url }}">{{ html_page.title }}</a></li>
-  {% endif %}
-{% endfor %}
+\{\% for html_page in site.html_pages \%\}
+  {% if  html_page.category contains '日記' \%\}
+    <li><a href="{{ html_page.url }}">\{\{ html_page.title \}\}</a></li>
+  \{\% endif \%\}
+\{\% endfor \%\}
 ```
 
 ただ、2点課題が。
