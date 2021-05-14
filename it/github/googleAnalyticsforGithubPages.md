@@ -1,11 +1,15 @@
 ---
 layout: default
 title: GitHub PagesへのAnalytics設定
+description: GitHub PagesのGoogle Analysticの設定方法を旧画面との違いを中心にまとめました。トラッキングがなくストリーミングに代わっていることなど。
 category: IT
 ---
 
 今まで会社の閉じた世界でしかITを触ってこなかったので、  
 どんなものか知りたくやってみました。
+
+GitHub PagesのGoogle Analysticの設定方法を旧画面との違いを中心にまとめました。  
+トラッキングがなくストリーミングに代わっていることなど。
 
 ## 目次
 
