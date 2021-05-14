@@ -7,10 +7,12 @@ Github Pagesの設定でやったことをまとめます。
 
 ## 目次
 
-[1.Github Pagesの作成](#1.Github-Pagesの作成)  
-[2.テーマの選択](#2.テーマの選択)  
-[3.pages-themesからコピー](#3.pages-themesからコピー)  
-[4.default.htmlのカスタマイズ](#4.default.htmlのカスタマイズ)
+[1.Github Pagesの作成](#anchor1)  
+[2.テーマの選択](#anchor2)  
+[3.pages-themesからコピー](#anchor3)  
+[4.default.htmlのカスタマイズ](#anchor4)
+
+<a id="anchor1"></a>
 
 ## 1.Github Pagesの作成
 
@@ -19,6 +21,8 @@ Github Pagesの設定でやったことをまとめます。
 
 [Github Pagesの作成](https://docs.github.com/ja/pages/getting-started-with-github-pages/creating-a-github-pages-site)
 
+<a id="anchor2"></a>
+
 ## 2.テーマの選択
 
 リポジトリの[setting]->[Pages]->[Change theme]を選択して、  
@@ -26,6 +30,8 @@ Github Pagesの設定でやったことをまとめます。
 
 私は、Archtect themeを選択しました。  
 文字がかわいいからｗ
+
+<a id="anchor3"></a>
 
 ## 3.pages-themesからコピー
 
@@ -42,6 +48,8 @@ https://github.com/pages-themes/architect
 
 自身の選択したテーマを選んでください。  
 https://github.com/pages-themes/
+
+<a id="anchor4"></a>
 
 ## 4.default.htmlのカスタマイズ
 
