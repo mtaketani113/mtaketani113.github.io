@@ -1,6 +1,7 @@
 ---
 layout: default
 title: トップページ
+description: トップページ。Github Pagesを使ったブログです。IT関連と日記を自由気ままに書いていきます。数学が好きなので、それも書いてきます。
 ---
 Github Pagesを使ったブログです。  
 IT関連と日記を自由気ままに書いていきます。  
