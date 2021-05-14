@@ -70,7 +70,7 @@ https://github.com/mtaketani113/mtaketani113.github.io/blob/master/it/github/cre
 
 なので`default.html`に以下を追加して、タイトルが出るようにしました。
 
-```
+```html
 <title>
   {{ page.title }} | {{ site.title }} - @mtaketani113
 </title>
@@ -92,7 +92,7 @@ category: IT
 
 これで、以下のように書くことで、自動で出力されるようにした。
 
-```
+```html
 <h3>IT関連</h3>
 {% for html_page in site.html_pages %}
   {% if  html_page.category contains 'IT' %}
