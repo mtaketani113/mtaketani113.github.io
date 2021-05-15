@@ -18,9 +18,8 @@ category: 数学
 
 $$
 \begin{align*}
-& n, m \in \mathbb{ N }\\
-& ① n + 0 = n\\
-& ② m + suc(m) = suc(n + m)\\
+& ① n + 0 = n  (n \in \mathbb{ N })\\
+& ② n + suc(m) = suc(n + m)  (n, m \in \mathbb{ N })\\
 \end{align*}
 $$
 
@@ -36,10 +35,10 @@ $$ suc(n) $$ は $$ n $$ の次の数という意味です。
 
 $$
 \begin{align*}
-1 + 1 = 1 + suc(0) \\
-= suc(1 + 0) \\
-= suc(1) \\
-= 2
+1 + 1 &= 1 + suc(0) \\
+&= suc(1 + 0) \\
+&= suc(1) \\
+&= 2
 \end{align*}
 $$
 
