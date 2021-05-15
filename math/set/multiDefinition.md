@@ -28,7 +28,7 @@ $$
 \end{align*}
 $$
 
-<a id="anchor1"></a>
+<a id="anchor2"></a>
 
 ## 自然数の分配法則
 
