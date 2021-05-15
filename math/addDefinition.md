@@ -18,8 +18,8 @@ category: 数学
 
 $$
 \begin{align*}
-& ① n + 0 = n \quad (n \in \mathbb{ N })\\
-& ② n + suc(m) = suc(n + m) \quad (n, m \in \mathbb{ N })\\
+& n + 0 = n \quad (n \in \mathbb{ N }) ・・・①\\
+& n + suc(m) = suc(n + m) \quad (n, m \in \mathbb{ N }) ・・・②\\
 \end{align*}
 $$
 
@@ -36,8 +36,8 @@ $$ suc(n) $$ は $$ n $$ の次の自然数という意味です。
 $$
 \begin{align*}
 1 + 1 &= 1 + suc(0) \\
-&= suc(1 + 0) \\
-&= suc(1) \\
+&= suc(1 + 0) \quad (\because　①) \\
+&= suc(1) \quad (\because　②) \\
 &= 2
 \end{align*}
 $$
