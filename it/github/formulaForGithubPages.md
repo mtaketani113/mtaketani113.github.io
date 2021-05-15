@@ -65,6 +65,7 @@ $$
 ```
 
 こんな感じ
+
 $$
 \begin{align*}
 n + 0 = n \quad (n \in \mathbb{ N }) ・・・①\\
