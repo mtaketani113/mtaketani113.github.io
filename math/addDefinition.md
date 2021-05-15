@@ -36,8 +36,8 @@ $$ suc(n) $$ は $$ n $$ の次の自然数という意味です。
 $$
 \begin{align*}
 1 + 1 &= 1 + suc(0) \\
-&= suc(1 + 0) \quad (\because　①) \\
-&= suc(1) \quad (\because　②) \\
+&= suc(1 + 0) \quad (\because ①) \\
+&= suc(1) \quad (\because ②) \\
 &= 2
 \end{align*}
 $$
