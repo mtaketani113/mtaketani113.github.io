@@ -46,10 +46,10 @@ Github Pagesの設定でやったことをまとめます。
 
 をコピーしてGithubに上げます。
 
-https://github.com/pages-themes/architect
+[pages-themes/architect](https://github.com/pages-themes/architect)
 
 自身の選択したテーマを選んでください。  
-https://github.com/pages-themes/
+[pages-themes](https://github.com/pages-themes/)
 
 <a id="anchor4"></a>
 
@@ -67,7 +67,7 @@ XXXX: ほげほげ
 ```
 
 具体例はここを見てください。
-https://github.com/mtaketani113/mtaketani113.github.io/blob/master/it/github/createGithuPages.md
+[createGithuPages.md](https://github.com/mtaketani113/mtaketani113.github.io/blob/master/it/github/createGithuPages.md)
 
 なので`default.html`に以下を追加して、タイトルが出るようにしました。
 
