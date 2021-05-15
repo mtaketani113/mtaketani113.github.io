@@ -30,7 +30,7 @@ Googleアカウントの中にAnalysticのアカウントが複数ある感じ�
 トラッキングIDというのが見つからず、代わりにストリーミングの測定IDになってるようです。
 
 コード体系も、
-UA-XXXXX→G-XXXXX
+UA-XXXXXXXXXX→G-XXXXXXXXXX
 になっているようです。
 
 ストリームIDと測定IDの2つがあるのですが、測定IDをサイトに設定するのが正しいようです。  
@@ -40,8 +40,28 @@ UA-XXXXX→G-XXXXX
 
 ## 測定IDをGithub Pagesに設定
 
-Github Pagesでの設定は簡単で`_config.yaml`に
-`google_analytics: G-XXXXXX`と書けばよいようです。
+~~Github Pagesでの設定は簡単で`_config.yaml`に
+`google_analytics: G-XXXXXXXXXX`と書けばよいようです。~~
+
+上記、やってみたのですが、自分がアクセスしても、  
+知り合いにアクセスしてもらってもアクセス数が「0」から変化しませんでした。
+
+ですので、以下を`head`に追加して、解決しました。
+
+```
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+```
+
+`G-XXXXXXXXXX`のところに測定IDを入力しました。  
+`google_analytics: G-XXXXXXXXXX`は削除しました。
+
+default.htmlを追加しているので、何か壊れてるのかな？
 
 <a id="anchor3"></a>
 
