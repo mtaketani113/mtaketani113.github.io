@@ -18,12 +18,12 @@ category: 数学
 
 $$
 \begin{align*}
-& ① n + 0 = n  (n \in \mathbb{ N })\\
-& ② n + suc(m) = suc(n + m)  (n, m \in \mathbb{ N })\\
+& ① n + 0 = n \quad (n \in \mathbb{ N })\\
+& ② n + suc(m) = suc(n + m) \quad (n, m \in \mathbb{ N })\\
 \end{align*}
 $$
 
-$$ suc(n) $$ は $$ n $$ の次の数という意味です。
+$$ suc(n) $$ は $$ n $$ の次の自然数という意味です。
 
 高校だと自然数は $$ 0 $$ を含みませんでしたが、  
 なにやら $$ 0 $$ を自然数に入れる派が大学では多かったような。
