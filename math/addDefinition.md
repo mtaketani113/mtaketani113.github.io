@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 足し算の定義
-description: 足し算の定義を記載します。
+description: 足し算の自然数の定義から実数への拡張を記載します。
 category: 数学
 ---
 
