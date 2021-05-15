@@ -18,9 +18,9 @@ category: 数学
 
 $$
 \begin{align*}
-n, m \in \mathbb{ N }  
-① n + 0 = n  
-② m + suc(m) = suc(n + m)
+n, m \in \mathbb{ N }\\
+① n + 0 = n\\
+② m + suc(m) = suc(n + m)\\
 \end{align*}
 $$
 
