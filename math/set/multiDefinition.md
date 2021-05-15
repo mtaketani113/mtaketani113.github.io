@@ -47,7 +47,7 @@ $$
 l \times (m + n) &= l \times (m + 0) \\
 &= l \times m \\
 &= l \times m + 0 \\
-&= l \times m + l \times 0 \quad ( \because ② ) \\
+&= l \times m + l \times 0 \quad ( \because ① ) \\
 & = l \times m + l \times n
 \end{align*}
 $$
