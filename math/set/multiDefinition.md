@@ -4,16 +4,19 @@ title: 掛け算の定義
 description: 足し算の定義の続きで、掛け算の定義を記載します。
 category: 数学
 ---
+
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script"></script>
+
+[足し算の定義](/math/set/addDefinition.html)
+の続きで、掛け算を定義します。  
+かなり足し算と似ています。
+
 ## 目次
 
 [自然数の掛け算の定義](#anchor1)  
 [自然数の分配法則](#anchor2)  
 
 <a id="anchor1"></a>
-
-[足し算の定義](/math/set/addDefinition.html)
-の続きで、掛け算を定義します。  
-かなり足し算と似ています。
 
 ## 自然数の掛け算の定義
 早速ですが以下のように再帰的に定義されています。
