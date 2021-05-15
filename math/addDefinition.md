@@ -21,6 +21,7 @@ $$
 n, m \in \mathbb{ N }
 1. n + 0 = n
 2. m + suc(m) = suc(n + m)
+\end{align*}
 $$
 
 `suc(n)`は`n`の次の数という意味です。
