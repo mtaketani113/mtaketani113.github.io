@@ -17,11 +17,13 @@ category: 数学
 以下の2行だけです。驚きですね。
 
 $$
+\begin{fleqn}
 \begin{align*}
 n, m \in \mathbb{ N }\\
 ① n + 0 = n\\
 ② m + suc(m) = suc(n + m)\\
 \end{align*}
+\end{fleqn}
 $$
 
 `suc(n)`は`n`の次の数という意味です。
