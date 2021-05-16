@@ -87,10 +87,11 @@ dockerから少し離れていて、久しぶりに動いたら
 クジラさんのマークが赤くなって起動していない・・・
 
 自分との設定の差を見て
-[Settings]->[General]の`Use the WSL 2 based engine`にチェックが入っていたのでそれをOffにすると動いた・・・
+[Settings]->[General]の  
+`Use the WSL 2 based engine`にチェックが入っていたのでそれをoffにすると動いた・・・
 
 Docker DesktopはWindows Homeでも動くように  
-WSL2条でも動くようになりました。
+WSL2上でも動くようになりました。
 
 僕らのはWindowsのバージョンが古いから？  
 Proだから？動かなかったのか？  
