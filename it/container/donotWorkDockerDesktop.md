@@ -20,7 +20,7 @@ category: IT
 [Proxyを設定](#anchor1)  
 [Build Kitの設定を削除](#anchor2)  
 [Build Kitの設定をflaseに](#anchor3)  
-[Use the WSL 2 をOffに](#anchor4)
+[Use the WSL 2 をOffに](#anchor4)  
 [感想](#anchor5)
 
 <a id="anchor1"></a>
