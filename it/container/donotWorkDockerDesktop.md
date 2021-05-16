@@ -1,15 +1,16 @@
 ---
 layout: default
-title: Docker Desktop for Windows が動かない
+title: Docker Desktop が動かない
 description: Proxy環境下でDocker Desktop for Windows が動かないときの対処法を記載します。
 category: IT
 ---
 
-会社環境でDocker Desktop for windowsを使っていて  
+会社環境でDocker Desktop for Windowsを使っていて  
 3回ほど動かなくて試行錯誤したので、まとめます。
 
 前提として、会社ではProxy環境下で作業しています。  
 また、会社のPCは半年～1年くらい世間から遅れたバージョンを使っています。  
+よくありますよね。  
 大きくはこの2つが問題を引き起こしていたようです( ;∀;)
 
 ちなみにWindowsなので(｀･ω･´)ｷﾘ
@@ -56,7 +57,7 @@ Dcoker Desktopを入れるとなぜか動かない・・・
 
 <a id="anchor3"></a>
 
-## Build Kitの設定をflaseに
+## Build Kitの設定をfalseに
 
 Build Kitの設定を消してから数か月。  
 dockerから少し離れていて、久しぶりに動いたら
