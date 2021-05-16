@@ -37,7 +37,7 @@ Dockerfileにかけますが、Docker Desktopの設定でProxyを設定しまし
 ## Build Kitの設定を削除
 
 パソコンを変えることになって、新しいパソコンに  
-Dcoker Desktopを入れるとなぜか動かない・・・
+Docker Desktopを入れるとなぜか動かない・・・
 
 ` [internal] load metadata for docker.io XXXX` みたいな感じのエラーが出て動かない。
 
