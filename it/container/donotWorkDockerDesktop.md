@@ -21,7 +21,6 @@ category: IT
 [Build Kitの設定を削除](#anchor2)  
 [Build Kitの設定をflaseに](#anchor3)  
 [Use the WSL 2 をOffに](#anchor4)  
-[感想](#anchor5)
 
 <a id="anchor1"></a>
 
@@ -96,8 +95,6 @@ WSL2上でも動くようになりました。
 僕らのはWindowsのバージョンが古いから？  
 Proだから？動かなかったのか？  
 そこは不明ですがとりあえず動いたのでよしとしましょうｗ
-
-<a id="anchor5"></a>
 
 ## 感想
 
