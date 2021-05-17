@@ -23,7 +23,8 @@ Google Chartsを使って私の体重の推移を観察してみようかと。
 
     var options = {
       title: '私の体重の推移',
-      legend: { position: 'bottom' }
+      legend: { position: 'bottom' },
+      vAxis:{minValue:50,maxValue:80}
     };
 
     var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
