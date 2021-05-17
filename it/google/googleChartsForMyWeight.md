@@ -32,4 +32,4 @@ Google Chartsを使って私の体重の推移を観察してみようかと。
   }
 </script>
 
-<div id="curve_chart" style="width: 900px; height: 500px"></div>
+<div id="curve_chart" style="width: 100%; height: 500px"></div>
