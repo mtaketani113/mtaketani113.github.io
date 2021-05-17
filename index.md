@@ -33,3 +33,9 @@ Macは使ったことがないので、良さがわかっていない・・・
 [ガロア](https://ja.wikipedia.org/wiki/%E3%82%A8%E3%83%B4%E3%82%A1%E3%83%AA%E3%82%B9%E3%83%88%E3%83%BB%E3%82%AC%E3%83%AD%E3%82%A2)
 
 「**僕にはもう時間がない**」ってあたりが厨二心をくすぐりますよねｗ
+
+## つぶやき
+
+Twitterのつぶやきです。
+
+<a class="twitter-timeline" href="https://twitter.com/mtaketani113?ref_src=twsrc%5Etfw">Tweets by mtaketani113</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
