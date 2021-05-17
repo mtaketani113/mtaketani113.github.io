@@ -21,11 +21,11 @@ Unable to build page. Please try again later.
 Githubの履歴を見ても、ビルドされたら`✓`がつくのですが、
 今回は以下のように何もつきませんでした。
 
-![ビルドされない]](/images/it/github/donotWrokBuild.png)
+![ビルドされない](/images/it/github/donotWrokBuild.png)
 
 ビルドが失敗すると以下のように`×`がつきます。
 
-![ビルド失敗]](/images/it/github/buildFailed.png)
+![ビルド失敗](/images/it/github/buildFailed.png)
 
 今回の原因は、結局のところ **Githubの障害** でした。
 
