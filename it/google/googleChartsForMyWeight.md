@@ -64,3 +64,7 @@ Google Chartsを使って私の体重の推移を観察してみようかと。
 
 <div id="curve_chart" style="width: 100%; height: 500px"></div>
 ```
+
+## 参考サイト
+
+[折れ線グラフ【Google Charts入門】- 配当金推移をチャート化する方法](https://uxbear.me/googlecharts-line/)
