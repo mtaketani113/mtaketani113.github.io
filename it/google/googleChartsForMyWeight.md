@@ -14,12 +14,37 @@ Google Chartsを使って私の体重の推移を観察してみようかと。
   google.charts.load('current', {'packages':['corechart']});
   google.charts.setOnLoadCallback(drawChart);
 
+  function getCsv(url){
+    //CSVファイルを文字列で取得。
+    var txt = new XMLHttpRequest();
+    txt.open('get', url, false);
+    txt.send();
+
+    //改行ごとに配列化
+    var arr = txt.responseText.split('\n');
+  
+    //1次元配列を2次元配列に変換
+    var res = [];
+    for(var i = 0; i < arr.length; i++){
+      //空白行が出てきた時点で終了
+      if(arr[i] == '') break;
+  
+      //","ごとに配列化
+      res[i] = arr[i].split(',');
+  
+      //体重の値は「"」を削除
+      if(res[i][1].match(/\-?\d+(.\d+)?(e[\+\-]d+)?/)){
+        res[i][1] = parseFloat(res[i][1].replace('"', ''));
+      }
+    }
+    return res;
+  }
+
+
   function drawChart() {
-    var data = google.visualization.arrayToDataTable([
-      ['日付', '体重(Kg)'],
-      ['21/05/16',  70.8],
-      ['21/05/17',  70.7],
-    ]);
+    var weight = getCsv("/it/google/weight.csv");
+
+    var data = google.visualization.arrayToDataTable(weight);
 
     var options = {
       title: '私の体重の推移',
