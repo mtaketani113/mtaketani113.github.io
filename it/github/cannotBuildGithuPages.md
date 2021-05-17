@@ -21,7 +21,7 @@ Unable to build page. Please try again later.
 Githubの履歴を見ても、ビルドされたら`✓`がつくのですが、
 今回は以下のように何もつきませんでした。
 
-![ビルドされない](/images/it/github/donotWrokBuild.png)
+![ビルドされない](/images/it/github/donotWorkBuild.png)
 
 ビルドが失敗すると以下のように`×`がつきます。
 
