@@ -24,7 +24,7 @@ Google Chartsを使って私の体重の推移を観察してみようかと。
     var options = {
       title: '私の体重の推移',
       legend: { position: 'bottom' },
-      vAxis:{minValue:50,maxValue:80}
+      vAxis: {minValue:50,maxValue:80}
     };
 
     var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
@@ -34,3 +34,33 @@ Google Chartsを使って私の体重の推移を観察してみようかと。
 </script>
 
 <div id="curve_chart" style="width: 100%; height: 500px"></div>
+
+ちなみにソースは以下のように書きました。  
+データの個所は外部ファイルにしようかな。
+```JavaScript
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load('current', {'packages':['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['日付', '体重(Kg)'],
+      ['21/05/16',  70.8],
+      ['21/05/17',  70.7],
+    ]);
+
+    var options = {
+      title: '私の体重の推移',
+      legend: { position: 'bottom' },
+      vAxis: {minValue:50,maxValue:80}
+    };
+
+    var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+    chart.draw(data, options);
+  }
+</script>
+
+<div id="curve_chart" style="width: 100%; height: 500px"></div>
+```
