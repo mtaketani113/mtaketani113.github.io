@@ -44,5 +44,5 @@ Windowsなら(｀･ω･´)ｷﾘ
 
 ## 参考サイト
 
-[Java で操作するUTF-8エンコードのＣＳＶに BOMを付ける。](https://oboe2uran.hatenablog.com/entry/2018/07/12/223138)
+[Java で操作するUTF-8エンコードのＣＳＶに BOMを付ける。](https://oboe2uran.hatenablog.com/entry/2018/07/12/223138)  
 [Java UTF-8のテキストファイルをBOM付きで作成する](https://www.javalife.jp/2018/02/26/post-441/)
