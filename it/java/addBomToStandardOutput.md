@@ -7,7 +7,8 @@ category: IT
 
 ファイル作成時にBOMをつける方法は、  
 色々サイトに書いてあって
-`OutputStream`に`0xef`,`0xbb`,`0xbf`にwriteすればよいです。
+`OutputStream`に`0xef`,`0xbb`,`0xbf`をwriteすればよいです。  
+具体的な情報は参考に張っておきます。
 
 ただ今回は、CSVファイル形式のデータを  
 サーバ経由でUTF-8でレスポンスが返ってくるので  
@@ -39,7 +40,8 @@ String result = new String(n);
 色々突っ込みどころ満載でしょうが、  
 まだまだCSVが好きなんですよね～
 
-環境にもよると思いますが、上記のプログラムをjavaコマンドで動かすときは`-Dfile.encoding=UTF-8`のオプションがいるかもですね。  
+環境にもよると思いますが、上記のプログラムをjavaコマンドで動かすときは  
+`-Dfile.encoding=UTF-8`のオプションがいるかもですね。  
 Windowsなら(｀･ω･´)ｷﾘ
 
 ## 参考サイト
