@@ -1,6 +1,6 @@
 ---
 layout: default
-title: GitHub Pageが更新されない
+title: GitHub Pagesが更新されない
 description: GitHub Pagesのビルドが実行されず、ページが更新されない現象が発生しました。原因はGithubの障害でした。
 category: IT
 ---
