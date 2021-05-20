@@ -23,8 +23,8 @@ Java7から`try-with-resources`が使えるので
 [ファイルディスクリプタの上限](#anchor1)  
 [APサーバが勝手にシャットダウン](#anchor2)  
 [ログを大量に出力してディスクフル](#anchor3)  
-[APサーバのバグを誘発してハング](#anchor3)  
-[まとめ](#anchor3)
+[APサーバのバグを誘発してハング](#anchor4)  
+[まとめ](#anchor5)
 
 <a id="anchor1"></a>
 
