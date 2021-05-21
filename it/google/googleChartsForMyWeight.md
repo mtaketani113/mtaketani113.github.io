@@ -47,7 +47,7 @@ Google Chartsを使って私の体重の推移を観察してみようかと。
     var data = google.visualization.arrayToDataTable(weight);
 
     var options = {
-      title: '私の体重の推移',
+      title: '21年の私の体重の推移',
       legend: { position: 'bottom' },
       vAxis: {minValue:50,maxValue:80}
     };
