@@ -31,7 +31,7 @@ Github GistにGeoJsonを記載すると地図上に点を打ったりできま�
       "geometry": {
         "type": "Point",
         "coordinates": [
-          軽度,
+          経度,
           緯度
         ]
       }
