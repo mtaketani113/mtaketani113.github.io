@@ -18,7 +18,7 @@ Github GistにGeoJsonを記載すると地図上に点を打ったりできま�
 
 ちなみに、Geo Jsonでの点の書き方は以下です。
 
-```
+```Json
 {
   "type": "FeatureCollection",
   "features": [
@@ -31,8 +31,8 @@ Github GistにGeoJsonを記載すると地図上に点を打ったりできま�
       "geometry": {
         "type": "Point",
         "coordinates": [
-          経度,
-          緯度
+          "経度",
+          "緯度"
         ]
       }
     }
@@ -46,7 +46,7 @@ featuresの中を増やしていけば点が増えていきます。
 サイトに張り付ければ完了です。
 すごく簡単(^^)/
 
-↓ここ
+↓ここ  
 ![地図の埋め込みスクリプト](/images/it/github/mapEmbedScript.png)
 
 他にも線を書いたり面を書いたりもできるみたいなので、  
