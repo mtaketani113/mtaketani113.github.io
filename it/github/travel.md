@@ -40,7 +40,11 @@ Github GistにGeoJsonを記載すると地図上に点を打ったりできま�
 }
 ```
 
-featuresの中を増やしていけば点が増えていきます。
+`features`の中を増やしていけば点が増えていきます。  
+また`properties`の中を書いておくと、点をクリックしたときに    
+テーブル形式で表示されます。
+
+![propertiesの効果](/images/it/github/mapProperties.png)
 
 後はこれをGithub Gistにアップして右上にあるURLをコピーして  
 サイトに張り付ければ完了です。
