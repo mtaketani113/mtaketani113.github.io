@@ -8,7 +8,7 @@ category: IT
 愛知の避難所（2019年5月13日更新）を地図に載せました。
 
 Github Gistを利用して地図を利用する方法を以下を参照ください。    
-[Github Gistで旅行した場所を表示](/github/set/travel.html)
+[Github Gistで旅行した場所を表示](/it/github/travel.html)
 
 <script src="https://gist.github.com/mtaketani113/774f13a319d0fd9766a786e241482869.js"></script>
 
