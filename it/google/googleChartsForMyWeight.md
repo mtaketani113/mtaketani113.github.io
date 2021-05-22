@@ -49,7 +49,7 @@ Google Chartsを使って私の体重の推移を観察してみようかと。
     var options = {
       title: '21年の私の体重の推移',
       legend: { position: 'bottom' },
-      vAxis: {minValue:50,maxValue:80}
+      vAxis: {minValue:55,maxValue:75}
     };
 
     var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
@@ -78,7 +78,7 @@ Google Chartsを使って私の体重の推移を観察してみようかと。
     var options = {
       title: '私の体重の推移',
       legend: { position: 'bottom' },
-      vAxis: {minValue:50,maxValue:80}
+      vAxis: {minValue:55,maxValue:75}
     };
 
     var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
@@ -95,7 +95,7 @@ Google Chartsを使って私の体重の推移を観察してみようかと。
 
 getCsvメソッドを追加して、CSVファイルを読み込むように修正しました。  
 
-```
+```JavaScript
   function getCsv(url){
     //CSVファイルを文字列で取得。
     var txt = new XMLHttpRequest();
@@ -128,9 +128,9 @@ getCsvメソッドを追加して、CSVファイルを読み込むように修�
     var data = google.visualization.arrayToDataTable(weight);
 
     var options = {
-      title: '私の体重の推移',
+      title: '21年の私の体重の推移',
       legend: { position: 'bottom' },
-      vAxis: {minValue:50,maxValue:80}
+      vAxis: {minValue:55,maxValue:75}
     };
 
     var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
