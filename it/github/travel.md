@@ -40,11 +40,7 @@ Github GistにGeoJsonを記載すると地図上に点を打ったりできま�
 }
 ```
 
-`features`の中を増やしていけば点が増えていきます。  
-また`properties`の中を書いておくと、点をクリックしたときに    
-テーブル形式で表示されます。
-
-![propertiesの効果](/images/it/github/mapProperties.png)
+`features`の中を増やしていけば点が増えていきます。
 
 後はこれをGithub Gistにアップして右上にあるURLをコピーして  
 サイトに張り付ければ完了です。
@@ -52,6 +48,11 @@ Github GistにGeoJsonを記載すると地図上に点を打ったりできま�
 
 ↓ここ  
 ![地図の埋め込みスクリプト](/images/it/github/mapEmbedScript.png)
+
+また`properties`の中を書いておくと、点をクリックしたときに    
+テーブル形式で表示されます。
+
+![propertiesの効果](/images/it/github/mapProperties.png)
 
 他にも線を書いたり面を書いたりもできるみたいなので、  
 機会があったら挑戦してみようと思います。
