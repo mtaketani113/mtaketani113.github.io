@@ -27,7 +27,7 @@ http→httpsに代わったようです。
 
 確かにHTTPS Required. って出てますね。
 
-![https required](/images/it/java/mavenHttpsRequired)
+![https required](/images/it/java/mavenHttpsRequired.png)
 
 
 http→httpsに変えることで  
