@@ -66,7 +66,7 @@ GithubのIssueで課題管理している方も多いかと思いますが、
     getIssues("https://api.github.com/repos/mtaketani113/createIssueCsv/issues");
 </script>
 
-<tabale>
+<table>
     <thead>
         <tr>
             <th>Issue No.</th>
@@ -74,7 +74,7 @@ GithubのIssueで課題管理している方も多いかと思いますが、
             <th>作成日</th>
         </tr>
     </thead>
-    <tbody id = "issues">
+    <tbody id="issues">
     </tbody>
 </table>
 
@@ -98,7 +98,7 @@ GithubのIssueで課題管理している方も多いかと思いますが、
 ```
 
 管理者からすると一覧で見たいとか、納期を一目で見たいとか、  
-Excelのほうが、ぱっと見てすぐわかるとかが大事のようです。    
+Excelのほうが、ぱっと見てすぐわかるとかが大事のようです。  
 Githubを新たに使おうとすると、こうした抵抗にあうと思います。
 
 たしかに、Excelの方がよいことも多々あります。  
