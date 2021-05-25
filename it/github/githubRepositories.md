@@ -50,15 +50,68 @@ Issueの一覧を出せたりします。
 GithubのIssueで課題管理している方も多いかと思いますが、  
 まだまだ会社ではExcel大好きな方々がいっぱいいるかとｗ
 
-一覧で見たいとか、納期を一目で見たいとか、  
-Excelのほうが、ぱっと見てすぐわかるとか  
-Githubを新たに使おうとすると抵抗しだすと思います。
+こんな感じのExcelをCSVで出力しました。
 
-たしかに、Excelの方がよいことも多々あって、  
-彼らの不安を払拭してあげる必要があります。
+<script>
+    async function getIssues (url) {
+        const res = await fetch(url);
+        const json = await res.json();
+        json.forEach(e => {
+            document.getElementById("issues")
+                .insertAdjacentHTML('afterbegin',
+                    '<tr><td>'+ e.number +'</td><td>'+ e.title 
+                    +'</td><td>'+ e.created_at +'</td></tr>');
+        })
+    }
+    getIssues("https://api.github.com/repos/mtaketani113/createIssueCsv/issues");
+</script>
+
+<tabale>
+    <thead>
+        <tr>
+            <th>Issue No.</th>
+            <th>Title</th>
+            <th>作成日</th>
+        </tr>
+    </theadv>
+    <tbody id = "issues">
+        <tr>
+            <td>Issue No.</th>
+            <th>Title</th>
+            <th>作成日</th>
+        </tr>
+    </tbody>
+</table>
+
+
+上のコードはこんな感じです。
+
+```JavaScript
+<script>
+    async function getIssues (url) {
+        const res = await fetch(url);
+        const json = await res.json();
+        json.forEach(e => {
+            document.getElementById("issues")
+                .insertAdjacentHTML('afterbegin',
+                    '<tr><td>'+ e.number +'</td><td>'+ e.title 
+                    +'</td><td>'+ e.created_at +'</td></tr>');
+        })
+    }
+    getIssues("https://api.github.com/repos/mtaketani113/createIssueCsv/issues");
+</script>
+```
+
+管理者からすると一覧で見たいとか、納期を一目で見たいとか、  
+Excelのほうが、ぱっと見てすぐわかるとかが大事のようです。    
+Githubを新たに使おうとすると、こうした抵抗にあうと思います。
+
+たしかに、Excelの方がよいことも多々あります。  
+なので彼らの不安をわからずやと、何も対策するのではなく  
+真摯に払拭してあげる必要があります。
 
 そんな人たちを納得させるために、GithubのAPIを使って  
-課題を一覧表にしたり、ちょっとアレンジして  
+上記のサンプルのように課題を一覧表にしたり、ちょっとアレンジして  
 特定の形式だ書いたら納期も一覧表に追加するようにしましょう。  
 きっと納得してもらえると思います。  
 
