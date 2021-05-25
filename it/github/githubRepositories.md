@@ -4,8 +4,17 @@ title: GitHubのAPIを利用して一覧表示
 description: GitHubのリポジトリーやIssueをAPIを利用してJavascriptで一覧表示する方法を記載します。
 category: IT
 ---
+
+**重要**  
+APIのアクセスには上限があるため、アクセスを繰り返すと  
+リストを出せないようですｗ  
+「API rate limit exceeded」とでます。  
+アクセス制限がかかっているときのエラー処理など  
+今後追記していこうかな(#^^#)
+
+本題を始めます。
 async/await と fetch関数を利用して、GithubのAPIを呼び出し、
-私のリポジトリをリスト表示しました。  
+私のリポジトリをリスト表示しました。
 
 <script>
     async function getRepository (url) {
