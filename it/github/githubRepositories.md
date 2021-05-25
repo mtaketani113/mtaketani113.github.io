@@ -75,11 +75,6 @@ GithubのIssueで課題管理している方も多いかと思いますが、
         </tr>
     </theadv>
     <tbody id = "issues">
-        <tr>
-            <td>Issue No.</th>
-            <th>Title</th>
-            <th>作成日</th>
-        </tr>
     </tbody>
 </table>
 
