@@ -1,10 +1,11 @@
 ---
 layout: default
-title: GitHubのリポジトリーを一覧表示
-description: GitHubのリポジトリーをAPIを利用してJavascriptで一覧表示する方法を記載します。
+title: GitHubのAPIを利用して一覧表示
+description: GitHubのリポジトリーやIssueをAPIを利用してJavascriptで一覧表示する方法を記載します。
 category: IT
 ---
-async/await と fetch関数を利用して、GithubのAPIを呼び出し、リスト表示してみました。
+async/await と fetch関数を利用して、GithubのAPIを呼び出し、
+私のリポジトリをリスト表示しました。  
 
 <script>
     async function getRepository (url) {
@@ -21,7 +22,8 @@ async/await と fetch関数を利用して、GithubのAPIを呼び出し、リ�
 
 <div id = "repos"></div>
 
-ソースは以下のように書きました
+ソースは以下のように書きました  
+最近はAPIの呼び出しも簡単ですね(#^^#)
 
 ```JavaScript
 <script>
