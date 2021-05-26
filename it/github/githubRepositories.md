@@ -30,7 +30,7 @@ async/await と fetch関数を利用して、GithubのAPIを呼び出し、
         }else{
             document.getElementById("repos")
                 .insertAdjacentHTML('afterbegin',  
-                '<li>APIの利用上限を超えました。しばらくしてからアクセスしてください。</li>');
+                '<li style="color:red">APIの利用上限を超えました。しばらくしてからアクセスしてください。</li>');
         }
     }
     getRepository("https://api.github.com/users/mtaketani113/repos");
@@ -56,7 +56,7 @@ async/await と fetch関数を利用して、GithubのAPIを呼び出し、
         }else{
             document.getElementById("repos")
                 .insertAdjacentHTML('afterbegin',  
-                '<li>APIの利用上限を超えました。しばらくしてからアクセスしてください。</li>');
+                '<li style="color:red">APIの利用上限を超えました。しばらくしてからアクセスしてください。</li>');
         }
     }
     getRepository("https://api.github.com/users/mtaketani113/repos");
@@ -90,7 +90,7 @@ GithubのIssueで課題管理している方も多いかと思いますが、
         }else{
             document.getElementById("issues")
                 .insertAdjacentHTML('afterbegin',  
-                '<tr>APIの利用上限を超えました。しばらくしてからアクセスしてください。</tr>');
+                '<tr style="color:red">APIの利用上限を超えました。しばらくしてからアクセスしてください。</tr>');
         }
     }
     getIssues("https://api.github.com/repos/mtaketani113/createIssueCsv/issues");
@@ -127,7 +127,7 @@ GithubのIssueで課題管理している方も多いかと思いますが、
         }else{
             document.getElementById("issues")
                 .insertAdjacentHTML('afterbegin',  
-                '<tr>APIの利用上限を超えました。しばらくしてからアクセスしてください。</tr>');
+                '<tr style="color:red">APIの利用上限を超えました。しばらくしてからアクセスしてください。</tr>');
         }
 
     }
