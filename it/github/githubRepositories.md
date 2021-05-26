@@ -27,7 +27,7 @@ async/await と fetch関数を利用して、GithubのAPIを呼び出し、
                     .insertAdjacentHTML('afterbegin',
                         '<li><a href="' + e.html_url + '">'+ e.name +'</a></li>');
             })
-        }slse{
+        }else{
             document.getElementById("repos")
                 .insertAdjacentHTML('APIの利用上限を超えました。しばらくしてからアクセスしてください。');
         }
@@ -52,7 +52,7 @@ async/await と fetch関数を利用して、GithubのAPIを呼び出し、
                     .insertAdjacentHTML('afterbegin',
                         '<li><a href="' + e.html_url + '">'+ e.name +'</a></li>');
             })
-        }slse{
+        }else{
             document.getElementById("repos")
                 .insertAdjacentHTML('APIの利用上限を超えました。しばらくしてからアクセスしてください。');
         }
@@ -137,7 +137,7 @@ Excelのほうが、ぱっと見てすぐわかるとかが大事のようです
 Githubを新たに使おうとすると、こうした抵抗にあうと思います。
 
 たしかに、Excelの方がよいことも多々あります。  
-なので彼らの不安をわからずやと、何も対策するのではなく  
+なので彼らの不安をわからずやと、何も対策しないのではなく  
 真摯に払拭してあげる必要があります。
 
 そんな人たちを納得させるために、GithubのAPIを使って  
