@@ -29,7 +29,8 @@ async/await と fetch関数を利用して、GithubのAPIを呼び出し、
             })
         }else{
             document.getElementById("repos")
-                .insertAdjacentHTML('APIの利用上限を超えました。しばらくしてからアクセスしてください。');
+                .insertAdjacentHTML('afterbegin',  
+                'APIの利用上限を超えました。しばらくしてからアクセスしてください。');
         }
     }
     getRepository("https://api.github.com/users/mtaketani113/repos");
@@ -54,7 +55,8 @@ async/await と fetch関数を利用して、GithubのAPIを呼び出し、
             })
         }else{
             document.getElementById("repos")
-                .insertAdjacentHTML('APIの利用上限を超えました。しばらくしてからアクセスしてください。');
+                .insertAdjacentHTML('afterbegin',  
+                'APIの利用上限を超えました。しばらくしてからアクセスしてください。');
         }
     }
     getRepository("https://api.github.com/users/mtaketani113/repos");
@@ -87,7 +89,8 @@ GithubのIssueで課題管理している方も多いかと思いますが、
             })
         }else{
             document.getElementById("issues")
-                .insertAdjacentHTML('APIの利用上限を超えました。しばらくしてからアクセスしてください。');
+                .insertAdjacentHTML('afterbegin',  
+                'APIの利用上限を超えました。しばらくしてからアクセスしてください。');
         }
     }
     getIssues("https://api.github.com/repos/mtaketani113/createIssueCsv/issues");
@@ -123,7 +126,8 @@ GithubのIssueで課題管理している方も多いかと思いますが、
             })
         }else{
             document.getElementById("issues")
-                .insertAdjacentHTML('APIの利用上限を超えました。しばらくしてからアクセスしてください。');
+                .insertAdjacentHTML('afterbegin',  
+                'APIの利用上限を超えました。しばらくしてからアクセスしてください。');
         }
 
     }
