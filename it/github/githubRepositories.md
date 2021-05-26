@@ -19,12 +19,18 @@ async/await と fetch関数を利用して、GithubのAPIを呼び出し、
 <script>
     async function getRepository (url) {
         const res = await fetch(url);
-        const json = await res.json();
-        json.forEach(e => {
+        const status = await res.status();
+        if(status == 200){
+            const json = await res.json();
+            json.forEach(e => {
+                document.getElementById("repos")
+                    .insertAdjacentHTML('afterbegin',
+                        '<li><a href="' + e.html_url + '">'+ e.name +'</a></li>');
+            })
+        }slse{
             document.getElementById("repos")
-                .insertAdjacentHTML('afterbegin',
-                    '<li><a href="' + e.html_url + '">'+ e.name +'</a></li>');
-        })
+                .insertAdjacentHTML('APIの利用上限を超えました。しばらくしてからアクセスしてください。');
+        }
     }
     getRepository("https://api.github.com/users/mtaketani113/repos");
 </script>
@@ -38,12 +44,18 @@ async/await と fetch関数を利用して、GithubのAPIを呼び出し、
 <script>
     async function getRepository (url) {
         const res = await fetch(url);
-        const json = await res.json();
-        json.forEach(e => {
+        const status = await res.status();
+        if(status == 200){
+            const json = await res.json();
+            json.forEach(e => {
+                document.getElementById("repos")
+                    .insertAdjacentHTML('afterbegin',
+                        '<li><a href="' + e.html_url + '">'+ e.name +'</a></li>');
+            })
+        }slse{
             document.getElementById("repos")
-                .insertAdjacentHTML('afterbegin',
-                    '<li><a href="' + e.html_url + '">'+ e.name +'</a></li>');
-        })
+                .insertAdjacentHTML('APIの利用上限を超えました。しばらくしてからアクセスしてください。');
+        }
     }
     getRepository("https://api.github.com/users/mtaketani113/repos");
 </script>
@@ -64,13 +76,20 @@ GithubのIssueで課題管理している方も多いかと思いますが、
 <script>
     async function getIssues (url) {
         const res = await fetch(url);
-        const json = await res.json();
-        json.forEach(e => {
+        const status = await res.status();
+        if(status == 200){
+            const json = await res.json();
+            json.forEach(e => {
             document.getElementById("issues")
                 .insertAdjacentHTML('afterbegin',
                     '<tr><td>'+ e.number +'</td><td>'+ e.title 
                     +'</td><td>'+ e.created_at +'</td></tr>');
-        })
+            })
+        }else{
+            document.getElementById("issues")
+                .insertAdjacentHTML('APIの利用上限を超えました。しばらくしてからアクセスしてください。');
+            })
+        }
     }
     getIssues("https://api.github.com/repos/mtaketani113/createIssueCsv/issues");
 </script>
@@ -94,13 +113,20 @@ GithubのIssueで課題管理している方も多いかと思いますが、
 <script>
     async function getIssues (url) {
         const res = await fetch(url);
-        const json = await res.json();
-        json.forEach(e => {
+        const status = await res.status();
+        if(status == 200){
+            const json = await res.json();
+            json.forEach(e => {
             document.getElementById("issues")
                 .insertAdjacentHTML('afterbegin',
                     '<tr><td>'+ e.number +'</td><td>'+ e.title 
                     +'</td><td>'+ e.created_at +'</td></tr>');
-        })
+            })
+        }else{
+            document.getElementById("issues")
+                .insertAdjacentHTML('APIの利用上限を超えました。しばらくしてからアクセスしてください。');
+        }
+
     }
     getIssues("https://api.github.com/repos/mtaketani113/createIssueCsv/issues");
 </script>
