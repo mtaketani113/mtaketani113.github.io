@@ -19,7 +19,7 @@ async/await と fetch関数を利用して、GithubのAPIを呼び出し、
 <script>
     async function getRepository (url) {
         const res = await fetch(url);
-        const status = await res.status();
+        const status = await res.status;
         if(status == 200){
             const json = await res.json();
             json.forEach(e => {
@@ -44,7 +44,7 @@ async/await と fetch関数を利用して、GithubのAPIを呼び出し、
 <script>
     async function getRepository (url) {
         const res = await fetch(url);
-        const status = await res.status();
+        const status = await res.status;
         if(status == 200){
             const json = await res.json();
             json.forEach(e => {
@@ -76,7 +76,7 @@ GithubのIssueで課題管理している方も多いかと思いますが、
 <script>
     async function getIssues (url) {
         const res = await fetch(url);
-        const status = await res.status();
+        const status = await res.status;
         if(status == 200){
             const json = await res.json();
             json.forEach(e => {
@@ -113,7 +113,7 @@ GithubのIssueで課題管理している方も多いかと思いますが、
 <script>
     async function getIssues (url) {
         const res = await fetch(url);
-        const status = await res.status();
+        const status = await res.status;
         if(status == 200){
             const json = await res.json();
             json.forEach(e => {
