@@ -90,7 +90,7 @@ GithubのIssueで課題管理している方も多いかと思いますが、
         }else{
             document.getElementById("issues")
                 .insertAdjacentHTML('afterbegin',  
-                '<tr style="color:red">APIの利用上限を超えました。しばらくしてからアクセスしてください。</tr>');
+                '<tr><td colspan="3" style="color:red">APIの利用上限を超えました。しばらくしてからアクセスしてください。</td></tr>');
         }
     }
     getIssues("https://api.github.com/repos/mtaketani113/createIssueCsv/issues");
@@ -127,7 +127,7 @@ GithubのIssueで課題管理している方も多いかと思いますが、
         }else{
             document.getElementById("issues")
                 .insertAdjacentHTML('afterbegin',  
-                '<tr style="color:red">APIの利用上限を超えました。しばらくしてからアクセスしてください。</tr>');
+                '<tr><td colspan="3" style="color:red">APIの利用上限を超えました。しばらくしてからアクセスしてください。</td></tr>');
         }
 
     }
