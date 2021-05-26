@@ -88,7 +88,7 @@ GithubのIssueで課題管理している方も多いかと思いますが、
         }else{
             document.getElementById("issues")
                 .insertAdjacentHTML('APIの利用上限を超えました。しばらくしてからアクセスしてください。');
-            })
+            }
         }
     }
     getIssues("https://api.github.com/repos/mtaketani113/createIssueCsv/issues");
