@@ -5,9 +5,8 @@ description: JavaScriptによるファンクションキーを無効にできま
 category: IT
 ---
 <script>
-window.document.onkeydown = function(event){
-    if(event.keyCode >= 112 && event.keyCode <= 123)
-        {
+    window.document.onkeydown = function(event){
+        if(event.keyCode >= 112 && event.keyCode <= 123){
             event.keyCode = null;
             event.returnValue = false;
         }
@@ -18,9 +17,8 @@ window.document.onkeydown = function(event){
 
 ```JavaScript
 <script>
-window.document.onkeydown = function(event){
-    if(event.keyCode >= 112 && event.keyCode <= 123)
-        {
+    window.document.onkeydown = function(event){
+        if(event.keyCode >= 112 && event.keyCode <= 123){
             event.keyCode = null;
             event.returnValue = false;
         }
