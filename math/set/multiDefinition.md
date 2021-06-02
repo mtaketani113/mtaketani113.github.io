@@ -71,15 +71,16 @@ $$
 $$
 \begin{align*}
 l \times (m + (k + 1)) &= l \times (m + suc(k)) \\
+&= l \times suc(m + k) \quad ( 足し算の定義参照 ) \\
 &= l \times (m + k) + l \quad ( \because ② ) \\
 &= l \times m + l \times k + l \\
 &= l \times m + l \times suc(k) \quad ( \because ② ) \\
-&= l \times m + l \times (k + 1))
+&= l \times m + l \times (k + 1)
 \end{align*}
 $$
 
 よって $$ k + 1$$ の時も成り立つので、
 数学的帰納法により
-$$ l \times (m + n) =  l \times m + l $$
+$$ l \times (m + n) =  l \times m + l \times n $$
 
 markdownで書いていると、何が何だか分からなくなってきますね( ;∀;)
