@@ -7,7 +7,7 @@ category: 数学
 
 <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script"></script>
 
-足し算の定義を書いてみます。
+ペアノの足し算の定義を書いてみます。
 と言いながら、markdownで数式を書く練習をしてたりｗ
 
 ## 目次
