@@ -66,7 +66,9 @@ Windows Homeでも利用できるようになりました。
 
 まず、以下のコマンドでイメージを落としてきます。
 
-`docker pull nginx:latest`
+```
+docker pull nginx:latest
+```
 
 イメージというのは、アプリを動かすための  
 インストールメディアみたいな感じです。
@@ -96,7 +98,9 @@ Dockerfileを使ってやるのが一般的かと思うので別の回で記載�
 
 コマンドは以下の通りです。
 
-`docker run --name nginx1 -d -p 8080:80 nginx`
+```
+docker run --name nginx1 -d -p 8080:80 nginx
+```
 
 `docker pull`を実行しなくても、pullも自動でしてくれると思います。  
 
@@ -121,24 +125,36 @@ Dockerfileを使ってやるのが一般的かと思うので別の回で記載�
 ![nginx](/images/it/container/nginx.png)
 
 作成し、起動しているコンテナは以下のコマンドで確認できます。  
-`docker ps`  
+```
+docker ps
+```  
 停止したのもすべて見たい場合は、`-a`オプションをつけて以下です。  
-`docker ps -a`
+```
+docker ps -a
+```
 
 コンテナを停止したい場合は、以下です。  
-`docker stop nginx1`
+```
+docker stop nginx1
+```
 
 再度起動したい場合は、以下です。  
-`docker start nginx1`
+```
+docker start nginx1
+```
 
 `docker run`で指定した条件で起動してくれます。
 
 いっぱいコンテナを作ると、よくわからなくなってくるので削除するには  
-`docker rm nginx1`
+```
+docker rm nginx1
+```
 で削除できます。nginx1じゃなくて自動で振られているIDでも削除できます。
 
 イメージを削除するときは以下です。  
-`docker rmi nginx`
+```
+docker rmi nginx
+```
 こちらも自動で振られているIDでも削除できます。
 
 <a id="anchor5"></a>
