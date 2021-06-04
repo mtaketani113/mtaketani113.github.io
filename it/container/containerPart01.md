@@ -14,10 +14,10 @@ Dockerとはどういったものなのか、なぜ注目されているのか�
 
 ## 目次
 
-[Dockerとは](#anchor1)  
-[Dockerの役割とk8sの必要性](#anchor2)  
-[なぜ注目されているか](#anchor3)  
-[まとめ](#anchor4)
+- [Dockerとは](#anchor1)  
+- [Dockerの役割とk8sの必要性](#anchor2)  
+- [なぜ注目されているか](#anchor3)  
+- [まとめ](#anchor4)
 
 <a id="anchor1"></a>
 
