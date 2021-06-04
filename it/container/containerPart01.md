@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Docker k8sまとめ[第1回]
-description: Docker k8sまとめ。第1回はDocker、k8sとはどういったものなのか。なぜ注目されているのかをまとめます。
+title: Docker、k8sまとめ[第1回]
+description: Docker、k8sまとめ。第1回はDocker、k8sとはどういったものなのか。なぜ注目されているのかをまとめます。
 category: IT
 ---
 
