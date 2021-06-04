@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Docker k8sまとめ[第1回] Docker、k8sとは
+title: Docker k8sまとめ[第1回]
 description: Docker k8sまとめ。第1回はDocker、k8sとはどういったものなのか。なぜ注目されているのかをまとめます。
 category: IT
 ---
@@ -9,7 +9,8 @@ Dockerとk8s最近遊んでいます。
 ここでは、学んだことを少しずつまとめていこうと思います。
 
 今回はDocker（コンテナ技術）など最近注目されていますが、
-Dockerとはどういったものなのか、なぜ注目されているのか、
+Dockerとはどういったものなのか、なぜ注目されているのか、  
+またk8sとは何なのかをまとめます。
 
 ## 目次
 
