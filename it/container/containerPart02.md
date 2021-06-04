@@ -74,7 +74,7 @@ Windows Homeでも利用できるようになりました。
 これはまだ動いていません。
 
 イメージがDocker Hubというところにあり、  
-そこからイメージをとってきていうのが`docker pull`のところです。
+そこからイメージをとってきて！というのが`docker pull`のところです。
 
 Docker Hubの`nginx`から最新(`latest`)をとってきてと書いています。  
 `latest`は省略可能かと。
