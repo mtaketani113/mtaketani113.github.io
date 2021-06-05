@@ -95,7 +95,7 @@ Use 'docker scan' to run Snyk tests against images to find vulnerabilities and l
 
 次にコンテナを作って実行しましょう。
 
-```Bash
+```
 docker run --name nginx1 -d -p 8080:80 nginx403
 ```
 
