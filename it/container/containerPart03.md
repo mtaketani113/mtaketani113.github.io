@@ -5,9 +5,6 @@ description: Docker、k8sまとめ。第3回はDockerfileを紹介します。�
 category: IT
 ---
 
-<link rel="stylesheet" href="/assets/css/github.css">
-<script src="/assets/js/highlight.min.js"></script>
-
 [第2回](/it/container/containerPart02.html)はDocker Desktopで実行しましたが、  
 今回はDockerfileを紹介しようと思います。
 
@@ -56,7 +53,7 @@ category: IT
 
 `403.html`ファイルと同じところにDockerfileを作成し、以下のように書きます。
 
-```
+```Dockerfile
 FROM nginx:latest
 ADD ./403.html /usr/share/nginx/html
 ```
