@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Docker、k8sまとめ[第3回] Dockerfileの利用
-description: Docker、k8sまとめ。第3回はDockerfileを紹介します。。
+description: Docker、k8sまとめ。第3回はDockerfileを紹介します。
 category: IT
 ---
 
