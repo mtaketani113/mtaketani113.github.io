@@ -122,6 +122,21 @@ AGEなどを見ると新しく作られていることが確認できます。
 このように2つ起動することを見て、  
 起動数が足りないと勝手に起動してくれます。
 
+また、以下のコマンドで全体も見えます。
+```
+# kubectl get deployment
+NAME               READY   UP-TO-DATE   AVAILABLE   AGE
+nginx-deployment   2/2     2            2           11m
+```
+
+削除したいときは`service`と`deployment`を削除すればよいです。
+```
+# kubectl delete service nginx
+# kubectl delete deployment nginx-deployment
+```
+
+`service`と`deployment`については、どこかでまた書きたいと思います。
+
 <a id="anchor3"></a>
 
 ## nginxのバージョンアップ
