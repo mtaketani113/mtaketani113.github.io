@@ -18,7 +18,7 @@ $(document).ready(function(){
 
 今回使ったのは、[highlight.js](https://highlightjs.org/)です。  
 利用は簡単で、[ダウンロードページ](https://highlightjs.org/download/)から
-Downloadです。
+Downloadします。
 
 「You can download a custom bundle including only the languages you need.」  
 とあったので、自分は`Dockerfile`を追加しました。たまに使うので。
