@@ -21,8 +21,8 @@ mavenのデフォルトのリポジトリ「http://repo1.maven.org/maven2/」で
 なので`setting.xml`の`repositories`に以下をのリポジトリを足さないといけないようです。
 ```XML
 <repository>
-	<id>jaspersoft-third-party</id>
-	<url>https://jaspersoft.jfrog.io/jaspersoft/third-party-ce-artifacts/</url>
+  <id>jaspersoft-third-party</id>
+  <url>https://jaspersoft.jfrog.io/jaspersoft/third-party-ce-artifacts/</url>
 </repository>
 ```
 
