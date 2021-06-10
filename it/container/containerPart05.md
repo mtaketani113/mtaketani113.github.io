@@ -95,7 +95,7 @@ root@930eabd450bd:/data# redis-cli
 
 ## tomcatと連携
 
-今回利用するのは以下です。
+今回利用するのは以下です。  
 [memcached-session-manager](https://github.com/magro/memcached-session-manager/)  
 [jedis](https://mvnrepository.com/artifact/redis.clients/jedis/3.0.0)
 
