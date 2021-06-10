@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Docker、k8sまとめ[第4回] tomcatのセッションの永続化
+title: Docker、k8sまとめ[第5回] tomcatのセッションの永続化
 description: Docker、k8sまとめ。第5回はtomcatのセッションの永続化です。
 category: IT
 ---
 
-[第4回](/it/container/containerPart02.html)はkubernetesを利用して、  
+[第4回](/it/container/containerPart04.html)はkubernetesを利用して、  
 nginxを動作させました。  
 今回はkubernetesを利用して、アプリケーションサーバを並列稼働したときに  
 必要になってくるセッション永続化について記載します。

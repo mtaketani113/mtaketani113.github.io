@@ -5,7 +5,7 @@ description: Docker、k8sまとめ。第4回はDocker Desktopでk8sを利用し�
 category: IT
 ---
 
-[第3回](/it/container/containerPart02.html)はDocker Desktopを利用して  
+[第3回](/it/container/containerPart03.html)はDocker Desktopを利用して  
 Dockerfileについて紹介しました。  
 今回はDocker Desktopでk8sを紹介しようと思います。
 
