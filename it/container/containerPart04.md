@@ -190,6 +190,31 @@ nginx-deployment-5d47ff8589-4vdxl   1/1     Running   0          8s
 nginx-deployment-5d47ff8589-j6r9r   1/1     Running   0          6s
 ```
 
+podの推移を見たい場合は、`kubectl get pods --watch`で見ることができます。
+`kubectl get pods --watch`で見るとこんな感じになります。
+```
+# kubectl get pods --watch
+NAME                               READY   STATUS    RESTARTS   AGE
+nginx-deployment-f77774fc5-k5njx   1/1     Running   0          5m8s
+nginx-deployment-f77774fc5-l58lj   1/1     Running   0          3m44s
+nginx-deployment-5d47ff8589-zhlhb   0/1     Pending   0          0s
+nginx-deployment-5d47ff8589-zhlhb   0/1     Pending   0          0s
+nginx-deployment-5d47ff8589-zhlhb   0/1     ContainerCreating   0          0s
+nginx-deployment-5d47ff8589-zhlhb   1/1     Running             0          2s
+nginx-deployment-f77774fc5-l58lj    1/1     Terminating         0          5m11s
+nginx-deployment-5d47ff8589-7s7jp   0/1     Pending             0          0s
+nginx-deployment-5d47ff8589-7s7jp   0/1     Pending             0          0s
+nginx-deployment-5d47ff8589-7s7jp   0/1     ContainerCreating   0          0s
+nginx-deployment-f77774fc5-l58lj    0/1     Terminating         0          5m12s
+nginx-deployment-5d47ff8589-7s7jp   1/1     Running             0          2s
+nginx-deployment-f77774fc5-l58lj    0/1     Terminating         0          5m13s
+nginx-deployment-f77774fc5-k5njx    1/1     Terminating         0          6m37s
+nginx-deployment-f77774fc5-l58lj    0/1     Terminating         0          5m13s
+nginx-deployment-f77774fc5-k5njx    0/1     Terminating         0          6m39s
+nginx-deployment-f77774fc5-k5njx    0/1     Terminating         0          6m49s
+nginx-deployment-f77774fc5-k5njx    0/1     Terminating         0          6m49s
+```
+
 実際に1.13.12に上がっているかは、画面を開いて開発者ツールのNetworkで  
 Response Headerを確認すると`Server: nginx/1.13.12`に変わっていることが確認できます。
 
@@ -234,6 +259,19 @@ nginx-deployment-5d47ff8589-j6r9r   1/1     Running             0          24m
 nginx-deployment-5d47ff8589-7tbsj   1/1     Running   0          5s
 nginx-deployment-5d47ff8589-bdzlt   1/1     Running   0          13m
 nginx-deployment-5d47ff8589-j6r9r   1/1     Running   0          25m
+```
+
+
+`kubectl get pods --watch`で見るとこんな感じになります。
+```
+kubectl get pods --watch
+NAME                                READY   STATUS    RESTARTS   AGE
+nginx-deployment-5d47ff8589-7s7jp   1/1     Running   0          4m52s
+nginx-deployment-5d47ff8589-zhlhb   1/1     Running   0          4m54s
+nginx-deployment-5d47ff8589-mjz6x   0/1     Pending   0          0s
+nginx-deployment-5d47ff8589-mjz6x   0/1     Pending   0          0s
+nginx-deployment-5d47ff8589-mjz6x   0/1     ContainerCreating   0          0s
+nginx-deployment-5d47ff8589-mjz6x   1/1     Running             0          2s
 ```
 
 <a id="anchor5"></a>
