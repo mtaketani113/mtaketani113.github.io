@@ -12,9 +12,9 @@ category: IT
 
 ## 目次
 
-- [docker-composeとは]](#anchor1)  
+- [docker-composeとは](#anchor1)  
 - [docker-composeでWordPressを実行](#anchor2)  
-- [デプロイの一時停止](#anchor3)  
+- [停止、起動とコンテナへのログイン](#anchor3)  
 - [まとめ](#anchor4)  
 
 <a id="anchor1"></a>
