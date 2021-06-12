@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Docker、k8sまとめ[第5回] k8sを利用したデプロイの管理
+title: Docker、k8sまとめ[第6回] k8sを利用したデプロイの管理
 description: Docker、k8sまとめ。k8sを利用したデプロイの管理ついて、バージョンの戻し方やアップデートの方法について記載します。
 category: IT
 ---
