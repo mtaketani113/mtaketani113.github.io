@@ -103,13 +103,14 @@ docker-compose up -d
 docker-compose stop
 ```
 
-このコマンドは`docker-compose.yaml`で実行する必要があります。  
+このコマンドは`docker-compose.yaml`のあるフォルダで実行する必要があります。  
 どれを止めていいのかわからないですかね？
 
 また、再度起動するときは以下のコマンドです。
 ```
 docker-compose start
 ```
+こちらも`docker-compose.yaml`のあるフォルダで実行する必要があります。  
 upだとキャッシュを使いますが、再度イメージ作成からになるのかな？
 
 また、コンテナへのログインも簡単で以下でそれぞれログインできます。
