@@ -5,7 +5,7 @@ description: Docker、k8sまとめ。k8sを利用したデプロイの管理つ�
 category: IT
 ---
 
-[第5回](/it/container/containerPart04.html)はtomcatのセッションの永続化でした。
+[第5回](/it/container/containerPart05.html)はtomcatのセッションの永続化でした。
 
 今回はk8sを利用したデプロイの管理について  
 バージョンの戻し方やアップデートの方法について記載します。
