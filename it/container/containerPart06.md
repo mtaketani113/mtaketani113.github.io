@@ -291,7 +291,7 @@ nginx-deployment-5d47ff8589   2         2         2       18h
 リソースの制限などで、Pod数を増やせないときなどに役に立ちそうですね。
 
 ちなみにデフォルトは25パーセントらしいです。%で設定もできるんですね。
-```
+```Yaml
     rollingUpdate:
       maxUnavailable: 25%
       maxSurge: 25%
