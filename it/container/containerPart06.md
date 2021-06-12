@@ -92,7 +92,7 @@ REVISION  CHANGE-CAUSE
 
 3つ以上あって途中のバージョンに変えると、飛び番になります。
 ↓5がない
-```
+```Shell
 $ kubectl rollout history deployment nginx-deployment
 deployment.apps/nginx-deployment
 REVISION  CHANGE-CAUSE
