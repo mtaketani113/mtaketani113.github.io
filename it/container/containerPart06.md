@@ -211,7 +211,7 @@ spec:
         - containerPort: 80
 ```
 
-```
+```Shell
 $ kubectl get replicasets --watch
 NAME                          DESIRED   CURRENT   READY   AGE
 nginx-deployment-5d47ff8589   2         2         2       18h
@@ -263,7 +263,7 @@ spec:
         - containerPort: 80
 ```
 
-```
+```Shell
 $ kubectl get replicasets --watch
 NAME                          DESIRED   CURRENT   READY   AGE
 nginx-deployment-5d47ff8589   0         0         0       18h
