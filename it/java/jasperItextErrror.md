@@ -1,11 +1,11 @@
 ---
 layout: default
-title: jasperReportが急に動かなくなる
-description: jasperReposrtがmavenで急にエラーが出て動かなくなりました。その原因を記載します。
+title: jasperReportsが急に動かなくなる
+description: jasperReposrtsがmavenで急にエラーが出て動かなくなりました。その原因を記載します。
 category: IT
 ---
 
-jasperReportの6.3.1を利用していたのですが、6月になって急にmavenで利用できなくなりました。
+jasperReportsの6.3.1を利用していたのですが、6月になって急にmavenで利用できなくなりました。
 
 `could not find artifact com.lowagie:itext:jar:2.1.7.js5`  
 や  
