@@ -16,7 +16,7 @@ category: IT
 - [Ingress Controllerの起動](#anchor2)
 - [ファイルの配置](#anchor3) 
 - [Hostsの登録](#anchor4)  
-- [まとめ](#anchor4)  
+- [まとめ](#anchor5)  
 
 <a id="anchor1"></a>
 
