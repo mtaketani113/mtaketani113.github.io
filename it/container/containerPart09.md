@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Docker、k8sまとめ[第9回] IngressでSticky Session
-description: Docker、k8sまとめ。IngressでSticky Sessionを実装する記載します。
+description: Docker、k8sまとめ。IngressでSticky Sessionを実現したいと思います。
 category: IT
 ---
 
