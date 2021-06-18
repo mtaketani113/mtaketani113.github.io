@@ -25,7 +25,7 @@ async/await と fetch関数を利用して、GithubのAPIを呼び出し、
             json.forEach(e => {
                 document.getElementById("repos")
                     .insertAdjacentHTML('afterbegin',
-                        '<li><a href="' + e.html_url + '">'+ e.name +'</a></li>');
+                        '<li>'+ e.name +'</li>');
             })
         }else{
             document.getElementById("repos")
@@ -51,7 +51,7 @@ async/await と fetch関数を利用して、GithubのAPIを呼び出し、
             json.forEach(e => {
                 document.getElementById("repos")
                     .insertAdjacentHTML('afterbegin',
-                        '<li><a href="' + e.html_url + '">'+ e.name +'</a></li>');
+                        '<li>'+ e.name +'</li>');
             })
         }else{
             document.getElementById("repos")
