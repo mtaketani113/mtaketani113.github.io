@@ -68,7 +68,7 @@ spec:
         image: nginx:1.13.12
         ports:
         - containerPort: 80
-        LivenessProbe: # ヘルスチェックの設定
+        livenessProbe: # ヘルスチェックの設定
           httpGet: 
             path: /index.html #ヘルスチェックする
             port: 80
@@ -134,11 +134,6 @@ kind: Deployment
 metadata:
   name: nginx-deployment
 spec:
-  strategy:
-    type: RollingUpdate
-    rollingUpdate:
-      maxUnavailable: 0
-      maxSurge: 1
   selector:
     matchLabels:
       app: nginx
