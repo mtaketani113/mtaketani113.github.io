@@ -40,7 +40,7 @@ $ kubectl cordon docker-desktop
 node/docker-desktop cordoned
 ```
 
-cordon コルドンと読むらしく、 
+cordon フランス語でコルドンと読むらしく、 
 紐とか非常線とか警戒線いう意味らしい。
 
 入れなくするということですかね？
