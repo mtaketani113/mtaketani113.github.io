@@ -148,7 +148,6 @@ evicting pod default/nginx-deployment-648fb5bbfd-87xfk
 error when evicting pod "nginx-deployment-648fb5bbfd-87xfk" (will retry after 5s): Cannot evict pod as it would violate the pod's disruption budget.
 evicting pod default/nginx-deployment-648fb5bbfd-87xfk
 error when evicting pod "nginx-deployment-648fb5bbfd-87xfk" (will retry after 5s): Cannot evict pod as it would violate the pod's disruption budget.
-pod/ingress-nginx-controller-c4f944d4d-tm8xg evicted
 evicting pod default/nginx-deployment-648fb5bbfd-87xfk
 error when evicting pod "nginx-deployment-648fb5bbfd-87xfk" (will retry after 5s): Cannot evict pod as it would violate the pod's disruption budget.
 evicting pod default/nginx-deployment-648fb5bbfd-87xfk
