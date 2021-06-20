@@ -137,7 +137,7 @@ minAvailable、maxAvailableはパーセントでも指定できるようです�
 これを適用すると、下記のように、別ノードがないので、停止できないよエラーを繰り返します。
 
 ```
-kubectl drain docker-desktop --force --ignore-daemonsets
+$ kubectl drain docker-desktop --force --ignore-daemonsets
 node/docker-desktop cordoned
 WARNING: ignoring DaemonSet-managed Pods: kube-system/kube-proxy-8j5rf
 evicting pod default/nginx-deployment-648fb5bbfd-xqwnf
