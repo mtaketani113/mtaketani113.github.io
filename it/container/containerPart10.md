@@ -5,7 +5,7 @@ description: Docker、k8sまとめ。k8sでのヘルスチェックについて�
 category: IT
 ---
 
-[第9回](/it/container/containerPart08.html)ではSticky Sessionについて記載しました。
+[第9回](/it/container/containerPart09.html)ではSticky Sessionについて記載しました。
 
 今回はヘルスチェックについて記載します。
 
