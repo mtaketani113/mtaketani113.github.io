@@ -1,7 +1,7 @@
 ---
 layout: default
-title: $(document).readyの中の関数を外部から呼び出す方法
-description: $(document).readyの中の関数を外部から無理やり呼び出す方法を紹介します。
+title: $(document).ready内の関数を呼ぶ方法
+description: $(document).ready内の関数を外部から無理やり呼び出す方法を紹介します。
 category: IT
 ---
 
