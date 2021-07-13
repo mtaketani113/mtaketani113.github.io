@@ -81,8 +81,8 @@ spec:
     app: nginx
   ports:
     - name: http
-      port: 8080  # 外部からアクセスるぽ0と
-      targetPort: 80 # コンテナ内のポート　containerPort: 80と一致
+      port: 8080
+      targetPort: 80
       
 ---
 apiVersion: autoscaling/v2beta1
@@ -116,7 +116,7 @@ deploymentでCPUの制限を加えないと動作しません。
 以下を実行すると、どれくらい負荷がかかっていると認識しているかを見ることができます。
 
 ```
-kubectl get HorizontalPodAutoscaler hpa-nginx
+$ kubectl get HorizontalPodAutoscaler hpa-nginx
 NAME        REFERENCE                     TARGETS   MINPODS   MAXPODS   REPLICAS   AGE
 hpa-nginx   Deployment/nginx-deployment   0%/50%    1         5         2          15m
 ```
