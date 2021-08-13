@@ -118,8 +118,9 @@ e
 ```
 
 こちらは`c`を削除した瞬間に`java.util.ConcurrentModificationException`が発生します。
-結果はこんな感じ
-```
+
+結果はこんな感じ。
+```Java
 a
 b
 Exception in thread "main" java.util.ConcurrentModificationException
