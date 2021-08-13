@@ -2,7 +2,7 @@
 layout: default
 title: Docker、k8sまとめ[第5回] tomcatのセッションの永続化
 description: Docker、k8sまとめ。第5回はredisを使ってtomcatのセッションを永続化します。
-category: IT
+category: container
 ---
 
 [第4回](/it/container/containerPart04.html)はkubernetesを利用して、  

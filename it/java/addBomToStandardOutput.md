@@ -2,7 +2,7 @@
 layout: default
 title: Javaの標準出力にBOMを追加
 description: Javaの標準出力にBOMを追加する方法を記載しました。
-category: IT
+category: java
 ---
 
 ファイル作成時にBOMをつける方法は、  

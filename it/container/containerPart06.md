@@ -2,7 +2,7 @@
 layout: default
 title: Docker、k8sまとめ[第6回] k8sを利用したデプロイの管理
 description: Docker、k8sまとめ。k8sを利用したデプロイの管理ついて、バージョンの戻し方やアップデートの方法について記載します。
-category: IT
+category: container
 ---
 
 [第5回](/it/container/containerPart05.html)はtomcatのセッションの永続化でした。

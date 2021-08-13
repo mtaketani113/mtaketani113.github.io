@@ -2,7 +2,7 @@
 layout: default
 title: Docker、k8sまとめ[第10回] ヘルスチェック
 description: Docker、k8sまとめ。k8sでのヘルスチェックについて記載します。Podの状態を監視して異常と判定した場合に再起動はトラフィック停止することができます。
-category: IT
+category: container
 ---
 
 [第9回](/it/container/containerPart09.html)ではSticky Sessionについて記載しました。

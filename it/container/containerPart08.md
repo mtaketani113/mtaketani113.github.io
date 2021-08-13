@@ -2,7 +2,7 @@
 layout: default
 title: Docker、k8sまとめ[第8回] IngressによるL7ロードバランシング
 description: Docker、k8sまとめ。docker-composeによる、複数コンテナの連携IngressによるL7ロードバランシングについて記載します。
-category: IT
+category: container
 ---
 
 [第7回](/it/container/containerPart07.html)ではdocker-composeを利用した、複数コンテナの連携について記載しました。

@@ -2,7 +2,7 @@
 layout: default
 title: Docker、k8sまとめ[第7回] docker-composeの利用
 description: Docker、k8sまとめ。docker-composeによる、複数コンテナの連携について記載します。
-category: IT
+category: container
 ---
 
 [第6回](/it/container/containerPart06.html)ではk8sによるデプロイの管理について記載しました。

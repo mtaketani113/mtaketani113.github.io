@@ -2,7 +2,7 @@
 layout: default
 title: Docker、k8sまとめ[第12回] オートスケール
 description: Docker、k8sまとめ。k8sでオートスケールする方法について記載します。
-category: IT
+category: container
 ---
 
 [第11回](/it/container/containerPart11.html)ではスケジューリング対象から除外やノード、Podを停止する方法について記載ました。

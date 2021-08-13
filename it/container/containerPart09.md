@@ -2,7 +2,7 @@
 layout: default
 title: Docker、k8sまとめ[第9回] IngressでSticky Session
 description: Docker、k8sまとめ。IngressでSticky Sessionを実現したいと思います。
-category: IT
+category: container
 ---
 
 [第8回](/it/container/containerPart08.html)ではIngressを使ってL7ロードバランシングを作りました。

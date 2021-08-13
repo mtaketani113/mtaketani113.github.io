@@ -2,7 +2,7 @@
 layout: default
 title: GitHubのAPIを利用して一覧表示
 description: GitHubのリポジトリーやIssueをAPIを利用してJavascriptで一覧表示する方法を記載します。
-category: IT
+category: github
 ---
 
 **重要**  

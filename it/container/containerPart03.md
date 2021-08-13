@@ -2,7 +2,7 @@
 layout: default
 title: Docker、k8sまとめ[第3回] Dockerfileの利用
 description: Docker、k8sまとめ。第3回はDockerfileを紹介します。
-category: IT
+category: container
 ---
 
 [第2回](/it/container/containerPart02.html)はDocker Desktopで実行しましたが、  

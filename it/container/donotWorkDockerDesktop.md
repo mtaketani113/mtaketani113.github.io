@@ -2,7 +2,7 @@
 layout: default
 title: Docker Desktop が動かない
 description: Proxy環境下でDocker Desktop for Windows が動かないときの対処法を記載します。
-category: IT
+category: container
 ---
 
 会社環境でDocker Desktop for Windowsを使っていて  

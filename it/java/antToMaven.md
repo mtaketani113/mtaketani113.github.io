@@ -2,7 +2,7 @@
 layout: default
 title: AntからMavenに変えて感じたこと
 description: AntからMavenに変えたメリット、デメリットをまとめてみました。
-category: IT
+category: java
 ---
 
 今更なのですが、AntからMavenに変えて良かったこと、悪かったことを書いていきます。  

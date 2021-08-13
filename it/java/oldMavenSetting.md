@@ -2,7 +2,7 @@
 layout: default
 title: 古いMavenの設定で、はまったこと
 description: Mavenではセントラルリポジトリがhttpをサポートしなくなったことや、3.8.1でhttpのアクセスがデフォルトでできなくなくなりました。そのため古い設定では動作しなくなってたので記載します。
-category: IT
+category: java
 ---
 
 世の中のITの変化は速く、  

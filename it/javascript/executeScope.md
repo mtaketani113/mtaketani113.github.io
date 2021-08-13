@@ -2,7 +2,7 @@
 layout: default
 title: $(document).ready内の関数を呼ぶ方法
 description: $(document).ready内の関数を外部から無理やり呼び出す方法を紹介します。
-category: IT
+category: javascript
 ---
 
 $(document).ready(function()の中の関数を外部から無理やり呼び出す方法を紹介します。

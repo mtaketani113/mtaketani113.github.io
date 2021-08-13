@@ -2,7 +2,7 @@
 layout: default
 title: JavaScriptによるファンクションキー無効化の落とし穴
 description: JavaScriptによるファンクションキーを無効にできますが、URLにフォーカスをあてると有効になります。
-category: IT
+category: javascript
 ---
 <script>
     window.document.onkeydown = function(event){

@@ -2,7 +2,7 @@
 layout: default
 title: GitHub Pagesでの数式代入
 description: GitHub Pagesでの数式代入方法を記載します。
-category: IT
+category: github
 ---
 
 <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script"></script>

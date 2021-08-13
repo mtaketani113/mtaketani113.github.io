@@ -2,7 +2,7 @@
 layout: default
 title: Github Gistで旅行した場所を表示
 description: Github GistでGeoJsonを利用して旅行した個所を表示
-category: IT
+category: github
 ---
 
 Github GistにGeoJsonを記載すると地図上に点を打ったりできます。  

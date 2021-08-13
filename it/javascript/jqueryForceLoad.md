@@ -2,7 +2,7 @@
 layout: default
 title: jQueryをサイトに強制読み込み
 description: 古いサイトの調査でjQueryが適用されていないサイトでjQueryを利用できるようにする方法です。
-category: IT
+category: javascript
 ---
 
 古いサイトの調査をしていて、javascriptの動作がわからず  

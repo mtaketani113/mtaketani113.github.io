@@ -2,7 +2,7 @@
 layout: default
 title: Github Pagesでコードハイライト
 description: GitHub Pagesでコードハイライトする方法。
-category: IT
+category: github
 ---
 
 Github Pagesをデフォルトで利用すると、コードハイライトがされずに  

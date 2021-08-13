@@ -2,7 +2,7 @@
 layout: default
 title: Docker、k8sまとめ[第11回] ノード、PODの停止
 description: Docker、k8sまとめ。k8sでスケジューリング対象から除外やノード、Podを停止する方法を記載します。
-category: IT
+category: container
 ---
 
 [第10回](/it/container/containerPart10.html)ではヘルスチェックについて記載ました。

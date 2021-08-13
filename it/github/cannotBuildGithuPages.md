@@ -2,7 +2,7 @@
 layout: default
 title: GitHub Pagesが更新されない
 description: GitHub Pagesのビルドが実行されず、ページが更新されない現象が発生しました。原因はGithubの障害でした。
-category: IT
+category: github
 ---
 2021年の5月16日にGithub Pagesが更新されないという現象が発生しました。  
 
