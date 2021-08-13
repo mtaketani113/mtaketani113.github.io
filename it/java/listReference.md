@@ -19,11 +19,11 @@ Listはスレッドセーフではないので、マルチスレッドでなく�
         list.add("d");
         
         for(String str : list){
-        	if("c".equals(str)) {
-        		list.remove("c");
-        	}else {
-            	System.out.println(str);
-        	}
+            if("c".equals(str)) {
+                list.remove("c");
+            }else {
+                System.out.println(str);
+            }
         }
 ```
 
@@ -47,11 +47,11 @@ b
         list.add("e");
         
         for(String str : list){
-        	if("c".equals(str)) {
-        		list.remove("c");
-        	}else {
-            	System.out.println(str);
-        	}
+            if("c".equals(str)) {
+                list.remove("c");
+            }else {
+                System.out.println(str);
+            }
         }
 ```
 
@@ -64,8 +64,8 @@ b
 a
 b
 Exception in thread "main" java.util.ConcurrentModificationException
-	at java.base/java.util.ArrayList$Itr.checkForComodification(ArrayList.java:1042)
-	at java.base/java.util.ArrayList$Itr.next(ArrayList.java:996)
+    at java.base/java.util.ArrayList$Itr.checkForComodification(ArrayList.java:1042)
+    at java.base/java.util.ArrayList$Itr.next(ArrayList.java:996)
     ・・・・
 ```
 
@@ -82,13 +82,13 @@ Exception in thread "main" java.util.ConcurrentModificationException
         list.add("e");
         
         for(int i = 0; i < list.size(); i++){
-        	String str = list.get(i);
-        	
-        	if("c".equals(str)) {
-        		list.remove("c");
-        	}else {
-            	System.out.println(str);
-        	}
+            String str = list.get(i);
+            
+            if("c".equals(str)) {
+                list.remove("c");
+            }else {
+                System.out.println(str);
+            }
         }
 ```
 こちらは正常に動き結果は以下の通りになります。
@@ -109,11 +109,11 @@ e
         list.add("d");
 
         list.forEach(str ->{
-        	if("c".equals(str)) {
-        		list.remove("c");
-        	}else {
-            	System.out.println(str);
-        	}
+            if("c".equals(str)) {
+                list.remove("c");
+            }else {
+                System.out.println(str);
+            }
         });
 ```
 
@@ -124,7 +124,7 @@ e
 a
 b
 Exception in thread "main" java.util.ConcurrentModificationException
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1542)
+    at java.base/java.util.ArrayList.forEach(ArrayList.java:1542)
     ・・・
 ```
 
