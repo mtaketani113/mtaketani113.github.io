@@ -35,7 +35,7 @@ String Constant Poolというところにリテラルで指定すると格納さ
 なので結果は`false`です。
 `intern()`は
 
-`String.valueOf`は以下の通りです。なので、リテラル弟子大した物そのものが返ってくるので、
+`String.valueOf`は以下の通りです。なので、リテラルで指定した物そのものが返ってくるので、
 `System.out.println(str1 == str5);`の結果は`true`です。
 ```Java
     public static String valueOf(Object obj) {
