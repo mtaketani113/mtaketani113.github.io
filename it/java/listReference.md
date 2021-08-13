@@ -127,6 +127,6 @@ Exception in thread "main" java.util.ConcurrentModificationException
     ・・・
 ```
 
-色々なパターンがあるので、for文を回してlist事態を削除するのが、あまりよくないのかもしれませんね。
+色々なパターンがあるので、for文を回してlist自体を削除するのが、あまりよくないのかもしれませんね。
 新しいListを作ってそちらに格納するか、
 `list.romve("c");`や条件が複雑なら`list.removeIf(s -> "c".equals(s));`などを利用するのがよいですかね。
