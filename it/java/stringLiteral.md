@@ -33,7 +33,6 @@ String Constant Poolというところにリテラルで指定すると格納さ
 
 `new String("abc")`の場合は、異なるオブジェクトになります。
 なので結果は`false`です。
-`intern()`は
 
 `String.valueOf`は以下の通りです。なので、リテラルで指定した物そのものが返ってくるので、
 `System.out.println(str1 == str5);`の結果は`true`です。
