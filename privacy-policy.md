@@ -34,7 +34,9 @@ Cookieを無効にする方法やGoogleアドセンスに関する詳細は「[�
 
 ## アクセス解析ツールについて
 
-当ブログでは、Googleによるアクセス解析ツール「[Googleアナリティクス](https://marketingplatform.google.com/intl/ja/about/analytics/){:target="_blank"}」を利用しています。このGoogleアナリティクスはトラフィックデータの収集のためにクッキー（Cookie）を使用しております。トラフィックデータは匿名で収集されており、個人を特定するものではありません。この機能はクッキー（Cookie）を無効にすることで収集を拒否することが出来ますので、お使いのブラウザの設定をご確認ください。この規約に関して、詳しくは[こちら](https://marketingplatform.google.com/about/analytics/terms/jp/){:target="_blank"}をクリックしてください。
+当ブログでは、Googleによるアクセス解析ツール「[Googleアナリティクス](https://marketingplatform.google.com/intl/ja/about/analytics/){:target="_blank"}」を利用しています。このGoogleアナリティクスはトラフィックデータの収集のためにクッキー（Cookie）を使用しております。トラフィックデータは匿名で収集されており、個人を特定するものではありません。
+
+この機能はクッキー（Cookie）を無効にすることで収集を拒否することが出来ますので、お使いのブラウザの設定をご確認ください。この規約に関して、詳しくは[こちら](https://marketingplatform.google.com/about/analytics/terms/jp/){:target="_blank"}をクリックしてください。
 
 ## 免責事項
 
