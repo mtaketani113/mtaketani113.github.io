@@ -323,8 +323,13 @@ footer {
   margin-top: 40px;
   font-size: 13px;
   color: #fff;
-  text-align: center;
+  
   background-color: #272626;
+}
+
+footer div.left {
+  text-align: left;
+  margin-left: 40px;
 }
 
 footer a {
