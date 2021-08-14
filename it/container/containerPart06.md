@@ -80,7 +80,7 @@ $ kubectl rollout undo deployment nginx-deployment
 deployment.apps/nginx-deployment rolled back
 ```
 
-戻すとリビジョン外貨のようになります。
+戻すとリビジョンが以下のようになります。
 ```Shell
 $ kubectl rollout history deployment nginx-deployment
 deployment.apps/nginx-deployment
