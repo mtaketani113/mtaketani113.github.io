@@ -54,7 +54,7 @@
       <div class="inner clearfix">
         <section id="main-content">
           <h1 id="page-title">{{ page.title }}</h1>
-          {% unless page.create_at == '' or page.create_at == null %}
+          {% unless page.created_at == '' or page.created_at == null %}
             作成日：{{ page.created_at }}
           {% endunless %}
           {% unless page.last_modifeid_at == '' or page.last_modifeid_at == null %}
