@@ -53,13 +53,13 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <h1 id="page-title">{{ page.title }}</h1>
           {% unless page.created_at == '' or page.created_at == null %}
-            作成日：{{ page.created_at }}
+            作成日:{{ page.created_at }}　
           {% endunless %}
           {% unless page.last_modifeid_at == '' or page.last_modifeid_at == null %}
-            更新日：{{ page.last_modifeid_at }}
+            更新日:{{ page.last_modifeid_at }}
           {% endunless %}
+          <h1 id="page-title">{{ page.title }}</h1>
           {{ content }}
         </section>
 

@@ -3,8 +3,8 @@ layout: default
 title: GitHubのパスワードによるアクセス拒否
 description: GitHubの2021年8月13日でパスワードによくアクセスが拒否されるようになりました。アクセストークンを使う必要があります。今回はそのアクセストークンの作成方法も記載します。前までなかった有効期限というのがあるみたい。
 category: github
-created_at: 2021/08/16
-last_modifeid_at: 2021/08/17
+created_at: 2021-08-16
+last_modifeid_at: 2021-08-17
 ---
 
 今日、会社に行くと、Jenkinsで設定していたビルドが失敗している・・・
