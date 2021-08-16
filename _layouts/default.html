@@ -55,13 +55,14 @@
         <section id="main-content">
           <h1 id="page-title">{{ page.title }}</h1>
           {{ content }}
-          <br/>
-          {% unless page.created_at == '' or page.created_at == null %}
-            作成日:{{ page.created_at }}　
-          {% endunless %}
-          {% unless page.last_modifeid_at == '' or page.last_modifeid_at == null %}
-            更新日:{{ page.last_modifeid_at }}
-          {% endunless %}
+          <p id="page-publish-date">
+            {% unless page.created_at == '' or page.created_at == null %}
+              作成日:{{ page.created_at }}　
+            {% endunless %}
+            {% unless page.last_modifeid_at == '' or page.last_modifeid_at == null %}
+              更新日:{{ page.last_modifeid_at }}
+            {% endunless %}
+          </p>
         </section>
 
         <aside id="sidebar">
