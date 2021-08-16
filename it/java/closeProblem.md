@@ -3,6 +3,8 @@ layout: default
 title: Javaでcloseを書かないとどうなるか
 description: Javaでclose処理を書かないと、サーバダウンなどにつながります。実施に経験した事象を紹介します。
 category: java
+created_at: 2021-05-20
+last_modifeid_at: 2021-05-31
 ---
 
 Javaでファイル参照などすると  
