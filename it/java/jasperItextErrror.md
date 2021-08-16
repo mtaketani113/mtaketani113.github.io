@@ -3,6 +3,8 @@ layout: default
 title: jasperReportsが急に動かなくなる
 description: jasperReposrtsがmavenで急にエラーが出て動かなくなりました。itextの依存関係のせいなのですが、その詳細を記載します。
 category: java
+created_at: 2021-06-09
+last_modifeid_at: 2021-06-13
 ---
 
 jasperReportsの6.3.1を利用していたのですが、6月になって急にmavenで利用できなくなりました。

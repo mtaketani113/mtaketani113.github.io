@@ -3,6 +3,8 @@ layout: default
 title: Docker、k8sまとめ[第1回] Docker、k8sとは
 description: Docker、k8sまとめ。第1回はDocker、k8sとはどういったものなのか。なぜ注目されているのかをまとめます。
 category: container
+created_at: 2021-06-04
+last_modifeid_at: 2021-06-13
 ---
 
 Dockerとk8sを最近遊んでいます。

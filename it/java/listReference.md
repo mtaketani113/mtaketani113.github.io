@@ -3,6 +3,8 @@ layout: default
 title: Listの参照中の編集
 description: Listはスレッドセーフではないため参照中に編集するとExceptionが発生することがあります。その現象について記載します。
 category: java
+created_at: 2021-08-13
+last_modifeid_at: 2021-08-13
 ---
 
 Listはスレッドセーフではないので、マルチスレッドでなくても参照中に編集すると`java.util.ConcurrentModificationException`が発生することがあります。
