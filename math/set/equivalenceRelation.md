@@ -22,6 +22,7 @@ $$
 a ∼ a ・・・反射律\\
 a ∼ b \Rightarrow b ∼ a ・・・対称律\\
 a ∼ b かつ b ∼ c \Rightarrow a ∼ c.・・・推移律\\
+\end{align*}
 $$
 
 ## 同値関係を兄弟で言い換え
