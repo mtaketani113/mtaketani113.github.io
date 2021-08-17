@@ -19,9 +19,9 @@ last_modifeid_at: 2021-08-18
 
 $$
 \begin{align*}
-a ∼ a ・・・反射律\\
-a ∼ b \Rightarrow b ∼ a ・・・対称律\\
-a ∼ b かつ b ∼ c \Rightarrow a ∼ c.・・・推移律\\
+& a ∼ a ・・・反射律\\
+& a ∼ b \Rightarrow b ∼ a ・・・対称律\\
+& a ∼ b \ かつ \ b ∼ c \Rightarrow a ∼ c.・・・推移律\\
 \end{align*}
 $$
 
