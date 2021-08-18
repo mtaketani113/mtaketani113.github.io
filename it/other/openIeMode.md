@@ -20,7 +20,7 @@ IEモードでの開き方ですが、2021年8月時点のIEモードの開き�
 
 サイトを設定しなくても「Internet explorerモードで再度読み込む」を選択すると切り替えられます。
 
-![IEモード切替](/images/it/othre/changeIEMode.png)
+<img src="/images/it/othre/changeIEMode.png" alt="IEモード切替" width="300">
 
 初回は「既定」になってました。そして、変更できなかったです。
 ですが、その下の追加でサイトを追加したりとかヘルプを見ていたら、変更できるようになりました・・・ちょっと謎。
