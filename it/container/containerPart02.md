@@ -3,6 +3,8 @@ layout: default
 title: Docker、k8sまとめ[第2回] Docker Desktopの利用
 description: Docker、k8sまとめ。第2回はDocker Desktop for Windowsをインストールして利用します。
 category: container
+created_at: 2021-06-05
+last_modifeid_at: 2021-06-05
 ---
 
 [第1回](/it/container/containerPart01.html)はDocker、k8sの概要と  

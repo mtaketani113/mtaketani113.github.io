@@ -3,6 +3,8 @@ layout: default
 title: Docker、k8sまとめ[第3回] Dockerfileの利用
 description: Docker、k8sまとめ。第3回はDockerfileを紹介します。
 category: container
+created_at: 2021-06-05
+last_modifeid_at: 2021-06-06
 ---
 
 [第2回](/it/container/containerPart02.html)はDocker Desktopで実行しましたが、  

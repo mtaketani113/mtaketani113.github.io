@@ -3,6 +3,8 @@ layout: default
 title: Docker、k8sまとめ[第5回] tomcatのセッションの永続化
 description: Docker、k8sまとめ。第5回はredisを使ってtomcatのセッションを永続化します。
 category: container
+created_at: 2021-06-10
+last_modifeid_at: 2021-08-19
 ---
 
 [第4回](/it/container/containerPart04.html)はkubernetesを利用して、  
@@ -27,7 +29,7 @@ kubernetesを利用して、アプリケーションサーバを並列稼働し�
 
 そこでスティッキーセッションを利用して､  
 アクセスするユーザー毎にアプリケーションサーバを固定する方法がありますが、  
-これだと、スケールアウトだと印ですが、  
+これだと、スケールアウトはいけますが、  
 スケールインや、サーバ落ちた時のオートヒーリングや  
 稼働中のデプロイなどでサーバ自体がなくなると、動作しなくなります。
 

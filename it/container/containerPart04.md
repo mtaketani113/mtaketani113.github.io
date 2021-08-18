@@ -3,6 +3,8 @@ layout: default
 title: Docker、k8sまとめ[第4回] Docker Desktopでk8s
 description: Docker、k8sまとめ。第4回はDocker Desktopでk8sを利用します。
 category: container
+created_at: 2021-06-06
+last_modifeid_at: 2021-06-12
 ---
 
 [第3回](/it/container/containerPart03.html)はDocker Desktopを利用して  
