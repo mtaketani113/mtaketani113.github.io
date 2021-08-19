@@ -1,7 +1,7 @@
 ---
 layout: default
 title: varchar2のchar修飾子
-description: Oracleでvarchar2(10)と指定すると10byteです。byteなので10文字入ると思いきや半角カナでUTF-8だったりすると半角なのに3byteでカウントが難しいです。そこでvarchar2(10 char)と指定すると10文字にできるのですが、1つ落とし穴があり改行で\r\nだと2文字になります。
+description: Oracleでvarchar2(10)と指定すると10byteです。byteなので10文字入ると思いきや半角カナでUTF-8だったりすると半角なのに3byteでカウントが難しいです。そこでvarchar2(10 char)と指定すると10文字にできるのですが、いくつか落とし穴があり、例えば改行で\r\nだと2文字になります。
 category: IT
 created_at: 2021-08-20
 last_modifeid_at: 2021-08-20
