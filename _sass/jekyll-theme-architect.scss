@@ -88,6 +88,17 @@ aside#sidebar p.repo-owner a {
   font-weight: bold;
 }
 
+aside#sidebar summary {
+  cursor: pointer;
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #474747;
+  text-indent: 3px;
+}
+
 #downloads {
   margin-bottom: 40px;
 }
