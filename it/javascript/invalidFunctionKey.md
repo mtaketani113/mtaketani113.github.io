@@ -20,7 +20,8 @@ last_modifeid_at: 2021-06-01
 ```JavaScript
 <script>
     window.document.onkeydown = function(event){
-        if(event.keyCode >= 112 && event.keyCode <= 123){
+        if(event.keyCode >= 112
+            && event.keyCode <= 123){
             event.keyCode = null;
             event.returnValue = false;
         }
