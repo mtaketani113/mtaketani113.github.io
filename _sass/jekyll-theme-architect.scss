@@ -90,13 +90,12 @@ aside#sidebar p.repo-owner a {
 
 aside#sidebar summary {
   cursor: pointer;
-  margin-top: 24px;
-  margin-bottom: 8px;
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
-  font-size: 18px;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
   font-weight: bold;
-  color: #474747;
-  text-indent: 3px;
 }
 
 #downloads {
