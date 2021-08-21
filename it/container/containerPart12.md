@@ -3,6 +3,8 @@ layout: default
 title: Docker、k8sまとめ[第12回] オートスケール
 description: Docker、k8sまとめ。k8sでオートスケールする方法について記載します。
 category: container
+created_at: 2021-07-14
+last_modifeid_at: 2021-08-21
 ---
 
 [第11回](/it/container/containerPart11.html)ではスケジューリング対象から除外やノード、Podを停止する方法について記載ました。
@@ -13,7 +15,7 @@ category: container
 
 - [Metric Serverの構築](#anchor1)  
 - [Horizontal Pod Autoscaling](#anchor2)
-- [まとめ](#anchor4)
+- [まとめ](#anchor3)
 
 <a id="anchor1"></a>
 
@@ -39,6 +41,8 @@ NAME                                     READY   STATUS    RESTARTS   AGE
 metrics-server-6d84b55499-df8h2          1/1     Running   0          26m
 ・・・
 ```
+
+<a id="anchor2"></a>
 
 ## Horizontal Pod Autoscaling
 
