@@ -4,7 +4,7 @@ title: jQueryをサイトに強制読み込み
 description: 古いサイトの調査でjQueryが適用されていないサイトでjQueryを利用できるようにする方法です。
 category: javascript
 created_at: 2021-05-31
-last_modifeid_at: 2021-05-31
+last_modifeid_at: 2021-08-21
 ---
 
 古いサイトの調査をしていて、javascriptの動作がわからず  
@@ -27,10 +27,12 @@ var firstScriptElement = document.getElementsByTagName( 'script' )[ 0 ];
 firstScriptElement.parentNode.insertBefore( script, firstScriptElement );
 ```
 
-このサイトではjQueryは入っていないので、  
-Consoleで`jQuery`と書くと`jQuery is not defined`と出るかと思います。
+~~このサイトではjQueryは入っていないので、  
+Consoleで`jQuery`と書くと`jQuery is not defined`と出るかと思います。~~
 
-そこで上記のコードをコピペしてConsoleで実行すると`ƒ (a,b){return new n.fn.init(a,b)}`  
+**jQueryをトップページへのリンクで使うようになったので、`ƒ (e,t){return new w.fn.init(e,t)}`と出るようになりました。**
+
+利用できないサイトで、上記のコードをコピペしてConsoleで実行すると`ƒ (a,b){return new n.fn.init(a,b)}`  
 と返ってきて利用できるかと思います。  
 F12を押して、試してみてください。
 
