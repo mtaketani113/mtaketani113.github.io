@@ -3,7 +3,7 @@
   height: 50px;
   position: fixed;
   right: 0;
-  bottom: 0;
+  bottom: -50px;
   background: #ef3f98;
   opacity: 0.6;
 }
