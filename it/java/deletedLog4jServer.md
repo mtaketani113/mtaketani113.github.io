@@ -1,7 +1,7 @@
 ---
 layout: default
 title: log4j-serverがなくなってる
-description: log4j2の脆弱性でバージョンアップを迫られていると思います。バージョン2.9.0からlog4j-serverが別リポジトリに移ってしまっているようです。調べて分かったことなどを記載します。
+description: log4j2の脆弱性でバージョンアップを迫られていると思います。バージョン2.9.0からlog4j-coreにあったorg.apache.logging.log4j.core.net.serverがなくなっています。log4j-serverのフォルダに移って、さらに別リポジトリに移ってしまっているようです。調べて分かったことなどを記載します。
 category: java
 created_at: 2021-12-15
 last_modifeid_at: 2021-12-15
@@ -12,13 +12,14 @@ log4j2の脆弱性で大変なことになっていますね。
 そういっている私も対応しなくてはならず、バージョンを単純に上げようかと思ったのですが、
 バージョンを上げるとコンパイルが通らなくなってしまいました。
 
-原因は、`log4j-server`のクラスを使っていて、それがlog4j2のバージョン2.9.0からなくなっているためのようです。
+`org.apache.logging.log4j.core.net.server`のあたりが見当たらないようです。
 
+原因は、バージョン2.9.0から、これらがなくなっているためのようです。
 
 その経緯は以下のようです。
 
 以下のコミットで同じリポジトリのlog4j-serverに移っています。  
-[log4j-serverのフォルダ移動](https://github.com/apache/logging-log4j2/commit/f515fa3c4ab8ecca83f75bcb29ceb71b54c61bc4)
+[org.apache.logging.log4j.core.net.serverのlog4j-serverへの移動](https://github.com/apache/logging-log4j2/commit/f515fa3c4ab8ecca83f75bcb29ceb71b54c61bc4)
 
 そして、以下のコミットでlog4j-serverが削除されてます・・・  
 [log4j-serverのリポジトリ移動](https://github.com/apache/logging-log4j2/commit/8865124fb11a3a9d39ea8900e6469e491d26bc22)
