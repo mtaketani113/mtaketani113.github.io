@@ -28,8 +28,7 @@ log4j2の脆弱性で大変なことになっていますね。
 
 なんと、mavenのリポジトリにもいないし、tagとかもない。
 
-リリースのブランチがあるだけ。  
-https://github.com/apache/logging-log4j-tools/tree/release-2.x
+[リリースのブランチ](https://github.com/apache/logging-log4j-tools/tree/release-2.x)があるだけ。  
 
 仕方がないので、cloneしてjarを作ろうとしたけど、エラーになる・・・
 
