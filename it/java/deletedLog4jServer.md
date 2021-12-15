@@ -48,7 +48,7 @@ log4j-coreにあった`org.apache.logging.log4j.core.net.server`が見当たら�
 
 バージョン2.15.0にすると2か所修正
 toolsを消してバージョンを修正
-```xml
+```Xml
     <artifactId>log4j-tools</artifactId>
     <version>2.14.1-SNAPSHOT</version>
     ↓
@@ -57,7 +57,7 @@ toolsを消してバージョンを修正
 ```
 
 hamcrest-allのバージョンを追加
-```xml
+```Xml
       <dependency>
         <groupId>org.hamcrest</groupId>
         <artifactId>hamcrest-all</artifactId>
