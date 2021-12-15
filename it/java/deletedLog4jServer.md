@@ -18,13 +18,13 @@ log4j2の脆弱性で大変なことになっていますね。
 その経緯は以下のようです。
 
 以下のコミットで同じリポジトリのlog4j-serverに移っています。  
-https://github.com/apache/logging-log4j2/commit/f515fa3c4ab8ecca83f75bcb29ceb71b54c61bc4
+[log4j-serverのフォルダ移動](https://github.com/apache/logging-log4j2/commit/f515fa3c4ab8ecca83f75bcb29ceb71b54c61bc4)
 
 そして、以下のコミットでlog4j-serverが削除されてます・・・  
-https://github.com/apache/logging-log4j2/commit/8865124fb11a3a9d39ea8900e6469e491d26bc22
+[log4j-serverのリポジトリ移動](https://github.com/apache/logging-log4j2/commit/8865124fb11a3a9d39ea8900e6469e491d26bc22)
 
 そして行先は、こちらのよう  
-https://github.com/apache/logging-log4j-tools
+[logging-log4j-tools](https://github.com/apache/logging-log4j-tools)
 
 なんと、mavenのリポジトリにもいないし、tagとかもない。
 
@@ -35,7 +35,8 @@ https://github.com/apache/logging-log4j-tools/tree/release-2.x
 
 どうも以下を編集しないといけないようです。
 
-https://github.com/apache/logging-log4j-tools/blob/release-2.x/pom.xml
+[log-serverのpom.xml](https://github.com/apache/logging-log4j-tools/blob/release-2.x/pom.xml)
+
 バージョン1.14.1のままにするなら、toolsを消してSNAPSHOTを消せば通りました。
 ```xml
     <artifactId>log4j-tools</artifactId>
@@ -63,7 +64,7 @@ hamcrest-allのバージョンを追加
         <scope>test</scope>
       </dependency>
       ↓
-      dependency>
+      <dependency>
         <groupId>org.hamcrest</groupId>
         <artifactId>hamcrest-all</artifactId>
         <version>1.3</version>
