@@ -76,7 +76,7 @@ hamcrest-allのバージョンを追加
 
 しかし、パッケージ名が変わっていて`core`がなくなっています。  
 
-`org.apache.logging.log4j.core.server`  
+`org.apache.logging.log4j.core.net.server`  
 ↓  
 `org.apache.logging.log4j.server`
 
