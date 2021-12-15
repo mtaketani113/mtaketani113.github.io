@@ -81,6 +81,9 @@ hamcrest-allのバージョンを追加
 
 また、前までなかった投げてなかった検査例外も投げているようです。  
 
+forkして2.15.0の方で修正をアップしてみました。
+
+[修正したリポジトリ](https://github.com/mtaketani113/logging-log4j-tools/tree/release-2.x)
 
 ## まとめ
 
