@@ -38,7 +38,7 @@ log4j-coreにあった`org.apache.logging.log4j.core.net.server`が見当たら�
 [log-serverのpom.xml](https://github.com/apache/logging-log4j-tools/blob/release-2.x/pom.xml)
 
 バージョン1.14.1のままにするなら、toolsを消してSNAPSHOTを消せば通りました。
-```xml
+```Xml
     <artifactId>log4j-tools</artifactId>
     <version>2.14.1-SNAPSHOT</version>
     ↓
