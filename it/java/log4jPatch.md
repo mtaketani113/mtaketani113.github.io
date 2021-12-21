@@ -17,14 +17,15 @@ log4j2の最新版はJava8以降でないといけません。なのでJavaの�
 | log4j-2.4 ～ 2.12.1 | 7以降 |
 | log4j-2.13.0 以降  | 8以降  |
 
-なので2.12.1以前のものを使っている最新に上げるにはJava8へのアップデートが必要です。
+なので2.12.1以前のものを使っている場合、最新に上げるにはJava8へのアップデートが必要です。
 
-2021年12月22日時点で
+しかし、2021年12月22日時点で過去のバージョンのパッチが作られているようです。
+
+具体的には
 [2.12.2](https://github.com/apache/logging-log4j2/releases/tag/rel%2F2.12.2)と[2.3.1-rc1](https://github.com/apache/logging-log4j2/releases/tag/log4j-2.3.1-rc1)
 のタグが作られていました。
 
 [2.12.2のリリースノート](https://github.com/apache/logging-log4j2/blob/rel/2.12.2/RELEASE-NOTES.md)を見るとJava7の人のために作ったと書いてます。
-
 
 [2.3.1-rc1のリリースノート](https://github.com/apache/logging-log4j2/blob/log4j-2.3.1-rc1/RELEASE-NOTES.txt)にも`LOG4J2-3198`が対応されていると書いてるので、Java6を使ってる人のためにやってくれたみたいですね。
 
