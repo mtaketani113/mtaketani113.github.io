@@ -4,7 +4,7 @@ title: AntからMavenに変えて感じたこと
 description: AntからMavenに変えたメリット、デメリットをまとめてみました。
 category: java
 created_at: 2021-05-30
-last_modifeid_at: 2021-05-30
+last_modifeid_at: 2022-01-18
 ---
 
 今更なのですが、AntからMavenに変えて良かったこと、悪かったことを書いていきます。  
@@ -26,6 +26,9 @@ last_modifeid_at: 2021-05-30
 pom.xmlに必要なjarファイルを記載すると勝手に落としてくれます。  
 jarファイルをダウンロードしてこなくていいので  
 簡単ですね。
+
+そして、AntだとEclipseなどでJarのバージョンアップなどでブランチを切り替えたりすると、たまにjarファイルをロックして切り替えに失敗したりします。  
+Mavenだとないのでこういうのものいいですね。
 
 ### 2. 依存関係のあるjarファイルを集めなくていい。
 
