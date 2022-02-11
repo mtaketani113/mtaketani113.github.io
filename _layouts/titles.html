@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" media="screen" type="text/css">
     <link rel="stylesheet" href="{{ '/assets/css/print.css' | relative_url }}" media="print" type="text/css">
     <link rel="stylesheet" href="{{ '/assets/css/github.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/card.css' | relative_url }}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
     <link rel="stylesheet" href="{{ '/assets/css/pageTop.css' | relative_url }}">
     <script src="{{ '/assets/js/highlight.min.js' | relative_url }}"></script>
@@ -88,7 +89,16 @@
 
           {% for html_page in sorted_html_pages %}
               {% if  html_page.category != null %}
-                <li><a href="{{ html_page.url }}">{{ html_page.title }}</a></li>
+                <section class="card">
+                  <img class="card-img" src="https://mtaketani113.github.io/images/linkImage.png" alt="">
+                  <div class="card-content">
+                    <h1 class="card-title">{{ html_page.title }}</h1>
+                    <p class="card-text">{{ html_page.description }}</p>
+                  </div>
+                  <div class="card-link">
+                    <a href="{{ html_page.url }}">Link</a>
+                  </div>
+                </section>
               {% endif %}
           {% endfor %}
         </section>
