@@ -90,13 +90,13 @@
           {% for html_page in sorted_html_pages %}
               {% if  html_page.category != null %}
                 <section class="card">
-                  <img class="card-img" src="https://mtaketani113.github.io/images/linkImage.png" alt="">
+                  <a href="{{ html_page.url }}">
+                    <img class="card-img" src="https://mtaketani113.github.io/images/linkImage.png" alt="">
+                  </a>
                   <div class="card-content">
-                    <p class="card-title">{{ html_page.title }}</p>
-                    <p class="card-text">{{ html_page.description }}</p>
-                  </div>
-                  <div class="card-link">
-                    <a href="{{ html_page.url }}">Link</a>
+                    <a href="{{ html_page.url }}">
+                      <p class="card-title">{{ html_page.title }}</p>
+                    </a>
                   </div>
                 </section>
               {% endif %}

@@ -4,6 +4,7 @@
     float: left;
     background: #fff;
     border-radius: 5px;
+    height: 300px;
     box-shadow: 0 2px 5px #ccc;
   }
   .card-img {
