@@ -83,7 +83,7 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <h1 id="page-title">記事一覧</h1>
+          <h1 id="page-title">{{ page.title }}</h1>
           {% assign sorted_html_pages = site.html_pages | sort:"last_modifeid_at" | reverse %}
 
           {% for html_page in sorted_html_pages %}
