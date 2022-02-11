@@ -3,8 +3,8 @@ layout: default
 title: WSL2でのDockerへの他PCからのアクセス
 description: WSL2でのDockerへ、他PCからアクセスすると、なぜかアクセスできません。原因は2つでWSL2へのネットワークが流れてないのとファイヤーウォールでした。
 category: container
-created_at: 2021-02-12
-last_modifeid_at: 2021-02-12
+created_at: 2022-02-12
+last_modifeid_at: 2022-02-12
 ---
 
 [Docker Desktopの有料化の対応](/it/container/chargeDockerDesktop.html)で
