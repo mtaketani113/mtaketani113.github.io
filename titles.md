@@ -10,6 +10,6 @@ description: 作成した記事を最近作成したものから並べる。
 
 {% for html_page in sorted_html_pages %}
     {% if  html_page.category != null %}
-        <li><a href="{{ html_page.url }}">{{ html_page.title }}</a></li>
+        <a href="{{ html_page.url }}">{{ html_page.title }}</a>
     {% endif %}
 {% endfor %}
