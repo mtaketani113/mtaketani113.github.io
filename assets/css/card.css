@@ -1,6 +1,6 @@
 .card {
-    padding: 0 0 20px 0;
-    width: calc(((100% - 10px - 10px) / 3) - 1px - 1px);
+    padding: 0 5px 20px 5px;
+    width: calc(((100% - 15px - 15px) / 3) - 1px - 1px);
     float: left;
     background: #fff;
     border-radius: 5px;
@@ -15,14 +15,14 @@
     padding: 20px;
   }
   .card-title {
-    font-size: 20px;
+    font-size: 12px;
     margin-bottom: 20px;
     text-align: center;
     color: #333;
   }
   .card-text {
     color: #777;
-    font-size: 14px;
+    font-size: 10px;
     line-height: 1.5;
   }
   .card-link {
