@@ -6,6 +6,7 @@
     border-radius: 5px;
     height: 300px;
     box-shadow: 0 2px 5px #ccc;
+    overflow: hidden;
   }
   .card-img {
     border-radius: 5px 5px 0 0;
