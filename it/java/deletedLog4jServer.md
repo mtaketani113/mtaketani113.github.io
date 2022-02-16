@@ -3,6 +3,7 @@ layout: default
 title: log4j-coreのnet.serverがなくなってる
 description: log4j2の脆弱性でバージョンアップを迫られていると思います。バージョン2.9.0からlog4j-coreにあったorg.apache.logging.log4j.core.net.serverがなくなっています。log4j-serverのフォルダに移って、さらに別リポジトリに移ってしまっているようです。調べて分かったことなどを記載します。
 category: java
+image: /images/it/java/cafe_mark.png
 created_at: 2021-12-15
 last_modifeid_at: 2021-12-15
 ---

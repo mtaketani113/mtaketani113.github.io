@@ -3,6 +3,7 @@ layout: default
 title: Javaの文字列の==での比較
 description: Javaの文字列を比較するときに`==`でもリテラルで指定するとtrueになります。その理由などを説明します。
 category: java
+image: /images/it/java/cafe_mark.png
 created_at: 2021-08-13
 last_modifeid_at: 2021-08-14
 ---

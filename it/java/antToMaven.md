@@ -3,6 +3,7 @@ layout: default
 title: AntからMavenに変えて感じたこと
 description: AntからMavenに変えたメリット、デメリットをまとめてみました。
 category: java
+image: /images/it/java/cafe_mark.png
 created_at: 2021-05-30
 last_modifeid_at: 2022-01-18
 ---

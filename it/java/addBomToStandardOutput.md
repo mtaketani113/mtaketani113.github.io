@@ -3,6 +3,7 @@ layout: default
 title: Javaの標準出力にBOMを追加
 description: Javaの標準出力にBOMを追加する方法を記載しました。
 category: java
+image: /images/it/java/cafe_mark.png
 created_at: 2021-05-18
 last_modifeid_at: 2021-05-19
 ---

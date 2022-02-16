@@ -3,6 +3,7 @@ layout: default
 title: Java6,7のlog4jの脆弱性対応
 description: log4j2の最新版はJava8以降でないといけません。なのでJavaのバージョンアップが必要になる可能性があります。Githubのlog4j2のリポジトリを見てると、log4j-2.3.1-rc1や2.12.2が出てきています。どうやら古いJavaのバージョンのために作ってくれているようです。
 category: java
+image: /images/it/java/cafe_mark.png
 created_at: 2021-12-22
 last_modifeid_at: 2021-12-22
 ---

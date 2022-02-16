@@ -3,6 +3,7 @@ layout: default
 title: Jconsoleでのリモートの監視
 description: Spring Bootで起動したアプリやTomcatで起動したアプリをJconsoleで監視する方法を記載します。
 category: java
+image: /images/it/java/cafe_mark.png
 created_at: 2021-12-24
 last_modifeid_at: 2021-12-24
 ---
