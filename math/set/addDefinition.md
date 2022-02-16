@@ -2,7 +2,10 @@
 layout: default
 title: 足し算の定義
 description: 足し算の自然数の定義から実数への拡張を記載します。
+image: /images/math/school_text02_sugaku.png
 category: 数学
+created_at: 2021-05-15
+last_modifeid_at: 2021-06-02
 ---
 
 <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script"></script>

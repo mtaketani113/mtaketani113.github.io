@@ -2,6 +2,7 @@
 layout: default
 title: 兄弟は同値関係だけど友達は・・・
 description: 数学で同値関係というのがあります。兄弟は同値関係ですが、友達は同値関係ではありません。どういった概念かを記載します。
+image: /images/math/school_text02_sugaku.png
 category: 数学
 created_at: 2021-08-18
 last_modifeid_at: 2021-08-18
