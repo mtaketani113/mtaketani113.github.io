@@ -1,6 +1,6 @@
 ---
 layout: default
-title: mvn deployで 422 Unprocessable Entity
+title: mavenのdeployで422
 description: githubにmvn deployでPackageにデプロイする際、422がでました。
 今回の原因はartifactIdに大文字が入っているからで、小文字に変えることで解決しました。
 category: java
