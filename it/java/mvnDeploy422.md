@@ -1,8 +1,7 @@
 ---
 layout: default
 title: mavenのdeployで422
-description: githubにmvn deployでPackageにデプロイする際、422がでました。
-今回の原因はartifactIdに大文字が入っているからで、小文字に変えることで解決しました。
+description: githubにmvn deployでPackageにデプロイする際、422がでました。今回の原因はartifactIdに大文字が入っているからで、小文字に変えることで解決しました。
 category: java
 image: /images/it/java/cafe_mark.png
 created_at: 2022-02-27
