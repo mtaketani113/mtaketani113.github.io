@@ -11,9 +11,6 @@ last_modifeid_at: 2022-03-05
 
 ## 経緯
 
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.css">
-<script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.js"></script>
-
 結構前の開発の話ですが、結構な規模の開発をすることとなりました。
 その開発メンバーですが、システムを内製で手の内化するというのもあり、内製メンバーも開発することになりました。
 
@@ -23,51 +20,43 @@ last_modifeid_at: 2022-03-05
 そこから教育をがっつりする時間もなかったので、
 学習コストが少なくとても有効活用できる[Semantic UI](https://semantic-ui.com/)というのを利用するようにしました。
 
+## 利用準備
+
+CDNがあるので、以下を記載すれば利用できます。
+```
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.css">
+<script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.js"></script>
+```
+
+
 ## クラス名で直感的に書ける
 
 Semantic UIはクラス名で直感的にわかるようになっています。
 
-たとえば
+たとえば、以下のように書いたときの結果です。
 
 ```Javascript
-<div class="ui grid">
-  <div class="eight wide column">
-    <a class="ui button" href="#">東京都</a>
-  </div>
-  <div class="eight wide column">
-    <a class="ui button" href="#">神奈川県</a>
+<div class="ui form">
+  <div class="inline fields">
+    <div class="eight wide field">
+      <label>Name</label>
+      <input type="text" placeholder="姓">
+    </div>
+    <div class="five wide field">
+      <input type="text" placeholder="名">
+    </div>
+    <div class="three wide field">
+      <button class="ui blue labeled icon button">
+        <i class="save icon"></i>
+        Save
+      </button>
+    </div>
   </div>
 </div>
 ```
 
-<div class="ui grid">
-  <div class="eight wide column">
-    <a class="ui button" href="#">東京都</a>
-  </div>
-  <div class="eight wide column">
-    <a class="ui button" href="#">神奈川県</a>
-  </div>
-</div>
-
-```Javascript
-<div class="ui center aligned grid">
-  <div class="eight wide column">
-    <a class="ui button" href="#">東京都</a>
-  </div>
-  <div class="eight wide column">
-    <a class="ui button" href="#">神奈川県</a>
-  </div>
-</div>
-```
-
-<div class="ui center aligned grid">
-  <div class="eight wide column">
-    <a class="ui button" href="#">東京都</a>
-  </div>
-  <div class="eight wide column">
-    <a class="ui button" href="#">神奈川県</a>
-  </div>
-</div>
+<iframe width="100%" height="300" src="//jsfiddle.net/mtaketani113/m5a216kc/embedded/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 ## サンプルが豊富
 
