@@ -56,7 +56,7 @@ Semantic UIはクラス名で直感的にわかるようになっています。
 </div>
 ```
 
-<iframe width="100%" height="300" src="//jsfiddle.net/mtaketani113/m5a216kc/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/mtaketani113/m5a216kc/embedded/result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 ```Javascript
 <button class="ui blue labeled icon button">
@@ -77,7 +77,7 @@ Semantic UIはクラス名で直感的にわかるようになっています。
 </button>
 ```
 
-<iframe width="100%" height="300" src="//jsfiddle.net/mtaketani113/m5a216kc/2/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/mtaketani113/m5a216kc/2/embedded/result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 また、`<div class="eight wide field">`のところでは16分割してそのうちのどれだけ使うかを指定できます。  
 サンプル表示では幅が狭いので縦に並んでいます。幅が狭いと勝手に縦に並べてくれます。
