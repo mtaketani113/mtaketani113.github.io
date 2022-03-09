@@ -3,8 +3,8 @@ layout: default
 title: JavaScriptでパスワード自動生成
 description: Javascriptを使ってパスワードを自動生成するサービスです。どこにも情報を送っていないですし、この画面だけで完結しています。安心して使ってください。
 category: javascript
-created_at: 2022-03-05
-last_modifeid_at: 2022-03-05
+created_at: 2022-03-09
+last_modifeid_at: 2022-03-09
 ---
 
 <script>
@@ -73,8 +73,6 @@ Javascriptを使ってパスワードを自動生成するサービスです。�
 ## 生成されたパスワード
 
 <input type="text" id="createdPassword" readonly="readonly"/>
-
-
 
 ## 実装方法
 
