@@ -38,7 +38,7 @@ last_modifeid_at: 2022-03-05
     var result = Array.from(Array(lengthNumber))
                   .map(()=>useString[Math.floor(Math.random()*useString.length)])
                   .join('');
-    document.getElementById("passwordLength").value = result;
+    document.getElementById("createdPassword").value = result;
 
   }
 
