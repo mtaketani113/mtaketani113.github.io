@@ -74,11 +74,17 @@ Javascriptを使ってパスワードを自動生成するサービスです。�
 
 <input type="text" id="createdPassword" readonly="readonly"/>
 
-## 実装方法
+# 実装方法
 
 実際に書いたプログラムを解説します。
 
-まずはHTMLを作成
+## HTMLを作成
+
+まずはHTMLを作成です。
+普通にチェックボックスと、それに付随する文字を書いているだけです。
+
+各項目にはidをふって、`document.getElementId`で取得できるようにしています。
+また、`<label for="xxx">`で文字をクリックしてもチェックボックスのOn、Offが切り替わるようにしています。
 
 ```Html
 <input type="checkbox" id="useSmallAlphabet" checked="checked"/>
@@ -93,6 +99,8 @@ Javascriptを使ってパスワードを自動生成するサービスです。�
 <input type="checkbox" id="useSymbol"/>
 <label for="useSymbol">記号を利用※</label>
 ```
+
+## Javascriptを作成
 
 つぎはJavascriptです。
 
@@ -139,7 +147,7 @@ window.onload = (event) => {
 };
 ```
 
-まずは定数を準備。
+最初に定数を準備。
 チェックごとに利用する文字列を準備します。
 
 ```Javascript
@@ -148,8 +156,6 @@ const largeAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 const number = "0123456789"
 const symbol = "!#$%&()"
 ```
-
-
 
 ここの部分でチェックを入れた文字列をuseStringに足していきます。
 ```Javascript
@@ -204,3 +210,4 @@ window.onload = (event) => {
 };
 ```
 
+以上が解説です。
