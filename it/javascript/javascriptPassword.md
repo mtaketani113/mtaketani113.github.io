@@ -41,8 +41,9 @@ last_modifeid_at: 2022-03-05
     document.getElementById("createdPassword").value = result;
 
   }
-
-  document.addEventListener('DOMContentLoaded', createPassword());
+  window.onload = (event) => {
+    createPassword()
+  };
 </script>
 
 Javascriptを使ってパスワードを自動生成するサービスです。どこにも情報を送っていないですし、この画面だけで完結しています。安心して使ってください。
