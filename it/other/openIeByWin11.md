@@ -13,19 +13,20 @@ last_modifeid_at: 2022-03-15
 1. 「.vbs」という拡張子で、ファイルを作成する
 
 2. 作成したファイルに以下を記載する。
+
 ```JavaScript
-'IEのオブジェクト作成
+'IEのオブジェクト作成'
 Dim objIE
 Set objIE = CreateObject("InternetExplorer.Application")
 
-'IEを表示する
+'IEを表示する'
 objIE.Visible = True
 
-'トップページを開く
+'トップページを開く'
 objIE.Navigate2 "https://mtaketani113.github.io/"
 ```
  
-3. ファイルをダブルクリックして実行する。
+1. ファイルをダブルクリックして実行する。
 
 これでIEが起動します。
 Windows11の初期段階ではEDGEが起動したのですが、
