@@ -10,9 +10,9 @@ last_modifeid_at: 2022-03-15
  2022年6月15日にIEのサポートがなくなって使えなくなります。Windows11ではIEのExeファイルを実行してもEDGEが開くようになっていますが、VBScriptでIEを開く方法があります。
  超簡単。
 
-1. 「.vbs」という拡張子で、ファイルを作成する
+(1)「.vbs」という拡張子で、ファイルを作成する
 
-2. 作成したファイルに以下を記載する。
+(2)作成したファイルに以下を記載する。
 
 ```JavaScript
 Dim objIE
@@ -23,7 +23,7 @@ objIE.Visible = True
 objIE.Navigate2 "https://mtaketani113.github.io/"
 ```
  
-3. ファイルをダブルクリックして実行する。
+(3)ファイルをダブルクリックして実行する。
 
 これでIEが起動します。
 Windows11の初期段階ではEDGEが起動したのですが、
