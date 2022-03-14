@@ -26,7 +26,7 @@ objIE.Visible = True
 objIE.Navigate2 "https://mtaketani113.github.io/"
 ```
  
-1. ファイルをダブルクリックして実行する。
+3. ファイルをダブルクリックして実行する。
 
 これでIEが起動します。
 Windows11の初期段階ではEDGEが起動したのですが、
