@@ -14,14 +14,14 @@ last_modifeid_at: 2022-03-15
 
 2. 作成したファイルに以下を記載する。
  ```JavaScript
-'IEのオブジェクト作成
+'IEのオブジェクト作成`
 Dim objIE
 Set objIE = CreateObject("InternetExplorer.Application")
 
-'IEを表示する
+'IEを表示する`
 objIE.Visible = True
 
-'トップページを開く
+'トップページを開く`
 objIE.Navigate2 "https://mtaketani113.github.io/"
  ```
  
