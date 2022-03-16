@@ -10,11 +10,10 @@ last_modifeid_at: 2022-03-17
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script> 
 <script type="text/JavaScript">
 
-  $(function(){
-    let qrtext = $("#qrtext").val();
-    let utf8qrtext = unescape(encodeURIComponent(qrtext));
-    
+  $(function(){   
     $("#qrCreateButton").click(function(){
+      let qrtext = $("#qrtext").val();
+      let utf8qrtext = unescape(encodeURIComponent(qrtext));
       $("#img-qr").html("");
       $("#img-qr").qrcode({text:utf8qrtext}); 
     });
