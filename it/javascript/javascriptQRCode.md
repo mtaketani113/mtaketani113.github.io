@@ -34,7 +34,11 @@ Javascriptを使ってQRコードを作成するサービスです。
 ## QRコードにしたい文字列
 
 <input type="text" id="qrtext"/>
-<input type="text" id="qrsize" val="160"/>
+
+## QRコードのサイズ
+
+<input type="text" id="qrsize" value="160"/>
+
 <input type="button" id="qrCreateButton" value="QRコード生成"/>
 
 ## QRコード
@@ -74,7 +78,7 @@ Javascriptを使ってQRコードを作成するサービスです。
 </script>
 
 <input type="text" id="qrtext"/>
-<input type="text" id="qrsize" val="160"/>
+<input type="text" id="qrsize" value="160"/>
 <input type="button" id="qrCreateButton" value="QRコード生成"/>
 
 <div id="img-qr"></div>
@@ -89,7 +93,7 @@ Javascriptを使ってQRコードを作成するサービスです。
 以下が入力と実行ボタンと結果を出力する箇所です。IDを振ってます。
 ```Html
 <input type="text" id="qrtext"/>
-<input type="text" id="qrsize" val="160"/>
+<input type="text" id="qrsize" value="160"/>
 <input type="button" id="qrCreateButton" value="QRコード生成"/>
 
 <div id="img-qr"></div>
