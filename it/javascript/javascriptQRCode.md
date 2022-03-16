@@ -11,7 +11,7 @@ last_modifeid_at: 2022-03-17
 <script type="text/JavaScript">
 
   $(function(){
-    let qrtext = $("qrtext").val();
+    let qrtext = $("#qrtext").val();
     let utf8qrtext = unescape(encodeURIComponent(qrtext));
     
     $("#qrCreateButton").click(function(){
