@@ -180,7 +180,7 @@ table {
 
 th {
   font-weight: 500;
-  border-color: #000;
+  border: #ccc;
 }
 
 table tr:nth-child(odd) td {
@@ -190,8 +190,7 @@ table tr:nth-child(odd) td {
 td {
   font-weight: 300;
   text-align: center;
-  border-color: #000;
-  border: 1px solid #ebebeb;
+  border: 1px solid #ccc;
 }
 
 form {
