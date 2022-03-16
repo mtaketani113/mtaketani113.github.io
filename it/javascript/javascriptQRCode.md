@@ -17,6 +17,12 @@ last_modifeid_at: 2022-03-17
       $("#img-qr").html("");
       $("#img-qr").qrcode({text:utf8qrtext}); 
     });
+    
+    $("#qrtext").keypress(function(e){
+      if(e.which == 13){
+        $("#qrCreateButton").click();
+      }
+    });
   });
 
 </script>
