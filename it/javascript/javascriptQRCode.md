@@ -14,11 +14,12 @@ last_modifeid_at: 2022-03-17
     $("#qrCreateButton").click(function(){
       let qrtext = $("#qrtext").val();
       let utf8qrtext = unescape(encodeURIComponent(qrtext));
+      let size = $("#qrsize").val();
       $("#img-qr").html("");
-      $("#img-qr").qrcode({text:utf8qrtext}); 
+      $("#img-qr").qrcode({width:size,height:size,text:utf8qrtext}); 
     });
-    
-    $("#qrtext").keypress(function(e){
+
+    $("#qrtext, #qrsize").keypress(function(e){
       if(e.which == 13){
         $("#qrCreateButton").click();
       }
@@ -33,7 +34,7 @@ Javascriptを使ってQRコードを作成するサービスです。
 ## QRコードにしたい文字列
 
 <input type="text" id="qrtext"/>
-
+<input type="text" id="qrsize" val="160"/>
 <input type="button" id="qrCreateButton" value="QRコード生成"/>
 
 ## QRコード
@@ -43,3 +44,74 @@ Javascriptを使ってQRコードを作成するサービスです。
 # 実装方法（作成中）
 
 実際に書いたプログラムを解説します。
+
+こちらを参考にしています。
+
+[JavaScriptでQRコードを作成【jQuery】](https://onoredekaiketsu.com/create-qr-code-with-javascript/)
+
+以下が記載したプログラムです。
+```HTML
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script> 
+<script type="text/JavaScript">
+
+  $(function(){   
+    $("#qrCreateButton").click(function(){
+      let qrtext = $("#qrtext").val();
+      let utf8qrtext = unescape(encodeURIComponent(qrtext));
+      let size = $("#qrsize").val();
+      $("#img-qr").html("");
+      $("#img-qr").qrcode({width:size,height:size,text:utf8qrtext}); 
+    });
+    
+    $("#qrtext, #qrsize").keypress(function(e){
+      if(e.which == 13){
+        $("#qrCreateButton").click();
+      }
+    });
+  });
+
+</script>
+
+<input type="text" id="qrtext"/>
+<input type="text" id="qrsize" val="160"/>
+<input type="button" id="qrCreateButton" value="QRコード生成"/>
+
+<div id="img-qr"></div>
+```
+
+以下で、JqueryとQRCodeを生成するJqueryの拡張のCDNを読み込みます。
+```Html
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script> 
+```
+
+以下が入力と実行ボタンと結果を出力する箇所です。IDを振ってます。
+```Html
+<input type="text" id="qrtext"/>
+<input type="text" id="qrsize" val="160"/>
+<input type="button" id="qrCreateButton" value="QRコード生成"/>
+
+<div id="img-qr"></div>
+```
+
+以下でボタンをクリックしたときの動作を記載しています。
+```Javascript
+  $("#qrCreateButton").click(function(){
+    let qrtext = $("#qrtext").val();
+    let utf8qrtext = unescape(encodeURIComponent(qrtext));
+    let size = $("#qrsize").val();
+    $("#img-qr").html("");
+    $("#img-qr").qrcode({width:size,height:size,text:utf8qrtext}); 
+  });
+```
+
+`unescape(encodeURIComponent(qrtext));`で文字化けしないようにしています。
+
+こちらでinput項目でエンターを押した時に更新されるようにしています。
+```Javascript
+  $("#qrtext, #qrsize").keypress(function(e){
+    if(e.which == 13){
+      $("#qrCreateButton").click();
+    }
+```
