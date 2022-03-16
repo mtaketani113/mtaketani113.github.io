@@ -13,8 +13,11 @@ last_modifeid_at: 2022-03-17
   $(function(){
     let qrtext = $("qrtext").val();
     let utf8qrtext = unescape(encodeURIComponent(qrtext));
-    $("#img-qr").html("");
-    $("#img-qr").qrcode({text:utf8qrtext}); 
+    
+    $("#qrCreateButton").click(function(){
+      $("#img-qr").html("");
+      $("#img-qr").qrcode({text:utf8qrtext}); 
+    });
   });
 
 </script>
@@ -25,6 +28,8 @@ Javascriptを使ってQRコードを作成するサービスです。
 ## QRコードにしたい文字列
 
 <input type="text" id="qrtext"/>
+
+<input type="button" id="qrCreateButton" value="QRコード生成"/>
 
 ## QRコード
 
