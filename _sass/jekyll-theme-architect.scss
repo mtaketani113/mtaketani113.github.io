@@ -182,6 +182,10 @@ th {
   font-weight: 500;
 }
 
+table tr:nth-child(odd) td {
+	background: #fff;
+}
+
 td {
   font-weight: 300;
   text-align: center;
