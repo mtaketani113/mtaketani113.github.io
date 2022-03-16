@@ -43,8 +43,11 @@ Javascriptを使ってQRコードを作成するサービスです。
 
 ## QRコード
 
-<div id="img-qr"></div>
+<div id="img-qr">
+未実行
+</div>
 
+↑生成後に右クリックして画像コピーなどで持っていけます。
 # 実装方法
 
 実際に書いたプログラムを解説します。
@@ -81,7 +84,9 @@ Javascriptを使ってQRコードを作成するサービスです。
 <input type="text" id="qrsize" value="160"/>
 <input type="button" id="qrCreateButton" value="QRコード生成"/>
 
-<div id="img-qr"></div>
+<div id="img-qr">
+未実行
+</div>
 ```
 
 以下で、JqueryとQRCodeを生成するJqueryの拡張のCDNを読み込みます。
@@ -96,7 +101,9 @@ Javascriptを使ってQRコードを作成するサービスです。
 <input type="text" id="qrsize" value="160"/>
 <input type="button" id="qrCreateButton" value="QRコード生成"/>
 
-<div id="img-qr"></div>
+<div id="img-qr">
+未実行
+</div>
 ```
 
 以下でボタンをクリックしたときの動作を記載しています。
