@@ -1,6 +1,6 @@
 ---
 layout: default
-title: JavaScriptバーコード作成
+title: JavaScriptでバーコード作成
 description: Javascriptを使ってバーコードを作成するサービスです。どこにも情報を送っていないですし、この画面だけで完結しています。安心して使ってください。
 category: javascript
 created_at: 2022-03-18
