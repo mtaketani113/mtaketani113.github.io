@@ -13,8 +13,11 @@ last_modifeid_at: 2022-03-17
   $(function(){   
     $("#barcodeCreateButton").click(function(){
       let barcodeText = $("#barcode-text").val();
+      let width = $("#width").val();
+      let height = $("#height").val();
+      let barcodeType = $('input:radio[name="barcodeType"]:checked').val();
       $("#img-barcord").html("");
-      $("#img-barcord").barcode(barcodeText, "code39",{barWidth:1, barHeight:20,output:"css"});
+      $("#img-barcord").barcode(barcodeText, barcodeType,{barWidth:width, barHeight:height,output:"css"});
     });
 
     $("#barcode-text,").keypress(function(e){
@@ -33,6 +36,19 @@ Javascriptを使ってバーコードを作成するサービスです。
 
 <input type="text" id="barcode-text"/>
 
+## バーコードの種類
+
+<input type="radio" name="barcodeType" id="code39" checked="checked" value="code39"/>
+<label for="code39">code39</label>
+
+<input type="radio" name="barcodeType" id="ean13" value="ean13"/>
+<label for="ean13">ean13</label>
+
+## QRコードのサイズ
+
+<input type="text" id="width" value="3"/>横
+
+<input type="text" id="height" value="60"/>縦
 
 <input type="button" id="barcodeCreateButton" value="バーコード生成"/>
 
