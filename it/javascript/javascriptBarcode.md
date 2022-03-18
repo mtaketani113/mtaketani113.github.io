@@ -20,7 +20,7 @@ last_modifeid_at: 2022-03-17
       $("#img-barcord").barcode(barcodeText, barcodeType,{barWidth:width, barHeight:height,output:"css"});
     });
 
-    $("#barcode-text,width,height").keypress(function(e){
+    $("#barcode-text,#width,#height").keypress(function(e){
       if(e.which == 13){
         $("#barcodeCreateButton").click();
       }
