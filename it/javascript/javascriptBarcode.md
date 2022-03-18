@@ -20,7 +20,7 @@ last_modifeid_at: 2022-03-17
       $("#img-barcord").barcode(barcodeText, barcodeType,{barWidth:width, barHeight:height,output:"css"});
     });
 
-    $("#barcode-text,").keypress(function(e){
+    $("#barcode-text,width,height").keypress(function(e){
       if(e.which == 13){
         $("#barcodeCreateButton").click();
       }
@@ -44,11 +44,11 @@ Javascriptを使ってバーコードを作成するサービスです。
 <input type="radio" name="barcodeType" id="ean13" value="ean13"/>
 <label for="ean13">ean13</label>
 
-## QRコードのサイズ
+## バーコードのサイズ
 
-<input type="text" id="width" value="3"/>横
+<input type="text" id="width" value="3"/>横幅
 
-<input type="text" id="height" value="60"/>縦
+<input type="text" id="height" value="60"/>縦の長さ
 
 <input type="button" id="barcodeCreateButton" value="バーコード生成"/>
 
