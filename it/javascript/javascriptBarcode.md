@@ -60,4 +60,36 @@ Javascriptを使ってバーコードを作成するサービスです。
 
 ↑生成後に右クリックして「画像をコピー」などで持っていけます。
 
-# 実装方法(作成中)
+# 実装方法
+
+今回は「jquery-barcode.js」を利用しました。
+
+[QRコード生成](/it/javascript/javascriptQRCode.html)とちがってCDNがなかったので、
+
+GithubのファイルをCDNとして利用できる以下のサービスを利用しました。
+
+https://www.jsdelivr.com/
+
+元のリポジトリがなくなると使えないのでとりあえずForkして、
+それを読み込みました。
+
+以下のような感じです。
+
+```Html
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/mtaketani113/jquery-barcode@master/jquery-barcode.js"></script> 
+```
+
+`mtaketani113/jquery-barcode@master/jquery-barcode.js`ここの部分が
+`{ユーザ}/{リポジトリ}@{ブランチまたはタグ}/{ファイルパス}`のようにすることで利用できます。
+
+あとは、QRコード生成と同じようにjQueryで実装しています。
+詳細は、F12で参照ください。
+
+バーコードにはいろいろ種類があって、
+今回は「code39」と「ean13」を利用できるようにしました。
+
+「code39」は英数字と一部記号を利用できます。
+
+「ean13」は12桁で数字のみです。なので12桁ないと生成できません。
+アルファベットを入れても生成できません。また、13桁目に1つ数字型されます。チェックディジットといわれるやつです。1文字間違って読み込んだり入れ替わっても誤り訂正してくれます。
