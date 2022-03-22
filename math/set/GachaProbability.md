@@ -18,7 +18,7 @@ last_modifeid_at: 2022-03-23
 当たる確率を $$ \frac{1}{n} $$ として $$ n $$ 回引いたとしましょう。
 
 1回がガチャを引いて外れる確率は $$ 1 - \frac{1}{n} $$ なので
-n回とも外れる確率は $$ \left(1 - \displaystyle\frac{1}{n}\right)^n $$ です。
+$$ n $$ 回とも外れる確率は $$ \left(1 - \displaystyle\frac{1}{n}\right)^n $$ です。
 
 ここで少し計算してみましょう。
 
