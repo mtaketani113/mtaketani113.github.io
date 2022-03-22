@@ -32,8 +32,8 @@ $$
 \end{align*}
 $$
 
-$$ \left(1 - \displaystyle\frac{1}{N}\right)^N $$ は高校数学で学んだ自然対数の底 $$ e ≒ 2.718 $$
-に収束しますので、 $$ \left(1 - \displaystyle\frac{1}{N}\right)^{-N} $$ は $$ \frac{1}{e} $$ に収束します。
+$$ \left(1 + \displaystyle\frac{1}{N}\right)^N $$ は高校数学で学んだ自然対数の底 $$ e ≒ 2.718 $$
+に収束しますので、逆数の $$ \left(1 + \displaystyle\frac{1}{N}\right)^{-N} $$ は $$ \frac{1}{e} $$ に収束します。
 また $$ \left(1 - \displaystyle\frac{1}{N}\right)^{-1} $$ は $$ N $$ を大きくすると$$ 1 $$ に収束します。
 
 なのでn回とも外れる確率は $$ \frac{1}{e} $$ に収束します。
