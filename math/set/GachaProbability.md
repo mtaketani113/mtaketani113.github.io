@@ -27,7 +27,6 @@ $$
 \left(1 - \displaystyle\frac{1}{n}\right)^n &= \left(\displaystyle\frac{n-1}{n}\right)^n \\
 &= \left(\displaystyle\frac{n-1}{(n-1) + 1}\right)^n \\
 &= \left(\displaystyle\frac{(n-1) + 1}{(n-1)}\right)^{-n} \\
-&= \left(\displaystyle\frac{(n-1) + 1}{(n-1)}\right)^{-n} \\
 &= \left(1 + \displaystyle\frac{1}{n-1}\right)^{-(n-1)-1} \\
 &= \left(1 + \displaystyle\frac{1}{N}\right)^{-N} \times \left(1 - \displaystyle\frac{1}{N}\right)^{-1} \quad (N=n-1)
 \end{align*}
