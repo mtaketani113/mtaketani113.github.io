@@ -51,13 +51,15 @@ last_modifeid_at: 2022-03-24
           outputMessage.hidden = true;
           outputData.parentElement.hidden = false;
           let codeData = code.data;
-          let innerTextData;
+          let innerData;
           if(codeData != null && (codeData.startsWith('https://') || codeData.startsWith('http://'))){
-            innerTextData = '<a href="' +  codeData + '">' + codeData + '</a>'
+            innerData = '<a href="' +  codeData + '">' + codeData + '</a>'
+            outputData.innerHTML = innerData;
           }else{
             innerTextData = codeData;
+            outputData.innerText = innerData;
           }
-          outputData.innerText = innerTextData;
+          
         } else {
           //処理なし
         }
