@@ -80,9 +80,10 @@ Javascriptを使ってQRコードを読み込む作成するサービスです�
 
 ## QRコードのデコード
 
+<div id="output" hidden>
+  <div id="outputMessage">こちらにかざした読み込んだQRコードのデコード結果を表示します。</div>
+  <div hidden><b>読み込んだデータ:</b> <span id="outputData"></span></div>
+</div>
+
 <div id="loadingMessage"></div>
 <canvas id="canvas" hidden></canvas>
-<div id="output" hidden>
-  <div id="outputMessage">No QR code detected.</div>
-  <div hidden><b>Data:</b> <span id="outputData"></span></div>
-</div>
