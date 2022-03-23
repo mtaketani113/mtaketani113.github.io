@@ -51,13 +51,10 @@ last_modifeid_at: 2022-03-24
           outputMessage.hidden = true;
           outputData.parentElement.hidden = false;
           let codeData = code.data;
-          let innerData;
           if(codeData != null && (codeData.startsWith('https://') || codeData.startsWith('http://'))){
-            innerData = '<a href="' +  codeData + '">' + codeData + '</a>'
-            outputData.innerHTML = innerData;
+            outputData.innerHTML = '<a href="' +  codeData + '">' + codeData + '</a>'
           }else{
-            innerTextData = codeData;
-            outputData.innerText = innerData;
+            outputData.innerText = codeData;
           }
           
         } else {
