@@ -43,13 +43,21 @@ last_modifeid_at: 2022-03-24
           inversionAttempts: "dontInvert",
         });
         if (code) {
+          // QRコードの部分を赤枠で囲う
           drawLine(code.location.topLeftCorner, code.location.topRightCorner, "#FF3B58");
           drawLine(code.location.topRightCorner, code.location.bottomRightCorner, "#FF3B58");
           drawLine(code.location.bottomRightCorner, code.location.bottomLeftCorner, "#FF3B58");
           drawLine(code.location.bottomLeftCorner, code.location.topLeftCorner, "#FF3B58");
           outputMessage.hidden = true;
           outputData.parentElement.hidden = false;
-          outputData.innerText = code.data;
+          let codeData = code.data;
+          let innerTextData;
+          if(codeData != null && (codeData.startsWith('https://') || codeData.startsWith('http://'))){
+            innerTextData = '<a href="' +  codeData + '">' + codeData + '</a>'
+          }else{
+            innerTextData = codeData;
+          }
+          outputData.innerText = innerTextData;
         } else {
           //処理なし
         }
