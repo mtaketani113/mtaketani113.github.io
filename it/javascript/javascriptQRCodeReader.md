@@ -61,6 +61,7 @@ last_modifeid_at: 2022-03-24
     $("#start").click(() => {
       navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" }, audio: false })
         .then(stream => {
+          video.srcObject = stream;
           video.setAttribute("playsinline", true); 
           video.play();
           requestAnimationFrame(tick);
@@ -73,9 +74,9 @@ last_modifeid_at: 2022-03-24
 Javascriptを使ってQRコードを読み込む作成するサービスです。(作成中)
 どこにも情報を送っていないですし、この画面だけで完結しています。安心して使ってください。
 
-<video id="video" autoplay=""></video>
+カメラ利用の許可が出ますので、許可していただくと使えます。
 
-<button id="start">QRコード読み込み</button>
+<button id="start">QRコード読み込みを開始</button>
 
 ## QRコードのデコード
 
