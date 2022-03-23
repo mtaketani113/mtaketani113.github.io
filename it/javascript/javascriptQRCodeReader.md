@@ -58,16 +58,9 @@ last_modifeid_at: 2022-03-24
       requestAnimationFrame(tick);
     }
 
-    // 読み込みのボタン
-    const $start = $("#start");
-    // video要素
-    const $video = $("#video");
-
     $("#start").click(() => {
       navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" }, audio: false })
         .then(stream => {
-          $video[0].srcObject = stream
-          video.srcObject = stream;
           video.setAttribute("playsinline", true); 
           video.play();
           requestAnimationFrame(tick);
