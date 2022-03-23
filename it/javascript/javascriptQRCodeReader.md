@@ -19,7 +19,7 @@ last_modifeid_at: 2022-03-24
       navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" }, audio: false })
         .then(stream => $video[0].srcObject = stream)
         .catch(err => alert(`${err.name} ${err.message}`));
-    }, false);
+    });
   });
 
 </script>
