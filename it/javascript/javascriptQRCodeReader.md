@@ -51,8 +51,7 @@ last_modifeid_at: 2022-03-24
           outputData.parentElement.hidden = false;
           outputData.innerText = code.data;
         } else {
-          outputMessage.hidden = false;
-          outputData.parentElement.hidden = true;
+          //処理なし
         }
       }
       requestAnimationFrame(tick);
