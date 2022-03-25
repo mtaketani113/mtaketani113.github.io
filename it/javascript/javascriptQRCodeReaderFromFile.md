@@ -110,7 +110,7 @@ Javascriptを使ってファイルからQRコードを読み込み、内容を�
 以下を参考に作成しています。  
 [HTML と JavaScript だけで QR コード読み取り](http://dotnsf.blog.jp/archives/1078584611.html)
 
-<input type="file" accept="image/*" capture="camera" name="file" id="file-image"/>
+<input type="file" accept="image/*" name="file" id="file-image"/>
 
 ## QRコードのデコード
 
