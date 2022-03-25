@@ -116,9 +116,8 @@ Javascriptを使ってファイルからQRコードを読み込み、内容を�
 
 ## QRコードのデコード
 
-<div id="output" hidden>
-  <div hidden><b>読み込んだデータ:</b> <span id="outputData"></span></div>
-</div>
+<div hidden><b>読み込んだデータ:</b> <span id="outputData"></span></div>
+
 
 <div id="loadingMessage"></div>
 <canvas id="canvas" hidden></canvas>
