@@ -30,10 +30,9 @@ last_modifeid_at: 2022-03-27
       		$soundFile.currentTime = 0;
 	      }
 	      $soundFile.play() ;
-        if(typeof navigator.vibrate == 'function'){ navigator.vibrate(200); };
+        if(typeof navigator.vibrate == 'function'){ navigator.vibrate(4000); };
       }
     });
-
 
   });
 
