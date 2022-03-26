@@ -32,7 +32,7 @@ last_modifeid_at: 2022-03-27
 	      $soundFile.play() ;
         if(typeof navigator.vibrate == 'function'){ navigator.vibrate(200); };
       }
-    }
+    });
 
 
   });
