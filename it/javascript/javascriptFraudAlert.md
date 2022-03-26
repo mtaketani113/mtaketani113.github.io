@@ -59,10 +59,10 @@ IPアドレスなんて変わります。
 
 <button id="searchIpAdress">IPから情報取得</button>
 
-国：<span ip="country"></span>
-都道府県：<span ip="region"></span>
-市、区：<span ip="city"></span>
-IPアドレス：<span ip="ipAdress"></span>
+国：<span id="country"></span>  
+都道府県：<span id="region"></span>  
+市、区：<span id="city"></span>  
+IPアドレス：<span id="ipAdress"></span>  
 
 ## アラー音を出して不安をあおる
 
