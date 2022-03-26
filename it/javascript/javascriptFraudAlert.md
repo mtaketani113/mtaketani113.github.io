@@ -3,8 +3,8 @@ layout: default
 title: JavaScriptによる詐欺に対抗
 description: Javascriptを使って人をだます人がいます。そんな人に引っかからないように手法をいくつか紹介します。
 category: javascript
-created_at: 2022-03-26
-last_modifeid_at: 2022-03-26
+created_at: 2022-03-27
+last_modifeid_at: 2022-03-27
 ---
 
 <script src="https://cdn.jsdelivr.net/gh/mtaketani113/jquery-barcode@master/jquery-barcode.js"></script> 
