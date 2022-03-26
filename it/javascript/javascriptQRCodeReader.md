@@ -74,16 +74,16 @@ last_modifeid_at: 2022-03-26
           video.setAttribute("playsinline", true); 
           video.play();
           requestAnimationFrame(tick);
+          $("#start").hide();
+          $("#stop").show();
         }).catch(err => alert(`${err.name} ${err.message}`));
-      $(this).hide();
-      $("#stop").show();
     });
 
     $("#stop").click(() => {
       localStream.getVideoTracks().forEach((track) => {
         track.stop();
       });
-      $(this).hide();
+      $("#stop").hide();
       $("#start").show();
     });
   });
