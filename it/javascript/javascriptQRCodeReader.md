@@ -64,14 +64,27 @@ last_modifeid_at: 2022-03-24
       requestAnimationFrame(tick);
     }
 
+    let localStream;
+
     $("#start").click(() => {
       navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" }, audio: false })
         .then(stream => {
+          localstream = stream;
           video.srcObject = stream;
           video.setAttribute("playsinline", true); 
           video.play();
           requestAnimationFrame(tick);
+          $(this).hide();
+          $("#stop").show();
         }).catch(err => alert(`${err.name} ${err.message}`));
+    });
+
+    $("#stop").click(() => {
+      localstrem.getVideoTracks().forEach((track) => {
+        track.stop();
+      });
+      $(this).hide();
+      $("#start").show();
     });
   });
 
@@ -86,6 +99,7 @@ Javascriptを使ってQRコードを読み込む作成するサービスです�
 カメラ利用の許可が出ますので、許可していただくと使えます。
 
 <button id="start">QRコード読み込みを開始</button>
+<button id="stop" hidden>停止</button>
 
 ## QRコードのデコード
 
