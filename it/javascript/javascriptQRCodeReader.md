@@ -4,7 +4,7 @@ title: JavaScriptでQRコードリーダー
 description: Javascriptを使ってQRコードを読み込み、内容を表示するサービスです。
 category: javascript
 created_at: 2022-03-24
-last_modifeid_at: 2022-03-24
+last_modifeid_at: 2022-03-26
 ---
 <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js"></script>
 
@@ -64,23 +64,23 @@ last_modifeid_at: 2022-03-24
       requestAnimationFrame(tick);
     }
 
-    let localStream;
+    let localStream = null;
 
     $("#start").click(() => {
       navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" }, audio: false })
         .then(stream => {
-          localstream = stream;
+          localStream = stream;
           video.srcObject = stream;
           video.setAttribute("playsinline", true); 
           video.play();
           requestAnimationFrame(tick);
-          $(this).hide();
-          $("#stop").show();
         }).catch(err => alert(`${err.name} ${err.message}`));
+      $(this).hide();
+      $("#stop").show();
     });
 
     $("#stop").click(() => {
-      localstrem.getVideoTracks().forEach((track) => {
+      localStream.getVideoTracks().forEach((track) => {
         track.stop();
       });
       $(this).hide();
