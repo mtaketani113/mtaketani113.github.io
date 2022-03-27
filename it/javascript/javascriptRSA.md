@@ -45,8 +45,8 @@ Javascriptを使ってRSA暗号の秘密鍵と公開鍵を作成するサービ�
 
 ## 秘密鍵
 
-<textarea> id="privateKey"></textarea>
+<textarea readonly id="privateKey" style="width: 90%;"></textarea>
 
 ## 公開鍵
 
-<textarea id="publicKey"></textarea>
+<textarea readonly id="publicKey" style="width: 90%;"></textarea>
