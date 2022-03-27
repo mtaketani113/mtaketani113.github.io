@@ -17,7 +17,7 @@ last_modifeid_at: 2022-03-28
       let passPhrase = $("#passPhrase").val();
       let privateKey = cryptico.generateRSAKey(passPhrase, 1024);
 
-      $("#privateKey").text(privateKey);
+      $("#privateKey").text(JSON.stringify(privateKey));
       
       // 公開鍵を作成
       var publicKey = cryptico.publicKeyString(privateKey);
@@ -28,7 +28,7 @@ last_modifeid_at: 2022-03-28
 
 </script>
 
-Javascriptを使って秘密鍵と公開鍵を作成するサービスです。
+Javascriptを使ってRSA暗号の秘密鍵と公開鍵を作成するサービスです。
 作成のたびに
 どこにも情報を送っていないですし、この画面だけで完結しています。安心して使ってください。
 
@@ -45,8 +45,8 @@ Javascriptを使って秘密鍵と公開鍵を作成するサービスです。
 
 ## 秘密鍵
 
-<div id="privateKey"></div>
+<textarea> id="privateKey"></textarea>
 
 ## 公開鍵
 
-<div id="publicKey"></div>
+<textarea id="publicKey"></textarea>
