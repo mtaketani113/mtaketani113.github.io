@@ -12,15 +12,15 @@ last_modifeid_at: 2022-03-27
 
   $(function(){   
     $("#searchIpAdress").click(function(){
-      $.get("https://ipinfo.io", (res) =>{
-
-        if(confirm("他サイト(https://ipinfo.io/)にアクセスします。よろしいですか？")){
+      if(confirm("他サイト(https://ipinfo.io/)にアクセスします。よろしいですか？")){
+        $.get("https://ipinfo.io", (res) =>{
           $("#country").text(res.country);
           $("#region").text(res.region);
           $("#city").text(res.city);
           $("#ipAdress").text(res.ip);
-        }
-      }, "jsonp");
+        
+        }, "jsonp");
+      }
     });
 
     $("#alert").click(function(){
@@ -63,7 +63,7 @@ IPアドレスなんて変わります。
 市、区：<span id="city"></span>  
 IPアドレス：<span id="ipAdress"></span>  
 
-## アラー音を出して不安をあおる
+## 警告音を出して不安をあおる
 
 次はアラート音を出してビビらせるタイプです。
 プラスアルファでスマフォの場合はバイブレーションするとビビり度マックスですよね・・・
@@ -83,6 +83,8 @@ IPアドレス：<span id="ipAdress"></span>
 </audio>
 
 <button id="alert">警告音+バイブ</button>
+
+後、他にもカメラのシャッター音にして撮影したと脅してくるところもあるようです。
 
 ## まとめ
 
