@@ -4,7 +4,7 @@ title: JavaScriptによる詐欺に対抗
 description: Javascriptを使って人をだます人がいます。そんな人に引っかからないように手法をいくつか紹介します。
 category: javascript
 created_at: 2022-03-27
-last_modifeid_at: 2022-03-27
+last_modifeid_at: 2022-03-28
 ---
 
 <script src="https://cdn.jsdelivr.net/gh/mtaketani113/jquery-barcode@master/jquery-barcode.js"></script> 
@@ -50,6 +50,8 @@ last_modifeid_at: 2022-03-27
 
 実は、IPアドレスなどから県、市くらいまではわかるのです。ただそれを表示しているだけです。
 IPアドレスなんて変わります。
+
+ただ、スマホの4Gとかだと東京になります。Wifi接続だと、地域が出ます。
 
 実際以下のボタンを押すと、
 `https://ipinfo.io/`にアクセスして、ご自身の国、県を表示します。
