@@ -28,17 +28,17 @@ last_modifeid_at: 2022-04-01
     $("#registCookie").click(() => {
       if(confirm("cookieに秘密鍵と公開鍵を登録します。よいですか？")){
         let m = 60*60*24*30;
-        document.cookie = "_publickKey=" + $("#publicKey").text()
+        document.cookie = "publicKey=" + $("#publicKey").text()
                             + "; path=/it/javascript/;max-age=" + m;
-        document.cookie = "_privateKey=" + $("#privateKey").text()
+        document.cookie = "privateKey=" + $("#privateKey").text()
                             + "; path=/it/javascript/;max-age=" + m;
       }
     });
 
     $("#deleteCookie").click(() => {
       if(confirm("cookieから削除します。よいですか？")){
-        document.cookie = "_publickKey=;max-age=0";
-        document.cookie = "_privateKey=;max-age=0";
+        document.cookie = "publicKey=;max-age=0";
+        document.cookie = "privateKey=;max-age=0";
       }
     });    
   });
