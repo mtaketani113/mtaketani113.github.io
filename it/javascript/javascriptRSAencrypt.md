@@ -14,12 +14,11 @@ last_modifeid_at: 2022-04-01
 
     var splitData = document.cookie.split("; ").filter(s => s.startsWith("_publicKey="))
 
-    if(splitData.length() > 0){
+    if(splitData.length > 0){
       let publicKey = splitData[0].split("=")[1]
-      $("#publicKey").val(publicKey)
-
+      $("#publicKey").val(publicKey);
     }
-    
+
     $("#crypt").click(() => {
       let planText = $("#planText").val();
       let publicKey = $("#publicKey").val();
