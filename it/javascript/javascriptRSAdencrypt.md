@@ -16,7 +16,7 @@ last_modifeid_at: 2022-04-01
 
     if(splitData.length > 0){
       let privateKey = splitData[0].split("=")[1]
-      $("#rsaKeyString").val(publicKey);
+      $("#rsaKeyString").val(privateKey);
     }
 
     $("#decrypt").click(() => {
