@@ -17,7 +17,7 @@ last_modifeid_at: 2022-04-01
       let encryptText = $("#encryptText").text(publicKey);
 
       var encryptionResult = cryptico.encrypt(planText, encryptText);
-      $("#cryptText").text(encryptionResult);
+      $("#cryptText").text(encryptionResult.cipher);
     });
   });
 
