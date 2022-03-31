@@ -6,7 +6,7 @@ category: javascript
 created_at: 2022-03-28
 last_modifeid_at: 2022-03-28
 ---
-<script src="https://cdn.jsdelivr.net/gh/mtaketani113/cryptico@1.0.0/cryptico.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/gh/mtaketani113/cryptico@1.0.1/cryptico.min.js"></script> 
 
 <script type="text/JavaScript">
   
