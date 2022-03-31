@@ -1,6 +1,6 @@
 ---
 layout: default
-title: JavaScriptで暗号化
+title: JavaScriptで復号化
 description: Javascriptを使って秘密鍵で複合化するサービスです。
 category: javascript
 created_at: 2022-04-01

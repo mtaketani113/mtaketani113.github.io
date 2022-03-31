@@ -41,4 +41,4 @@ last_modifeid_at: 2022-04-01
 
 ## 暗号化した文
 
-<textarea id="encryptText" style="width: 90%;"></textarea>
+<textarea readonly id="encryptText" style="width: 90%;"></textarea>
