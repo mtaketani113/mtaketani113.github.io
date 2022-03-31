@@ -38,7 +38,7 @@ last_modifeid_at: 2022-04-01
     $("#deleteCookie").click(() => {
       if(confirm("cookieから削除します。よいですか？")){
         document.cookie = "_publickKey=;max-age=0";
-        document.cookie = "_privateKey=";max-age=0";
+        document.cookie = "_privateKey=;max-age=0";
       }
     });    
   });
