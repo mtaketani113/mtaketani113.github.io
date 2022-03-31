@@ -12,6 +12,13 @@ last_modifeid_at: 2022-04-01
   
   $(function(){
 
+    var splitData = document.cookie.split("; ").filter(s => s.startsWith("_privateKey="))
+
+    if(splitData.length > 0){
+      let privateKey = splitData[0].split("=")[1]
+      $("#rsaKeyString").val(publicKey);
+    }
+
     $("#decrypt").click(() => {
       let encryptText = $("#encryptText").val();
       let rsaKeyString = $("#rsaKeyString").val();
