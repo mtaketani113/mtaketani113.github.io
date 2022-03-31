@@ -19,7 +19,7 @@ last_modifeid_at: 2022-04-01
       let rsaKey = cryptico.parseStringToRsaKey(rsaKeyString);
       
       var decryptionResult = cryptico.decrypt(encryptText, rsaKey);
-      $("#decryptText").val(decryptionResult);
+      $("#decryptText").val(decryptionResult.plaintext);
     });
   });
 
