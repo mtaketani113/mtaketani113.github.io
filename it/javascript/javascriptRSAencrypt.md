@@ -14,7 +14,7 @@ last_modifeid_at: 2022-04-01
 
     $("#crypt").click(() => {
       let planText = $("#planText").val();
-      let publicKey = $("#publicKey").text();
+      let publicKey = $("#publicKey").val();
 
       var encryptionResult = cryptico.encrypt(planText, publicKey);
       $("#cryptText").text(encryptionResult.cipher);
