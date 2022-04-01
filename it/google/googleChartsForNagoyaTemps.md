@@ -14,9 +14,9 @@ Google Chartsを使って名古屋の予想気温表示します。
 
   async function getTempsData(){
     //気象庁のデータを取得。
-    let meteologicalData;
-    await fetch("https://www.jma.go.jp/bosai/forecast/data/forecast/230000.json")
-            .then(res => res.json())
+    let meteologicalData = await fetch("https://www.jma.go.jp/bosai/forecast/data/forecast/230000.json")
+                             .then(res => res.json())
+    return meteologicalData;
   };
 
   function drawChart() {
@@ -51,9 +51,9 @@ Google Chartsを使って名古屋の予想気温表示します。
 
   async function getTempsData(){
     //気象庁のデータを取得。
-    let meteologicalData;
-    await fetch("https://www.jma.go.jp/bosai/forecast/data/forecast/230000.json")
-            .then(res => res.json())
+    let meteologicalData = await fetch("https://www.jma.go.jp/bosai/forecast/data/forecast/230000.json")
+                             .then(res => res.json())
+    return meteologicalData;
   };
 
   function drawChart() {
