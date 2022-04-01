@@ -12,34 +12,31 @@ Google Chartsを使って名古屋の予想気温表示します。
   google.charts.load('current', {'packages':['corechart']});
   google.charts.setOnLoadCallback(drawChart);
 
-  function getTempsData(){
+  async function getTempsData(){
     //気象庁のデータを取得。
     let meteologicalData;
-    fetch("https://www.jma.go.jp/bosai/forecast/data/forecast/230000.json")
-      .then((res) => res.json())
-      .then(data => meteologicalData=data);
-    return meteologicalData;
+    await fetch("https://www.jma.go.jp/bosai/forecast/data/forecast/230000.json")
+            .then(res => res.json())
   };
 
-
   function drawChart() {
-    let tempsData = getTempsData();
+    getTempsData().then(tempsData =>{
+      let chartArray = [[]];
+      chartArray[0] = tempsData[1].timeSeries[1].timeDefines;
+      chartArray[1] = tempsData[1].timeSeries[1].areas[0].tempsMax;
+      chartArray[2] = tempsData[1].timeSeries[1].areas[0].tempsMin;
+      let data = google.visualization.arrayToDataTable(chartArray);
 
-    let chartArray = [[]];
-    chartArray[0] = tempsData[1].timeSeries[1].timeDefines;
-    chartArray[1] = tempsData[1].timeSeries[1].areas[0].tempsMax;
-    chartArray[2] = tempsData[1].timeSeries[1].areas[0].tempsMin;
-    let data = google.visualization.arrayToDataTable(chartArray);
+      var options = {
+        title: '名古屋の予想気温',
+        legend: { position: 'bottom' },
+        vAxis: {minValue:0,maxValue:40}
+      };
 
-    var options = {
-      title: '名古屋の予想気温',
-      legend: { position: 'bottom' },
-      vAxis: {minValue:0,maxValue:40}
-    };
+      var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
 
-    var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
-
-    chart.draw(data, options);
+      chart.draw(data, options);
+    });
   }
 </script>
 
@@ -52,34 +49,31 @@ Google Chartsを使って名古屋の予想気温表示します。
   google.charts.load('current', {'packages':['corechart']});
   google.charts.setOnLoadCallback(drawChart);
 
-  function getTempsData(){
+  async function getTempsData(){
     //気象庁のデータを取得。
     let meteologicalData;
-    fetch("https://www.jma.go.jp/bosai/forecast/data/forecast/230000.json")
-      .then((res) => res.json())
-      .then(data => meteologicalData=data);
-    return meteologicalData;
+    await fetch("https://www.jma.go.jp/bosai/forecast/data/forecast/230000.json")
+            .then(res => res.json())
   };
 
-
   function drawChart() {
-    let tempsData = getTempsData();
+    getTempsData().then(tempsData =>{
+      let chartArray = [[]];
+      chartArray[0] = tempsData[1].timeSeries[1].timeDefines;
+      chartArray[1] = tempsData[1].timeSeries[1].areas[0].tempsMax;
+      chartArray[2] = tempsData[1].timeSeries[1].areas[0].tempsMin;
+      let data = google.visualization.arrayToDataTable(chartArray);
 
-    let chartArray = [[]];
-    chartArray[0] = tempsData[1].timeSeries[1].timeDefines;
-    chartArray[1] = tempsData[1].timeSeries[1].areas[0].tempsMax;
-    chartArray[2] = tempsData[1].timeSeries[1].areas[0].tempsMin;
-    let data = google.visualization.arrayToDataTable(chartArray);
+      var options = {
+        title: '名古屋の予想気温',
+        legend: { position: 'bottom' },
+        vAxis: {minValue:0,maxValue:40}
+      };
 
-    var options = {
-      title: '名古屋の予想気温',
-      legend: { position: 'bottom' },
-      vAxis: {minValue:0,maxValue:40}
-    };
+      var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
 
-    var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
-
-    chart.draw(data, options);
+      chart.draw(data, options);
+    });
   }
 </script>
 
