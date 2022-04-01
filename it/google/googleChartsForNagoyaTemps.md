@@ -32,7 +32,9 @@ Google Chartsを使って名古屋の予想気温表示します。
       chartArray[2][0] = "最高気温";
 
       for(var i = 0; i < chartArray[0].length; i++){
-        //体重の値は「"」を削除
+        dateSplit = chartArray[0][i].split(/-|T/)
+        chartArray[0][i] = dateSplit[1] + "月" + dateSplit[2] + "日"
+        //「'」を削除
         if(chartArray[1][i].match(/\-?\d+(.\d+)?(e[\+\-]d+)?/)){
           chartArray[1][i] = parseFloat(chartArray[1][i].replace("'", ''));
         }
@@ -86,9 +88,11 @@ Google Chartsを使って名古屋の予想気温表示します。
       chartArray[2][0] = "最高気温";
 
       for(var i = 0; i < chartArray[0].length; i++){
-        //体重の値は「"」を削除
+        dateSplit = chartArray[0][i].split(/-|T/)
+        chartArray[0][i] = dateSplit[1] + "月" + dateSplit[2] + "日"
+        //「'」を削除
         if(chartArray[1][i].match(/\-?\d+(.\d+)?(e[\+\-]d+)?/)){
-          chartArray[1][i] = parseFloat(chartArray[1][i].replace("'", ''));
+          chartArray[1][] = parseFloat(chartArray[1][i].replace("'", ''));
         }
         if(chartArray[2][i].match(/\-?\d+(.\d+)?(e[\+\-]d+)?/)){
           chartArray[2][i] = parseFloat(chartArray[2][i].replace("'", ''));
