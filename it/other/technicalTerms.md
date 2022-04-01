@@ -4,7 +4,7 @@ title: IT用語のわかりにくい読み
 description: IT用語のわかりにくい読みと概要をまとめました。徐々に増やしていく予定です。
 category: IT
 created_at: 2022-03-16
-last_modifeid_at: 2022-03-17
+last_modifeid_at: 2022-04-01
 ---
 
 IT関連のわかりにくい読みと概要をまとめました。
@@ -33,4 +33,5 @@ IT関連のわかりにくい読みと概要をまとめました。
 | LGPL | えるじーぴーえる | ちょっとゆるいGPL<br/>呼び出しは許す |
 | Maven | めいぶん<br/>めいばん | Javaのビルドツール　XMLで記載 |
 | Qiita | きーた | エンジニアコミュニティサービス |
+| RHEL | れる | Red Hat Enterprise Linux |
 
