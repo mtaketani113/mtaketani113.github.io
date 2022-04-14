@@ -1,6 +1,6 @@
 ---
 layout: default
-title: WindowsのEDGEのCSVのContentTypeがかわった
+title: WindowsのCSVのContentTypeがかわった
 description: ある日突然WindowsでEDGEを使っている人が、CSVファイルをアップロードできなくなりました。原因はContentTypeでCSVかを判定していたためです。バージョン100以降からtext/csvに代わったようです。
 category: IT
 created_at: 2022-04-15
