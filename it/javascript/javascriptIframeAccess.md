@@ -28,7 +28,8 @@ last_modifeid_at: 2022-05-25
 `iframe`で埋め込んでいるサイトによってはアクセスが拒否されます。
 
 試しに以下の画像を取得するために開発者ツールで
-`document.querySelector("#twitter-widget-1").contentWindow.document`と記載してみてください。
+`document.querySelector("#twitter-widget-1").contentWindow.document`  
+と記載してみてください。
 
 <blockquote class="twitter-tweet"><p lang="und" dir="ltr"><a href="https://twitter.com/hashtag/%E9%9B%A8%E5%AE%BF%E3%82%8A?src=hash&amp;ref_src=twsrc%5Etfw">#雨宿り</a> <a href="https://twitter.com/hashtag/%E3%81%A4%E3%81%B0%E3%82%81?src=hash&amp;ref_src=twsrc%5Etfw">#つばめ</a> <a href="https://t.co/WEhispwUg2">pic.twitter.com/WEhispwUg2</a></p>&mdash; mtaketani113 (@mtaketani113) <a href="https://twitter.com/mtaketani113/status/1517111524002656257?ref_src=twsrc%5Etfw">April 21, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -47,8 +48,9 @@ originというのがhttps://サイト:ポート　のことでこれが異な�
 開発者ツールで要素の検索をする機能があると思います。
 それで`iframe`の要素をクリックすると、埋め込んだサイトのほうに主が移るようです。
 
-実際に埋め込んでる画像をクリックすると、
-`document.querySelector("twitter-widget-0").contentWindow.document`が効かなくなるかと思います。
+実際に埋め込んでる画像をクリックすると、  
+`document.querySelector("twitter-widget-0").contentWindow.document`  
+が効かなくなるかと思います。
 
 ##　まとめ
 
