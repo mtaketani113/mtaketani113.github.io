@@ -17,10 +17,10 @@ last_modifeid_at: 2022-05-25
 `contentWindow.document`で取得できます。
 
 実際に以下の画像を取得するために開発者ツールで  
-`document.querySelector("twitter-widget-0").contentWindow.document`と記載すると  
+`document.querySelector("#executeScope").contentWindow.document`と記載すると  
 `#document`と結果が出てアクセスできるかと思います。
 
-<blockquote class="twitter-tweet"><p lang="und" dir="ltr"><a href="https://twitter.com/hashtag/%E9%9B%A8%E5%AE%BF%E3%82%8A?src=hash&amp;ref_src=twsrc%5Etfw">#雨宿り</a> <a href="https://twitter.com/hashtag/%E3%81%A4%E3%81%B0%E3%82%81?src=hash&amp;ref_src=twsrc%5Etfw">#つばめ</a> <a href="https://t.co/WEhispwUg2">pic.twitter.com/WEhispwUg2</a></p>&mdash; mtaketani113 (@mtaketani113) <a href="https://twitter.com/mtaketani113/status/1517111524002656257?ref_src=twsrc%5Etfw">April 21, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<iframe src="https://mtaketani113.github.io/it/javascript/executeScope.html" id="executeScope"></iframe>
 
 ## iframeへのJavaScriptでのアクセスが拒否される
 
@@ -28,9 +28,9 @@ last_modifeid_at: 2022-05-25
 `iframe`で埋め込んでいるサイトによってはアクセスが拒否されます。
 
 試しに以下の画像を取得するために開発者ツールで
-`document.querySelectorAll("frame")[1].contentWindow.document`と記載してみてください。
+`document.querySelector("#twitter-widget-1").contentWindow.document`と記載してみてください。
 
-<iframe src="https://www.google.com/maps/embed?pb=!4v1628861352299!6m8!1m7!1sCAoSLEFGMVFpcE5Id1E2VEFGMlhYNVdtLW1oOUFqTWplWThGOEFnV0Y3VVg1aklq!2m2!1d34.4590433!2d136.722815!3f352.25288698617726!4f16.663865852967916!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<blockquote class="twitter-tweet"><p lang="und" dir="ltr"><a href="https://twitter.com/hashtag/%E9%9B%A8%E5%AE%BF%E3%82%8A?src=hash&amp;ref_src=twsrc%5Etfw">#雨宿り</a> <a href="https://twitter.com/hashtag/%E3%81%A4%E3%81%B0%E3%82%81?src=hash&amp;ref_src=twsrc%5Etfw">#つばめ</a> <a href="https://t.co/WEhispwUg2">pic.twitter.com/WEhispwUg2</a></p>&mdash; mtaketani113 (@mtaketani113) <a href="https://twitter.com/mtaketani113/status/1517111524002656257?ref_src=twsrc%5Etfw">April 21, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 以下のような結果が出ると思います。
 
