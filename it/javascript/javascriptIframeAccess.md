@@ -17,8 +17,8 @@ last_modifeid_at: 2022-05-25
 `contentWindow.document`で取得できます。
 
 実際に以下の画像を取得するために開発者ツールで  
-`document.querySelector("#executeScope").contentWindow.document`と記載すると  
-`#document`と結果が出てアクセスできるかと思います。
+`document.querySelector("#executeScope").contentWindow.document`  
+と記載すると`#document`と結果が出てアクセスできるかと思います。
 
 <iframe src="https://mtaketani113.github.io/it/javascript/executeScope.html" id="executeScope"></iframe>
 
@@ -27,7 +27,7 @@ last_modifeid_at: 2022-05-25
 しかし、すべてアクセスできるわけではなく
 `iframe`で埋め込んでいるサイトによってはアクセスが拒否されます。
 
-試しに以下の画像を取得するために開発者ツールで
+試しに以下の画像を取得するために開発者ツールで  
 `document.querySelector("#twitter-widget-1").contentWindow.document`  
 と記載してみてください。
 
