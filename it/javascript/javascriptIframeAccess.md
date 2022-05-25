@@ -49,7 +49,7 @@ originというのがhttps://サイト:ポート　のことでこれが異な�
 それで`iframe`の要素をクリックすると、埋め込んだサイトのほうに主が移るようです。
 
 実際に埋め込んでる画像をクリックすると、  
-`document.querySelector("twitter-widget-0").contentWindow.document`  
+`document.querySelector("#twitter-widget-1").contentWindow.document`  
 が効かなくなるかと思います。
 
 ##　まとめ
