@@ -55,3 +55,9 @@
   .card-link a:hover {
     color: #0090aa;
   }
+  .card-img{
+    transition: 0.5s;
+  }
+  .card:hover .card-img {
+    margin-top:-90px;
+  }
