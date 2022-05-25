@@ -35,8 +35,8 @@ last_modifeid_at: 2022-05-25
 以下のような結果が出ると思います。
 
 ```JavaScript
-VM617:1 Uncaught DOMException: Blocked a frame with origin "https://mtaketani113.github.io" from accessing a cross-origin frame.
-    at <anonymous>:1:29
+VM3797:1 Uncaught DOMException: Blocked a frame with origin "https://mtaketani113.github.io" from accessing a cross-origin frame.
+    at <anonymous>:1:58
 ```
 
 originというのがhttps://サイト:ポート　のことでこれが異なるということでブロックされています。
