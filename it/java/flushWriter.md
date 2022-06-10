@@ -60,3 +60,9 @@ try(BufferedWriter bw = new BufferedWriter(new FileWriter(file))){
   }
 }
 ```
+
+## まとめ
+
+ファイルが大きい場合は`flush`を途中ですることでメモリを開放して`OutOfMemory`を防ぎましょう。
+javaの起動時に`-Xmx`などで使うメモリを大きくすることで対応することも可能かと思いますが、
+どの程度大きくなるなど不明な場合もありますし`flush`するのがよいかと思います。
