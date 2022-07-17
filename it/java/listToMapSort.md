@@ -15,37 +15,37 @@ List→Mapの変換をラムダ式で普通に実施するとListの順序が保
 ```Java
 public class Main {
 
-	public static void main(String[] args) throws Exception {
+  public static void main(String[] args) throws Exception {
 
-		@Getter
-		class Test{
-			String key;
-			String value;
-			
-			Test(String key, String value){
-				this.key = key;
-				this.value = value;
-			}
-		}
-		
-		List<Test> testList = new ArrayList<>();
-		
-		for(int i = 0; i < 10; i++) {
-			Test test = new Test("key" + i, "value" + i);
-			testList.add(test);
-		}
-		
-		Map<String, String> testMap =testList.stream()
-	    .collect(Collectors.toMap(
-	      Test::getKey,
-	      Test::getValue
-	      )
-	    );
-		
-		testMap.forEach((u, v) -> 
-	    	System.out.println(u + " "+ v)
-		);	
-	}
+    @Getter
+    class Test{
+      String key;
+      String value;
+      
+      Test(String key, String value){
+        this.key = key;
+        this.value = value;
+      }
+    }
+    
+    List<Test> testList = new ArrayList<>();
+    
+    for(int i = 0; i < 10; i++) {
+      Test test = new Test("key" + i, "value" + i);
+      testList.add(test);
+    }
+    
+    Map<String, String> testMap =testList.stream()
+      .collect(Collectors.toMap(
+        Test::getKey,
+        Test::getValue
+        )
+      );
+    
+    testMap.forEach((u, v) -> 
+        System.out.println(u + " "+ v)
+    );  
+  }
 }
 ```
 
@@ -68,14 +68,14 @@ key8 value8
 これで以下の`Collectors.toMap`の部分を変更します。
 
 ```Java
-		Map<String, String> testMap =testList.stream()
-	    .collect(Collectors.toMap(
-	      Test::getKey,
-	      Test::getValue,
-	      (u, v) -> v, // この行を追加
-	      LinkedHashMap::new // この行を追加
-	      )
-	    );
+Map<String, String> testMap =testList.stream()
+  .collect(Collectors.toMap(
+    Test::getKey,
+    Test::getValue,
+    (u, v) -> v, // この行を追加
+    LinkedHashMap::new // この行を追加
+    )
+  );
 ```
 
 そうすると結果は以下のように順番になります。
@@ -97,8 +97,8 @@ key9 value9
 試しにfor分の後に以下のように書いてみましょう。
 
 ```Java
-		Test add = new Test("key0", "key10");
-		testList.add(add);
+Test add = new Test("key0", "key10");
+testList.add(add);
 ```
 
 そうすると、以下のように値が変わります。
