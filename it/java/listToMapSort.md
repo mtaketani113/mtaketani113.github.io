@@ -1,14 +1,14 @@
 ---
 layout: default
 title: List→Mapの変換で順序を保持する
-description: List→Mapの変換をラムダ式で普通に実施するとListの順序が保持されません。保持する方法を記載します。
+description: JavaのList→Mapの変換をラムダ式で普通に実施するとListの順序が保持されません。保持する方法を記載します。
 category: java
 image: /images/it/java/cafe_mark.png
 created_at: 2022-07-18
 last_modifeid_at: 2022-07-18
 ---
 
-List→Mapの変換をラムダ式で普通に実施するとListの順序が保持されません。保持する方法を記載します。
+JavaのList→Mapの変換をラムダ式で普通に実施するとListの順序が保持されません。保持する方法を記載します。
 
 まずは、以下のようなプログラムを作成しました。
 
