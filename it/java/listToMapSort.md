@@ -93,17 +93,17 @@ key8 value8
 key9 value9
 ```
 
-しかし、このままだとkeyが重複したときに後が地になります。
+しかし、このままだとkeyが重複したときに後勝ちになります。
 試しにfor分の後に以下のように書いてみましょう。
 
 ```Java
-Test add = new Test("key0", "key10");
+Test add = new Test("key0", "value10");
 testList.add(add);
 ```
 
 そうすると、以下のように値が変わります。
 ```
-key0 key10
+key0 value10
 key1 value1
 key2 value2
 key3 value3
