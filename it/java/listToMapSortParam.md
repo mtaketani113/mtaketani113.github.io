@@ -45,7 +45,7 @@ public class Main {
     Test add = new Test("key0", 10);
     testList.add(add);
     
-    Map<String, String> testMap =testList.stream()
+    Map<String, Integer> testMap =testList.stream()
       .collect(Collectors.toMap(
         Test::getKey,
         Test::getValue,
@@ -79,7 +79,7 @@ key9 9
 これで以下の`Collectors.toMap`の部分を変更します。
 
 ```Java
-Map<String, String> testMap =testList.stream()
+Map<String, Integer> testMap =testList.stream()
   .collect(Collectors.toMap(
     Test::getKey,
     Test::getValue,
