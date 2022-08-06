@@ -41,7 +41,7 @@ VSCodeなどでSpring Boot Extention Packなどを利用すれば、3.0.0-M4も�
 SpringBootであれば、`mybatis-spring-boot-starter`を利用すれば、MyBatisを簡単に使えるのですが、
 MyBatisのサイトを見ると以下のように書いています。
 
-「master(2.3.x) : MyBatis 3.5+, MyBatis-Spring 2.1, Java 8+ and Spring Boot 2.5+ (First version for supporting Spring Boot 3), not release yet」
+**master(2.3.x) : MyBatis 3.5+, MyBatis-Spring 2.1, Java 8+ and Spring Boot 2.5+ (First version for supporting Spring Boot 3), not release yet**
 
 2.3以降がSoringBoot3で利用できるけどまだリリースしてませんと。
 
