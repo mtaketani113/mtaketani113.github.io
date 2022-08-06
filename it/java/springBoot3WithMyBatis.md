@@ -20,12 +20,12 @@ SpringBoot3は2022年11月リリース予定で現在2022年8月時点では開�
 pom.xmlで以下のようにすると使えます。
 
 ```Xml
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.0.0-M4</version>
-		<relativePath/> <!-- lookup parent from repository -->
-	</parent>
+<parent>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-parent</artifactId>
+  <version>3.0.0-M4</version>
+  <relativePath/> <!-- lookup parent from repository -->
+</parent>
 ```
 
 VSCodeなどでSpring Boot Extention Packなどを利用すれば、3.0.0-M4も利用できます。
@@ -57,9 +57,9 @@ MyBatisのサイトを見ると以下のように書いています。
 
 ```Xml
 <repository>
-	<id>sonatype-nexus-snapshots</id>
-    <name>Sonatype Nexus Snapshots</name>
-	<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+  <id>sonatype-nexus-snapshots</id>
+  <name>Sonatype Nexus Snapshots</name>
+  <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
 </repository>
 ```
 
@@ -67,9 +67,9 @@ MyBatisのサイトを見ると以下のように書いています。
 
 ```Xml
 <dependency>
-	<groupId>org.mybatis.spring.boot</groupId>
-	<artifactId>mybatis-spring-boot-starter</artifactId>
-	<version>2.3.0-SNAPSHOT</version>
+  <groupId>org.mybatis.spring.boot</groupId>
+  <artifactId>mybatis-spring-boot-starter</artifactId>
+  <version>2.3.0-SNAPSHOT</version>
 </dependency>
 ```
 
