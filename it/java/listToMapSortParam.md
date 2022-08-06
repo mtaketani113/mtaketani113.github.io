@@ -151,7 +151,7 @@ Map<String, Integer> testMap =testList.stream()
 
 ## まとめ
 
-`Collectors.toMap`の`(u, v) -> v`は同一のキーがあった場合の処理を記載します。
+`Collectors.toMap`の`(u, v) -> v`の部分は同一のキーがあった場合の処理のようです。
 
 - `(u, v) -> v`だと後勝ち
 - `(u, v) -> u`だと先勝ち
