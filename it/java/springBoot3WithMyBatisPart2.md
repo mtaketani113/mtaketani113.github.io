@@ -65,7 +65,7 @@ src
 build.gradleは以下の通りです。
 SpringBootは8月時点の`3.0.0-M4`をMyBatisは`2.3.0-SNAPSHOT`を利用しています。
 
-```groovy
+```Groovy
 plugins {
 	id 'org.springframework.boot' version '3.0.0-M4'
 	id 'io.spring.dependency-management' version '1.0.12.RELEASE'
