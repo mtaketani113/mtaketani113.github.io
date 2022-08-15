@@ -78,7 +78,7 @@ public class LocaleConfig implements WebMvcConfigurer  {
 
 セッションを利用したい場合は`CookieLocaleResolver`→`SessionLocaleResolver`とすることで可能です。
 
-そして最後にメッセージがどこにあるかと、文字コードを設定ファイルの文字コードを記載しています。
+そして最後にメッセージがどこにあるかと、設定ファイルの文字コードを記載しています。
 
 ```Java
   @Bean 
