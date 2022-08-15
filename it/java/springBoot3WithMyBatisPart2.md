@@ -160,7 +160,7 @@ public interface CustomerMapper {
 </mapper>
 ```
 
-##　テーブル作成
+## テーブル作成
 
 Customerのテーブルを以下で作成すると動作します。
 
@@ -179,3 +179,5 @@ CREATE TABLE customer (
 
 SpringBoot3でMyBatisを実際に動かしてみました。
 特に、SpringBoot2の時と使い方は変わらなさそう。
+
+あとMavenと違って、Gradleの書き方は人間にやさしい感じですね。
