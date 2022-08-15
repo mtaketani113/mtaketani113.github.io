@@ -117,7 +117,7 @@ VSCodeなどでSpring Boot Extention Packなどを利用すれば、3.0.0-M4も�
 データベース(MySQL)の接続情報と、MyBatisのスネークケースからキャメルケースへの自動変換する設定、
 `mybatis.configuration.map-underscore-to-camel-case=true`を追加しています。
 
-```
+```Java
 spring.datasource.url=${DATASOURCE_URL:jdbc:mysql://localhost:3306/demo}
 spring.datasource.username=${DATASOURCE_USERNAME:demo}
 spring.datasource.password=${DATASOURCE_PASSWORD:demo}
@@ -166,7 +166,7 @@ Customerのテーブルを以下で作成すると動作します。
 
 ```Sql
 CREATE TABLE customer (
-    id           INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+    id      INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
     name    TEXT,
     post    TEXT,
     adress  TEXT,
