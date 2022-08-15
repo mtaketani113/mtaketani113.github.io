@@ -13,7 +13,7 @@ last_modifeid_at: 2022-08-15
 
 以下がサンプルです。せっかくなのでGradleを利用してみました。
 
-[mybatisDemoForSpringboot3](https://github.com/mtaketani113/mybatisDemoForSpringboot3/tree/0.0.1)
+[mybatisDemoForSpringboot3](https://github.com/mtaketani113/mybatisDemoForSpringboot3/tree/0.0.2)
 
 ## srcのフォルダ構成
 srcのフォルダは適当ですが以下のようにしています。
@@ -166,10 +166,10 @@ Customerのテーブルを以下で作成すると動作します。
 
 ```Sql
 CREATE TABLE customer (
-    id      INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
-    name    TEXT,
-    post    TEXT,
-    adress  TEXT,
+    id       INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
+    name     TEXT,
+    post     TEXT,
+    address  TEXT,
 
     PRIMARY KEY(id)
 );
