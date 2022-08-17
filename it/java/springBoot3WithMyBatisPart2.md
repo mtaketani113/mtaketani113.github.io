@@ -1,11 +1,11 @@
 ---
 layout: default
 title: 開発中のSpringBoot3でMyBatis利用 その2
-description: 開発中のSpringBoot3でMyBatisを利用する方法を回きましたが、実施にプログラムを書いて動かしてみました。
+description: 開発中のSpringBoot3でMyBatisを利用する方法を書きましたが、実施にプログラムを書いて動かしてみました。
 category: java
 image: /images/it/java/cafe_mark.png
 created_at: 2022-08-15
-last_modifeid_at: 2022-08-15
+last_modifeid_at: 2022-08-17
 ---
 
 [前回](https://mtaketani113.github.io/it/java/springBoot3WithMyBatis.html)
@@ -106,7 +106,7 @@ tasks.named('test') {
 ```
 
 VSCodeなどでSpring Boot Extention Packなどを利用すれば、3.0.0-M4も利用できます。
-そういったので作成するのが確実化と思います。
+そういったので作成するのが確実かと思います。
 
 僕はこちらのサイトを参考に作成しました。
 
