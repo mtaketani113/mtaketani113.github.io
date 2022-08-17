@@ -39,17 +39,17 @@ ENTRYPOINT ["java","-jar","/app/spring-boot-application.jar"]
 
 今回はGradleなので`gradle:7.5.1-jdk18-alpine`を利用しています。
 
-また、このままだと`/gradle/src/build/libs/`にjarファイルが2ファイル（`xx.jar`と`xx-plain.jar`）がでいるため、`build.gradle`に以下を追加します。
-
-じゃないと  
-`COPY --from=build /home/gradle/src/build/libs/*.jar /app/spring-boot-application.jar`  
-がうまくいきません。
+また、このままだと`/gradle/src/build/libs/`にjarファイルが2ファイル（`xx.jar`と`xx-plain.jar`）できるため、`build.gradle`に以下を追加します。
 
 ```Groovy
 jar {
     enabled = false
 }
 ```
+
+じゃないと  
+`COPY --from=build /home/gradle/src/build/libs/*.jar /app/spring-boot-application.jar`  
+がうまくいきません。
 
 ## docker-compose.yaml作成
 
