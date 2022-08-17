@@ -19,7 +19,6 @@ SpringBoot3+mysqlでDockerを利用して、どこでも同じ環境を作れる
 ## Dockerfile作成
 
 Dockerfileは以下の通りです。
-今回はGradleを利用しているおで
 
 ```Dockerfile
 FROM gradle:7.5.1-jdk18-alpine AS build
@@ -38,7 +37,7 @@ COPY --from=build /home/gradle/src/build/libs/*.jar /app/spring-boot-application
 ENTRYPOINT ["java","-jar","/app/spring-boot-application.jar"]
 ```
 
-今回はGradleを利用しているので`gradle:7.5.1-jdk18-alpine`を利用しています。
+今回はGradleなので`gradle:7.5.1-jdk18-alpine`を利用しています。
 
 また、このままだと`/gradle/src/build/libs/`にjarファイルが2ファイル（`xx.jar`と`xx-plain.jar`）がでいるため、`build.gradle`に以下を追加します。
 
