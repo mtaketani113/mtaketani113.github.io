@@ -133,6 +133,15 @@ docker-compose up -d
 docker-compose stop
 ```
 
+## 今後の改善点
+
+多分ですが、再実行などするとDockerfileの以下の部分で、
+Mysqlのデータもコピーしてしまう気がするので、必要なものだけをコピーするようにするようにする必要があります。
+
+`COPY --chown=gradle:gradle . /home/gradle/src`
+
+参照元のサイトは、1階層ずらしてましたね。
+
 ## まとめ
 
 docker-composeを利用して、どこでも環境構築できるようにしてみました。
