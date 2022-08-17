@@ -140,6 +140,8 @@ Mysqlのデータもコピーしてしまう気がするので、必要なもの
 
 `COPY --chown=gradle:gradle . /home/gradle/src`
 
+今後改善していこうかと。
+
 ## まとめ
 
 docker-composeを利用して、どこでも環境構築できるようにしてみました。
