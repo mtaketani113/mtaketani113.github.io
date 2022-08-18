@@ -25,7 +25,7 @@ SemanticUIを利用してみました。環境構築で、「Cannot read propert
 
 [バグの解決方法](https://github.com/Semantic-Org/Semantic-UI/issues/7073)
 
-以下を実施すれば、解決しました。
+1. 以下を実施すれば、解決しました。
 
 `semantic-ui-react/css-patch`をインストール
 ```
@@ -34,7 +34,7 @@ yarn add --dev @semantic-ui-react/css-patch
 npm install --dev @semantic-ui-react/css-patch
 ```
 
-package.jsonに以下を追加します。scriptsが既にあれば、そこに`"postinstall": "semantic-ui-css-patch"`を追加です。
+2. package.jsonに以下を追加します。scriptsが既にあれば、そこに`"postinstall": "semantic-ui-css-patch"`を追加です。
 
 ```Json
 {
