@@ -4,8 +4,8 @@ title: SpringBoot3のRC1を利用
 description: SpringBoot3でRC1が出ました。M4からバージョンアップしてみるとSpringSecurityで動かなくなったところがあったので記載します。
 category: java
 image: /images/it/java/cafe_mark.png
-created_at: 2022-08-15
-last_modifeid_at: 2022-08-17
+created_at: 2022-10-28
+last_modifeid_at: 2022-10-28
 ---
 
 SpringBoot3でRC1が出ました。M4からバージョンアップしてみるとSpringSecurityで動かなくなったところがあったので記載します。
