@@ -25,6 +25,7 @@ gradleの7.6RC1のダウンロードのリンクは、
 ## gradlew(Gradle Wra)pper)のアップデート
 
 以下のコマンドで簡単にできます。
+
 `./gradlew wrapper --gradle-version=7.6-rc-1`
 
 ## まとめ
