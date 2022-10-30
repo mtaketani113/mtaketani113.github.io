@@ -1,6 +1,6 @@
 ---
 layout: default
-title: GradeleでJava19のビルド
+title: GradleでJava19のビルド
 description: GradeleではJava19は、まだサポートしてませんが、22年10月に7.6-rc-1が出て正式ではないですが可能になりました。
 category: java
 image: /images/it/java/cafe_mark.png
@@ -8,7 +8,7 @@ created_at: 2022-10-30
 last_modifeid_at: 2022-10-30
 ---
 
-GradeleではJava19は、まだサポートしてませんが、22年10月に7.6-rc-1が出て正式ではないですが可能になりました。
+GradleではJava19は、まだサポートしてませんが、22年10月に7.6-rc-1が出て正式ではないですが可能になりました。
 [7.6.0-M1](https://github.com/gradle/gradle/releases/tag/v7.6.0-M1)の時に少し試したのですが、GithubActionsで動かなかったです。今回試しましたが、RC1では動作しました。
 ですがので、適用方法を記載します。
 
