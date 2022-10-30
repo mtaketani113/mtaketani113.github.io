@@ -22,7 +22,7 @@ gradleの7.6RC1のダウンロードのリンクは、
 
 後は展開して環境変数を修正すれば利用可能です。
 
-## gradlew(Gradle Wra)pper)のアップデート
+## gradlew(Gradle Wrapper)のアップデート
 
 以下のコマンドで簡単にできます。
 
