@@ -5,7 +5,7 @@ description: GradleではJava19は、まだサポートしてませんが、22�
 category: java
 image: /images/it/java/cafe_mark.png
 created_at: 2022-10-30
-last_modifeid_at: 2022-10-30
+last_modifeid_at: 2022-11-12
 ---
 
 GradleではJava19は、まだサポートしてませんが、22年10月に7.6-rc-1が出て正式ではないですが可能になりました。
@@ -27,6 +27,16 @@ gradleの7.6RC1のダウンロードのリンクは、
 以下のコマンドで簡単にできます。
 
 `./gradlew wrapper --gradle-version=7.6-rc-1`
+
+## 【追記 2022/11/12】RC3が出ました。
+
+2022年11月12日にRC3が出たようです。
+
+ダウンロードリンク  
+[こちら](https://services.gradle.org/distributions/gradle-7.6-rc-3-bin.zip)
+
+コマンド  
+`./gradlew wrapper --gradle-version=7.6-rc-3`
 
 ## まとめ
 
