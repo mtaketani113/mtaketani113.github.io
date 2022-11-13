@@ -102,7 +102,7 @@ ProxyPass / ajp://サーバー名:8009/
 
 ## まとめ
 
-spring bootとApacheをajpで連携さkせるために、@Configurationで設定しますが、
+spring bootとApacheをajpで連携させるために、@Configurationで設定しますが、
 以下2点の設定が必要でした。
 - secretの設定
 - IP「0.0.0.0」の設定
