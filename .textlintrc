@@ -4,5 +4,19 @@
     "no-mix-dearu-desumasu": true,
     "preset-ja-spacing": true,
     "preset-ja-technical-writing": true
+  },
+  "filters": {
+    "allowlist": {
+      "allow": [
+        "/^\\[.+\\]$[^]*?^\\[\\/.+\\]$/m"
+      ]
+    },
+    "whitelist": {
+      "allow": [
+        "？",
+        "！",
+        "個人情報保護法"
+      ]
+    }
   }
 }
