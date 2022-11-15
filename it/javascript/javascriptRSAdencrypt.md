@@ -32,7 +32,7 @@ last_modifeid_at: 2022-04-01
 
 </script>
 
-[JavaScriptで秘密鍵・公開鍵作成](/it/javascript/javascriptRSA.html)で作成した秘密鍵で[JavaScriptで暗号化](/it/javascript/javascriptRSAencrypt.html)で暗号化した文を復号化するサービスです。
+[JavaScriptで秘密鍵・公開鍵作成](/it/javascript/javascriptRSA.html)で作成した秘密鍵を利用して[JavaScriptで暗号化](/it/javascript/javascriptRSAencrypt.html)で暗号化した文を復号化するサービスです。
 どこにも情報を送っていないですし、この画面だけで完結しています。安心して使ってください。
 
 以下を参考に作成しています。  

@@ -119,10 +119,13 @@ Javascriptを使ってQRコードを作成するサービスです。
 
 `unescape(encodeURIComponent(qrtext));`で文字化けしないようにしています。
 
-こちらでinput項目でエンターを押した時に更新されるようにしています。
+こちらのソースによってinput項目にフォーカスした状態で
+エンターを押すと更新されます。
 ```Javascript
   $("#qrtext, #qrsize").keypress(function(e){
     if(e.which == 13){
       $("#qrCreateButton").click();
     }
 ```
+
+`e.which == 13`・・・エンターは13番なのですね。

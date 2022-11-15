@@ -193,11 +193,10 @@ const symbol = "!#$%&()"
   document.getElementById("createdPassword").value = result;
 ```
 
-`Array.from(Array(lengthNumber))`で文字数で指定した分の配列を作ります。
-`Array(lengthNumber)`だけだと、幅が文字数分のArrayを作るだけで1つずつの要素には何も入っていない状態なので、
-`map`をしても処理は繰り返されません。
+`Array.from(Array(lengthNumber))`これにより文字数で指定した分の配列を作ります。  
+注意事項として、`Array(lengthNumber)`だけだと、幅が文字数分のArrayを作るだけで1つずつの要素には何も入っていない状態です。そのため`map`をしても処理は繰り返されません。なので、`Array.from(Array(lengthNumber))`とややこしいことをしています。
 
-そして`map`で書くように文字列仕様文字列からランダムな番号の文字を切り取り、1つずつ入れていきます。
+そして`map`で書くように使用する文字列の中からランダムな番号の文字を切り取り、1つずつ入れていきます。
 
 その後`join`で配列を結合して文字列にします。
 その作られた文字列を`document.getElementById("createdPassword").value = result;`で結果の欄に入れます。

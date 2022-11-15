@@ -105,7 +105,7 @@ key8 8
 key9 9
 ```
 
-また、足し算にすることもできます。
+また、足し算にもできます。
 0番目だと0+10で後勝ちと変わらないので、key1に変えて試してみます。
 
 ```Java
@@ -136,7 +136,7 @@ key8 8
 key9 9
 ```
 
-Exceptionをthrowすることもできます。
+Exceptionをthrowもできます。
 
 ```Java
 Map<String, Integer> testMap =testList.stream()
