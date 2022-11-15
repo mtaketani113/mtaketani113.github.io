@@ -1,0 +1,8 @@
+{
+  "rules": {
+    "no-dropping-the-ra": true,
+    "no-mix-dearu-desumasu": true,
+    "preset-ja-spacing": true,
+    "preset-ja-technical-writing": true
+  }
+}
