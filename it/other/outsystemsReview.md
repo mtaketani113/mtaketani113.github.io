@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Outsystemsを利用した感想
-description: Outsystemsを実際に利用しました。とても良い仕組みでしたが一部気になるところもあったのでメリット、デメリット両方か効果と思います。
+description: Outsystemsを実際に利用しました。とても良い仕組みでしたが一部気になるところもあったのでメリット、デメリット両方記載します。
 category: IT
 created_at: 2022-11-15
 last_modifeid_at: 2022-11-15
