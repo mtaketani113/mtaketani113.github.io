@@ -21,7 +21,7 @@ category: container
 
 ## docker-composeとは
 
-docker-composeは、複数のコンテナを連携してサービスを実行するコマンドで、
+docker-composeは、複数のコンテナを連携して実行するコマンドで、
 docker-compose.yamlに構成を記載すると実行できます。  
 dockerコマンドを簡略化してくれます。
 
@@ -44,34 +44,34 @@ dockerコマンドを簡略化してくれます。
 version: '3'
 
 services:
-   db:
-     image: mysql:5.7
-     volumes:
-       - db_data:/var/lib/mysql
-     restart: always
-     networks:
-       - default
-     environment:
-       MYSQL_ROOT_PASSWORD: somewordpress
-       MYSQL_DATABASE: wordpress
-       MYSQL_USER: wordpress
-       MYSQL_PASSWORD: wordpress
+  db:
+    image: mysql:5.7
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    networks:
+      - default
+    environment:
+      MYSQL_ROOT_PASSWORD: somewordpress
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
 
-   wordpress:
-     depends_on:
-       - db
-     image: wordpress:latest
-     ports:
-       - "8000:80"
-     restart: always
-     networks:
-       - default
-     environment:
-       WORDPRESS_DB_HOST: db:3306
-       WORDPRESS_DB_USER: wordpress
-       WORDPRESS_DB_PASSWORD: wordpress
+  wordpress:
+    depends_on:
+      - db
+    image: wordpress:latest
+    ports:
+      - "8000:80"
+    restart: always
+    networks:
+      - default
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
 volumes:
-    db_data:
+  db_data:
 networks:
   default:
     driver: bridge
@@ -80,10 +80,10 @@ networks:
 dockerではこのnetworkというので、複数のコンテナを名前で連携できます。   
 `wordpress`から見て`db`という名前でアクセスしてますね。
 
-今回はWordPressとDBだけなので1つだけですが  
-たとえばWEB-AP-DBのアプリだと、  
-WEB-APとAP-DBはつながる必要はあるが、WEB-DBはつながる必要がない場合など、
-2つのnetworkに分けることもできます。
+今回はWordPressとDBだけなのでneworkは1つだけでよいです。  
+たとえばWEB-AP-DBの3層構造だと、  
+WEB-APとAP-DBをつなげる必要はあるが、WEB-DBをつなげる必要はないです。
+そういった場合は2つのnetworkに分けることもできます。
 
 上記のYamlを`docker-compose.yaml`というファイルにして、  
 ファイルのあるフォルダで、以下のコマンドを実行すると、起動できます。
