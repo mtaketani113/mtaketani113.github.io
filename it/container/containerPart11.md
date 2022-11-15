@@ -23,7 +23,7 @@ Docker Desktopで単一ノードで動かしているので、実現はできな
 ## スケジューリング対象の除外
 
 まずは以下のコマンドで、ノードをチェックします。
-ここではDocker Desktopが前提なのでノードは一つです。足したりできるのか？？
+ここではDocker Desktopが前提なのでノードは1つです。足したりできるのか？？
 
 ```Shell
 $ kubectl get node
@@ -40,7 +40,7 @@ $ kubectl cordon docker-desktop
 node/docker-desktop cordoned
 ```
 
-cordon フランス語でコルドンと読むらしく、 
+cordonフランス語でコルドンと読むらしく、 
 紐とか非常線とか警戒線いう意味らしい。
 
 入れなくするということですかね？
@@ -53,7 +53,7 @@ docker-desktop   Ready,SchedulingDisabled   master   5d17h   v1.19.7
 ```
 SchedulingDisabledとなっています。
 
-ですので、たとえば、Podを一つ消すと`Pending`から変わらなくなります。
+ですので、たとえば、Podを1つ消すと`Pending`から変わらなくなります。
 新しくは作れないのですね。他にノードもないから、作れず止まっている状態ですかね。
 
 ```

@@ -280,7 +280,7 @@ nginx-deployment-5d47ff8589-mjz6x   1/1     Running             0          2s
 
 ## まとめ
 
-Docker Desktopを使ってkubectlの動作を勉強することができます。  
+Docker Desktopを使ってkubectlの動作を勉強できます。  
 yamlファイルに設定をまとめ、読み込ませることで、  
 バージョンやレプリカ数などを変更できます。
 

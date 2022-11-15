@@ -171,7 +171,7 @@ F12でApplication→Cookiesを見ると、`root`という値でCookieが登録�
 
 ## まとめ
 
-Sticky Sessionを利用して、アクセスするPod(Server)を固定することができました。
+Sticky Sessionを利用して、アクセスするPod(Server)を固定できました。
 これにより、Statefulなアプリも複数APサーバで実行できます。
 利用するには`annotations`を使うだけなので、意外に簡単ですね。
 

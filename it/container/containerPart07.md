@@ -77,7 +77,7 @@ networks:
     driver: bridge
 ```
 
-dockerではこのnetworkというので、複数のコンテナを名前で連携することができます。   
+dockerではこのnetworkというので、複数のコンテナを名前で連携できます。   
 `wordpress`から見て`db`という名前でアクセスしてますね。
 
 今回はWordPressとDBだけなので1つだけですが  

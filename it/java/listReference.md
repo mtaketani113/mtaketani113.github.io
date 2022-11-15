@@ -39,7 +39,7 @@ b
 
 `c`が削除されてずれるため、最後に参照されないので`java.util.ConcurrentModificationException`は発生しません。
 
-次にListに一つ要素を足した場合です。
+次にListに1つ要素を足した場合です。
 ```Java
         List<String> list = new ArrayList<>();
         

@@ -91,7 +91,7 @@ pom.xmlをOWNERとREPOSITORYにはそれぞれリポジトリの所有者とリ�
 
 ## まとめ
 
-mvn deployで`422 Unprocessable Entity`が発生する原因の一つは**artifactIdに大文字**を使っているからのようです。mvn installとかは使えるのに、若干はめですよねｗ小文字に変えて対応しましょう。
+mvn deployで`422 Unprocessable Entity`が発生する原因の1つは**artifactIdに大文字**を使っているからのようです。mvn installとかは使えるのに、若干はめですよねｗ小文字に変えて対応しましょう。
 
 githugのPackageを使うことでmavenのリポジトリとして使えます。
 便利なので利用してみてはどうでしょうか。

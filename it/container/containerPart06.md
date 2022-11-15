@@ -129,7 +129,7 @@ Pod Template:
 
 [第3回のバージョンアップ](https://mtaketani113.github.io/it/container/containerPart04.html#anchor3)
 で、アップデートすると徐々に変わっていくのを見ることができたと思いますが、  
-この変わり方をコントロールすることができます。
+この変わり方をコントロールできます。
 
 そこで使うのがRecreateとRollingUpdateです。
 
@@ -303,7 +303,7 @@ nginx-deployment-5d47ff8589   2         2         2       18h
 
 ## デプロイの一時停止
 
-安全のため、Deploymentを一時停止することができます。
+安全のため、Deploymentを一時停止できます。
 
 ```Shell
 # 停止
@@ -322,7 +322,7 @@ $ kubectl rollout resume deployment nginx-deployment
 deployment.apps/nginx-deployment resumed
 ```
 
-このように、更新を停止することができます。
+このように、更新を停止できます。
 
 <a id="anchor4"></a>
 

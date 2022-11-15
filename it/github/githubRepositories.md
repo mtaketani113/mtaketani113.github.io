@@ -13,7 +13,7 @@ APIのアクセスには上限があるため、アクセスを繰り返すと
 今後追記していこうかな(#^^#)
 
 本題を始めます。
-async/await と fetch関数を利用して、GithubのAPIを呼び出し、
+async/awaitとfetch関数を利用して、GithubのAPIを呼び出し、
 私のリポジトリをリスト表示しました。
 
 <script>

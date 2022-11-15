@@ -129,4 +129,4 @@ List→Mapにラムダ式で変換する場合に、順序を保持するには�
 ```
 
 `(u, v) -> v`ここの部分を`(u, v) -> {throw new IllegalArgumentException();}`と変えることで
-キーが重複している場合にExceptionをThrowすることができます。
+キーが重複している場合にExceptionをThrowできます。
