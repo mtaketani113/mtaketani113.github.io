@@ -5,10 +5,10 @@ description: 2022年11月になり、SpringBoot3だけでなくMybatisもリリ�
 category: java
 image: /images/it/java/cafe_mark.png
 created_at: 2022-11-27
-last_modifeid_at: 2022-11-27
+last_modifeid_at: 2022-11-28
 ---
 
-以前、[開発中のSpringBoot3でMyBatis利用](https://mtaketani113.github.io/it/java/springBoot3WithMyBatis.html)
+以前、[開発中のSpringBoot3でMyBatis利用](https://mtaketani113.github.io/it/java/springBoot3WithMyBatis.html)や
 [開発中のSpringBoot3でMyBatis利用 その2](https://mtaketani113.github.io/it/java/springBoot3WithMyBatisPart2.html)で開発中のSpringBoot3とMyBtaisを利用する方法を記載しましたが、
 2022年11月になり、SpringBoot3だけでなくMybatisもリリースされました。以前書いた設定方法が変わりましたので追加で記載します。
 
@@ -35,20 +35,6 @@ plugins {
 	id 'java'
 }
 ```
-
-## SnapShotのあるリポジトリの追加
-
-SpringBootであれば、`mybatis-spring-boot-starter`を利用すれば、MyBatisを簡単に使えるのですが、
-MyBatisのサイトを見ると以下のように書いています。
-
-
-2.3以降がSoringBoot3で利用できるけどまだリリースしてませんと。
-
-ただ、こちらにSnapShotがあるようです。
-
-[2.3.0-SNAPSHOT](https://oss.sonatype.org/content/repositories/snapshots/org/mybatis/spring/boot/mybatis-spring-boot/2.3.0-SNAPSHOT/)
-
-これを利用してみましょう。
 
 ## MyBatisの利用
 
