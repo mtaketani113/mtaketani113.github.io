@@ -54,7 +54,7 @@ npm run deply
 
 `https://{ユーザ名}.github.io/{リポジトリー名}`
 
-ここが、はまりポイントです。
+ここが、はまりポイントです。  
 こちらのサイトに対策が記載されていました。
 
 [GitHub Pages で React Router を使った SPA サイトを動かす方法](https://maku.blog/p/9u8it5f/)
