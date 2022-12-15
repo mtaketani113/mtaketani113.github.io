@@ -4,7 +4,7 @@ title: Github PagesにReactで作成したページを公開
 description: 少しはまったので、Github PagesにReactで作成したページを公開する方法を記載します。
 category: github
 created_at: 2022-12-07
-last_modifeid_at: 2022-12-08
+last_modifeid_at: 2022-12-15
 ---
 
 少しはまったので、Github PagesにReactで作成したページを公開する方法を備忘録としても記載します。
@@ -55,7 +55,11 @@ npm run deply
 `https://{ユーザ名}.github.io/{リポジトリー名}`
 
 ここが、はまりポイントです。
-これを対策するため、以下の2つを実施します。
+
+こちらのサイトに対策が記載されていました。
+[GitHub Pages で React Router を使った SPA サイトを動かす方法](https://maku.blog/p/9u8it5f/)
+
+まとめると、以下の2つを実施することで対策でいます。
 
 ① 404.htmlの配置
 
@@ -79,6 +83,27 @@ publicの下にあるindex.htmlに以下を追加します。
       })();
     </script>
 ```
+
+## Google Search Consoleの対策
+
+ただし、Google Search Consoleなどで
+作成した下位ページのIndexを登録しようとすると
+404発生→404.htmlでリダイレクトという処理になっているせいか
+404エラーを先に引っ掛けて登録できませんでした。
+
+なので、対策として下位ページのindex.htmlをほぼコピーしたhtmlを
+下位ページの名前にして作成しました。
+
+何を言ってるかわからないかもしれないので、
+参考が[こちら](https://github.com/mtaketani113/omu-karate-page/blob/main/public/schedule.html)です。
+
+/schduleというURLだったので、schdule.htmlを作って置きました。
+
+/schduleと/schdule/は異なり、前者はschdule.html 後者はschdule/index.htmlにアクセスしようとします。
+両方対策するのは面倒ですし、そもそもぺ自分ファイル作成しないといけないですし、
+あんまりスマートではないですよね・・・
+
+一応登録はできたのですが・・・他に対策ないんでしょうかね？
 
 ## おまけ Github Actionsでデプロイ設定
 
