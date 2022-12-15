@@ -97,10 +97,10 @@ publicの下にあるindex.htmlに以下を追加します。
 何を言ってるかわからないかもしれないので、
 参考が[こちら](https://github.com/mtaketani113/omu-karate-page/blob/main/public/schedule.html)です。
 
-/schduleというURLだったので、schdule.htmlを作って置きました。
+/scheduleというURLだったので、schdule.htmlを作って置きました。
 
-/schduleと/schdule/は異なり、前者はschdule.html 後者はschdule/index.htmlにアクセスしようとします。
-両方対策するのは面倒ですし、そもそもぺ自分ファイル作成しないといけないですし、
+/scheduleと/schedule/は異なり、前者はschdule.html 後者はschdule/index.htmlにアクセスしようとします。
+両方対策するのは面倒ですし、そもそもページごとにファイル作成しないといけないですし、
 あんまりスマートではないですよね・・・
 
 一応登録はできたのですが・・・他に対策ないんでしょうかね？
