@@ -42,9 +42,9 @@ beforAllに入れる必要はないかもしれないですがｗ
 
 サンプルコードは[こちら](https://github.com/mtaketani113/omu-karate-page/blob/v1.2.6/src/components/TrainingMenue.test.tsx)
 
-##　うまくいかなかった方法
+## うまくいかなかった方法
 
-調べてみるとモックを利用するということでしたが、
+Google先生で調べて、色々出てきたのですが、
 最初に見つかったのが以下を追加する方法でした。
 
 ```TypeScript
