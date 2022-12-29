@@ -38,7 +38,7 @@ matchmediaをモックにする必要がありそうなエラーですね。
   });
 ```
 
-beforAllに入れる必要はないかもしれないですがｗ
+beforeAllに入れる必要はないかもしれないですがｗ
 
 サンプルコードは[こちら](https://github.com/mtaketani113/omu-karate-page/blob/v1.2.6/src/components/TrainingMenue.test.tsx)
 
