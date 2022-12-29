@@ -65,6 +65,13 @@ Object.defineProperty(window, 'matchMedia', {
 
 参照サイトは[こちら](https://jestjs.io/docs/manual-mocks#mocking-methods-which-are-not-implemented-in-jsdom)
 
+これを実施すると以下のようなエラーが出ました。
+```TypeScript
+typeerror: cannot read properties of undefined (reading 'matches')
+```
+
+うーん、エラーが変わったんでモックは効いてるっぽいですけど・・・
+
 何か間違ってるためだと思いますが・・・
 何かわからず。もっと手っ取り早い方法を見つけたのが
 前に記載した方法です。
