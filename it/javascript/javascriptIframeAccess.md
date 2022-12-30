@@ -3,6 +3,7 @@ layout: default
 title: JavaScriptでiframeにアクセスの注意
 description: JavaScriptでiframeにアクセスする方法と、アクセス拒否について記載します。また、開発者ツールを使うときの注意を記載します。
 category: javascript
+image: /images/it/javascript/javascript_code.jpg
 created_at: 2022-05-25
 last_modifeid_at: 2022-05-25
 ---

@@ -3,6 +3,7 @@ layout: default
 title: Semantic UI React利用して開発
 description: ReactでSemanticUIを利用してみました。環境構築で、「Cannot read properties of undefined (reading 'get')during rendering of asset asset/inline|data:application/x-font-ttf;charset=utf-8;;base64,・・・」と出て構築できませんでした。解決方法を記載します。
 category: javascript
+image: /images/it/javascript/javascript_code.jpg
 created_at: 2022-08-18
 last_modifeid_at: 2022-08-18
 ---

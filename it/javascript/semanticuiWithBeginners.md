@@ -3,6 +3,7 @@ layout: default
 title: Semantic UIを利用して開発
 description: 開発時のメンバーがあまり開発したことがないメンバーで、画面を作れない状態でした。そこでSemantic UIを利用して開発した話です。
 category: javascript
+image: /images/it/javascript/javascript_code.jpg
 created_at: 2022-03-05
 last_modifeid_at: 2022-03-05
 ---

@@ -3,6 +3,7 @@ layout: default
 title: JavaScriptでファイルからQRコード読み込み
 description: Javascriptを使ってファイルからQRコードを読み込み、内容を表示するサービスです。
 category: javascript
+image: /images/it/javascript/javascript_code.jpg
 created_at: 2022-03-25
 last_modifeid_at: 2022-03-25
 ---

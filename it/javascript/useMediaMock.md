@@ -3,6 +3,7 @@ layout: default
 title: useMediaを利用した場合のテスト
 description: ReactでuseMediaを利用すると、テストが動作しなくなります。その解消方法を紹介します。
 category: javascript
+image: /images/it/javascript/javascript_code.jpg
 created_at: 2022-12-29
 last_modifeid_at: 2022-12-29
 ---

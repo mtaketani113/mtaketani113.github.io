@@ -3,6 +3,7 @@ layout: default
 title: JavaScriptでQRコード作成
 description: Javascriptを使ってQRコードを作成するサービスです。どこにも情報を送っていないですし、この画面だけで完結しています。安心して使ってください。
 category: javascript
+image: /images/it/javascript/javascript_code.jpg
 created_at: 2022-03-17
 last_modifeid_at: 2022-03-17
 ---

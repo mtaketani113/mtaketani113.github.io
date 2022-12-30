@@ -3,6 +3,7 @@ layout: default
 title: JavaScriptによるファンクションキー無効化の落とし穴
 description: JavaScriptによるファンクションキーを無効にできますが、URLにフォーカスをあてると有効になります。
 category: javascript
+image: /images/it/javascript/javascript_code.jpg
 created_at: 2021-06-01
 last_modifeid_at: 2021-06-01
 ---

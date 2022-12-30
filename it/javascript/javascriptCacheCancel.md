@@ -3,6 +3,7 @@ layout: default
 title: キャッシュ削除
 description: JavaScriptやCSSなど改修した際にキャッシュが残ってしまいユーザの動作がおかしくなるのを防ぐ方法を紹介します。
 category: javascript
+image: /images/it/javascript/javascript_code.jpg
 created_at: 2022-06-08
 last_modifeid_at: 2022-06-08
 ---
