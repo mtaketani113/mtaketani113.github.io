@@ -57,4 +57,4 @@ const isWide = useMedia('(min-width: 780px)');
 `react-use`の`useMedia`を利用する方法を記載しました。
 React18では`use-Media`だと少し古い扱いのようです。
 
-テストもエラーになるのでリンクを参考に対処してみてください。
+useMediaを利用するとテストがエラーになるので[リンク](/it/javascript/useMediaMock.html)を参考に対処してみてください。
