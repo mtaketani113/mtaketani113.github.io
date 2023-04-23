@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Oracleの12cの適応計画の外し方
-description: Oracleで12cの適応計画というのがあり、それが逆効果の時があります。そうなったときの簡単な対処方法を記載します。
+title: Oracle12cの適応計画の外し方
+description: Oracle12cでは適応計画というのがあり、それが逆効果の時があります。そうなったときの簡単な対処方法を記載します。
 category: IT
 created_at: 2023-04-23
 last_modifeid_at: 2023-04-23
