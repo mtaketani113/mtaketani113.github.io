@@ -8,7 +8,7 @@ created_at: 2023-05-04
 last_modifeid_at: 2023-05-04
 ---
 
-ReactでuseStateでJsonや配列を更新したのですがうまくいかず、少しは待ったので記載します。
+ReactでuseStateで連想配列やJsonや配列を更新したのですがうまくいかず、少しは待ったので記載します。
 
 useStateでsetすると画面が更新されるのですが、
 以下のように記載してボタンをクリックしたのですが、更新されませんでした。
@@ -46,7 +46,7 @@ setしても、変わったと認識されないようです。
 
 対策は、参照先が変わるようにするだけです。
 
-こんな感じ
+連想配列の時はこんな感じ
 
 ```Javascript
 const [customer, setCustomer] = useState({
@@ -62,10 +62,7 @@ const click = () => {
   customer.name = 'XX株式会社';
   customer.address = '東京都';
 
-  setCustomer({...customer,
-    id: '100',
-    name: 'XX株式会社',
-    address, '東京都'});
+  setCustomer({...customer,　id: '101',　name: 'YY株式会社',　address: '大阪府'});
 }
 ```
 
@@ -75,7 +72,7 @@ const click = () => {
 配列の時も同様で以下のように書けばよいです。
 
 ```Javascript
-setCustomers([...customers, {id: '100', name: 'XX株式会社', address: '東京'}])
+setCustomers([...customers, {id: '101', name: 'YY株式会社', address: '大阪府'}])
 ```
 
 ## まとめ
