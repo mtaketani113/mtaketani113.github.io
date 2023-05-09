@@ -5,7 +5,7 @@ description: ReactでuseStateでJsonや配列を更新したのですがうま�
 category: javascript
 image: /images/it/javascript/javascript_code.jpg
 created_at: 2023-05-04
-last_modifeid_at: 2023-05-07
+last_modifeid_at: 2023-05-09
 ---
 
 ReactでuseStateで連想配列やJsonや配列を更新したのですがうまくいかず、少しは待ったので記載します。
@@ -69,11 +69,24 @@ const click = () => {
 `{...xxx, param: yyy}`という形で書くことでオブジェクトのコピーが作られて更新されるため
 参照先が変わるのでsetすることで更新されるようになります。
 
-配列の時も同様で以下のように書けばよいです。
+配列の時も同様で要素の追加であれば以下のように書けばよいです。
 
 ```Javascript
 setCustomers([...customers, {id: '101', name: 'YY株式会社', address: '大阪府'}])
 ```
+
+更新だとこんな感じですかね？
+
+```Javascript
+const tmp = [...customers];
+tmp[0].id = '101';
+tmp[0].name: 'YY株式会社';
+tmp[0].address: '大阪府';
+setCustomers(tmp);
+```
+
+ただし、`...`スプレッド構文はディープコピーでないので、元のオブジェクトも変わります。
+場合によっては注意が必要かもしれません。
 
 ## まとめ
 
