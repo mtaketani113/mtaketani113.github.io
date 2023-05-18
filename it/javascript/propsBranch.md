@@ -1,19 +1,19 @@
 ---
 layout: default
-title: ReactのJSXのPropsの条件分岐
-description: ReactのJSXのProps（属性）を条件によって変えたいことがあり、Reactの型の条件分岐について記載します。
+title: ReactのPropsの条件分岐
+description: ReactにおけるJSXのProps（属性）を条件によって変えたいことがあり、Reactの型の条件分岐について記載します。
 category: javascript
 image: /images/it/javascript/javascript_code.jpg
 created_at: 2023-05-19
 last_modifeid_at: 2023-05-19
 ---
 
-ReactのJSXのProps（属性）を条件によって変えたいことがあり、
+ReactにおけるJSXのProps（属性）を条件によって変えたいことがあり、
 その方法について調べたので少し記載します。
 
 参考サイトは[こちら](https://de-milestones.com/react-props-conditional-type/)です
 
-# Reatの型の条件分岐方法
+## 条件分岐の書き方
 
 型を必須部分と分岐する部分をわけて
 分岐部分を「&」でつなぎ、
