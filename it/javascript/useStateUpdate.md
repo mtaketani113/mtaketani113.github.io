@@ -1,14 +1,14 @@
 ---
 layout: default
 title: useStateでのオブジェクトの更新
-description: ReactでuseStateでJsonや配列を更新したのですがうまくいかず、少しは待ったので記載します。
+description: ReactでuseStateでJsonや配列を更新したのですがうまくいかず、少しハマったので記載します。
 category: javascript
 image: /images/it/javascript/javascript_code.jpg
 created_at: 2023-05-04
-last_modifeid_at: 2023-05-09
+last_modifeid_at: 2023-08-22
 ---
 
-ReactでuseStateで連想配列やJsonや配列を更新したのですがうまくいかず、少しは待ったので記載します。
+ReactでuseStateで連想配列やJsonや配列を更新したのですがうまくいかず、少しハマったので記載します。
 
 useStateでsetすると画面が更新されるのですが、
 以下のように記載してボタンをクリックしたのですが、更新されませんでした。
