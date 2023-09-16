@@ -5,7 +5,7 @@ description: SpringBootとAJP/1.3でApache連携する際に、はまったこ�
 category: java
 image: /images/it/java/cafe_mark.png
 created_at: 2022-11-13
-last_modifeid_at: 2022-11-13
+last_modifeid_at: 2023-09-16
 ---
 
 SpringBootとAJP/1.3でApache連携する際に、はまったことを記載します。
@@ -74,7 +74,7 @@ public class AppConfig {
 Tomcatを9.0.34でsecretというのが追加されたようです。
 新しいのを使う場合は、気を付けてください。
 
-###　IPアドレスの設定
+##　IPアドレスの設定
 
 はまったことの2つ目はここです。  
 ```Java
