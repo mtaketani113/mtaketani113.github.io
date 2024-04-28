@@ -40,6 +40,12 @@ Macは使ったことがないので、良さがわかっていない・・・
 
 - [大阪公立大学空手道部 応援ページ](https://mtaketani113.github.io/omu-karate-page/)
 - [JavaScript Tools](https://mtaketani113.github.io/react-tools/)
+
+こちらのサイトもNext.jsでメンテしています
+
+- [大阪公立大学空手道部 監督ブログ](https://omu-karate-org.github.io/blog/list/1)
+
+
 ## つぶやき
 
 Twitterのつぶやきです。
