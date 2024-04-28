@@ -3,6 +3,8 @@ layout: default
 title: GitHub Pagesでmermaidを利用する
 description: GitHub PagesでMermaidを利用する方法を記載します。
 category: github
+created_at: 2024-04-28
+last_modifeid_at: 2024-04-28
 ---
 
 Github Pagesでmermaidを利用する方法を記載します。
@@ -42,6 +44,8 @@ graph TD
    window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
 </script>
 ```
+
+ちなみに、Vidual Studio Codeで編集しているのですが、「Markdown Preview Mermaid Support」というプラグインを使うとプレビューで作成したグラフなどが見えます。ぜひ使ってください。
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js"></script>
 <script>
