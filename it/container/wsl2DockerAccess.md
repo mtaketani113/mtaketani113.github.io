@@ -9,9 +9,9 @@ last_modifeid_at: 2022-02-12
 
 [Docker Desktopの有料化の対応](/it/container/chargeDockerDesktop.html)で
 WSL2を使ってDockerを動かせるようにはなったのですが、
-localhost空のアクセス以外、例えば自分自身のPCからでもIPアドレスやPC名などでアクセスできないのです。
+localhostからのアクセス以外、例えば自分自身のPCからでもIPアドレスやPC名などでアクセスできないのです。
 
-他PC空も当然アクセスできませんでした。
+他PCからも当然アクセスできませんでした。
 
 調べてみると、原因は2つでWSL2へのネットワークが流れてないのとファイヤーウォールでした。
 
@@ -53,7 +53,7 @@ netsh.exe interface portproxy delete v4tov4 listenport=8080 listenaddress=${自�
 それがファイヤーウォールです。
 
 普通であれば、画面から変更できて、特定のPC空などからアクセスを制御できたりするのですが、
-会社環境のためか、なぜか変更できない・・・
+環境のためか、なぜか変更できない・・・
 
 そこで緊急回避策です。  
 PowerShellで開放できます。
