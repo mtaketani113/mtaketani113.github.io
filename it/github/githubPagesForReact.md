@@ -44,7 +44,7 @@ npm install gh-pages --save-dev
 ここまで設定すれば、以下のコマンドで公開できます。
 
 ```Shell
-npm run deply
+npm run deploy
 ```
 
 ## 404対策
