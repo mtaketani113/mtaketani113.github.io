@@ -16,7 +16,7 @@ VSCode(Windows)でsafe-chainを利用しようとすると、
 
 ## 現象
 
-safe-chainのインストール手順は、以下です
+safe-chainのインストール手順は、以下です。
 1. 以下のコマンドを実行
 ```TypeScript
 npm install -g @aikidosec/safe-chain
@@ -31,6 +31,7 @@ safe-chain setupでnpm等のaliasを作成される・・・はず。
 npm install safe-chain-test
 ```
 エラーメッセージはこんな感じなのが出ればOKです。
+
 ```TypeScript
 ✖ Safe-chain: Malicious changes detected:
  - safe-chain-test@0.0.1-security
@@ -41,6 +42,7 @@ Exiting without installing malicious packages.
 しかし、再起動して「3」を実行しても`safe-chain-test`がインストールされてしまう。
 
 `aikido-npm`でinstallしてみると失敗するのでsafe-chainは入っているよう
+
 ```TypeScript
 aikido-npm install safe-chain-test
 ✖ Safe-chain: Malicious changes detected:
