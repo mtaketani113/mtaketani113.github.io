@@ -65,7 +65,7 @@ New-Item -type file -force $PROFILE
 
 3. 開いたPROFILEに以下を記載して保存 
 ```PowerShell
-New-Item -type file -force $profile
+Set-Alias -Name npm -Value aikido-npm
 ```
 
 4. ターミナルを再起動
