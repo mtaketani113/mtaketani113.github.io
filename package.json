@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/mtaketani113/mtaketani113.github.io#readme",
   "devDependencies": {
-    "textlint": "^12.2.3",
+    "textlint": "^15.5.4",
     "textlint-filter-rule-allowlist": "^4.0.0",
     "textlint-filter-rule-whitelist": "^2.0.0",
     "textlint-rule-no-dropping-the-ra": "^3.0.0",
